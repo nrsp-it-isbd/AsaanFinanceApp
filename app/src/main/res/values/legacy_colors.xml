@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Legacy colors mapped to AssanFinanceApp theme -->
+    <color name="text_slate_400">#9E9E9E</color>
+    <color name="colorDarkGray">#7E7E7E</color>
+    <color name="navy_blue_dark">@color/primary_dark</color>
+    <color name="navy_blue">@color/primary</color>
+    <color name="border_slate_200">#E0E0E0</color>
+    <color name="bg_slate_50">@color/background</color>
+    <color name="primary_alpha_10">#1A33C6B9</color>
+    <color name="border_light">#E0E0E0</color>
+    <color name="incharge_blue">@color/primary_light</color>
+    <color name="colorGray">#9E9E9E</color>
+    <color name="status_error">#F44336</color>
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorAccent">@color/accent</color>
+    <color name="colorPrimaryDark">@color/primary_dark</color>
+    <color name="purple_700">@color/primary_dark</color>
+    <color name="teal_700">@color/primary</color>
+    <color name="vividRedColor">@color/primary</color>
+    <color name="red">#F44336</color>
+    <color name="lightred">@color/primary_light</color>
+    <color name="lightBlack">#222222</color>
+    <color name="colorGrey100">#F5F5F5</color>
+    <color name="appBackground">@color/background</color>
+    <color name="snakeBarBackground">#313033</color>
+    <color name="yellow">@color/warning_yellow</color>
+    <color name="primary_teal">@color/primary</color>
+    <color name="text_white_40">#66FFFFFF</color>
+    <color name="bg_white">@color/surface</color>
+    <color name="border_slate_100">#F1F5F9</color>
+    <color name="text_slate_300">#CBD5E1</color>
+    <color name="status_warning">@color/warning_yellow</color>
+    <color name="status_success">#4CAF50</color>
+    <color name="status_info">@color/primary_light</color>
+    <color name="primary_teal_10">#1A00B8A9</color>
+    <color name="bg_accent">@color/background</color>
+    <color name="primary_teal_alpha_10">#1A00B8A9</color>
+    <color name="teal_dark">@color/primary_dark</color>
+    <color name="teal_light">@color/primary_light</color>
+    <color name="navy_light">@color/primary_light</color>
+    <color name="colorPrimary_alpha_10">#1A00B8A9</color>
+    <color name="text_slate_500">#64748B</color>
+    <color name="text_slate_600">#475569</color>
+    <color name="primary_10">#1A00B8A9</color>
+
+    <color name="bg_rounded_teal_soft">@color/background</color>
+    <color name="primaryDark">@color/primary_dark</color>
+</resources>

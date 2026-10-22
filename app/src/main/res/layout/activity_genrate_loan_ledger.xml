@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_gradient">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="8dp"
+            android:background="@drawable/bg_pill_grey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true" 
+        tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/deposit_receipt"
+            android:textColor="@color/auto_color_1F2937"
+            android:textSize="18sp"
+            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layoutParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="visible"
+        android:baselineAligned="false">
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Summary Hero Card                    -->
+            <!-- ══════════════════════════════════════ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/auto_color_E8F5E9"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+        android:baselineAligned="false">
+
+                    <!-- Total Due -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_due_amount"
+                        android:textColor="@color/auto_color_2E7D32"
+                        android:textSize="12sp"
+                        android:alpha="0.85" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/TotalDueAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/str_rs_0"
+                        android:textColor="@color/primary"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif-black" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="14dp"
+                        android:background="@color/auto_color_C7E7D0" />
+
+                    <!-- Due Date row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/due_date"
+                                android:textColor="@color/auto_color_2E7D32"
+                                android:textSize="11sp"
+                                android:alpha="0.8" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvDueDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_receipts_1"
+                                android:textColor="@color/auto_color_2E7D32"
+                                android:textSize="11sp"
+                                android:alpha="0.8" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/numberOfReceipts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/str_0"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_total_paid_1"
+                                android:textColor="@color/auto_color_2E7D32"
+                                android:textSize="11sp"
+                                android:alpha="0.8" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/TotalAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/str_rs_0"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Ledger Receipts Table Card           -->
+            <!-- ══════════════════════════════════════ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/auto_color_E5E7EB"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+        android:baselineAligned="false">
+
+                    <!-- Card Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+        android:baselineAligned="false">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="18dp"
+                            android:background="@color/primary_light"
+                            android:layout_marginEnd="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_ledger"
+                            android:textColor="@color/auto_color_1F2937"
+                            android:textSize="14sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <!-- Table Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/auto_color_F0FDF4"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="8dp"
+        android:baselineAligned="false">
+
+                        <TextView
+                            android:id="@+id/txtRECEIPT_NO"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/str_receipt_no"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtDueDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/str_due_date"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtInstallments"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/str_instalments"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtPaidDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/str_paid_date"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/str_total_1"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ledgerRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:minHeight="@dimen/_120sdp"
+                        android:nestedScrollingEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/txtNoDataFound"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="@string/no_data_found"
+                        android:textColor="@color/auto_color_9CA3AF"
+                        android:textSize="14sp"
+                        android:visibility="gone" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Payment Channels Header              -->
+            <!-- ══════════════════════════════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+        android:baselineAligned="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_can_pay_by_using_the_following_channels"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textSize="14sp"
+                    android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/you_can_pay_by_using_the_following_channels_urdu"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="12sp" 
+        tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Agents Card                          -->
+            <!-- ══════════════════════════════════════ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/auto_color_E5E7EB"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+        android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+        android:baselineAligned="false">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="16dp"
+                            android:background="@color/auto_color_10B981"
+                            android:layout_marginEnd="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_agents_1"
+                            android:textColor="@color/auto_color_1F2937"
+                            android:textSize="13sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewAgents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Banks Card                           -->
+            <!-- ══════════════════════════════════════ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/auto_color_E5E7EB"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+        android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+        android:baselineAligned="false">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="16dp"
+                            android:background="@color/auto_color_3B82F6"
+                            android:layout_marginEnd="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_banks_1"
+                            android:textColor="@color/auto_color_1F2937"
+                            android:textSize="13sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewBankChannels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtNoReceipts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_receipts"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sdp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>
+

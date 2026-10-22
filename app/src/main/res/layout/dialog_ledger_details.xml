@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="24dp"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_rounded"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/auto_installment_details_721"
+            android:textColor="@color/dark_navy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:useDefaultMargins="true">
+
+                <TextView
+                    android:text="@string/auto_receipt_no_722"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvReceiptNo"
+                    android:layout_gravity="end"
+                    android:text="@string/auto_n_a_723"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_due_date_724"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvDueDateDialog"
+                    android:layout_gravity="end"
+                    android:text="@string/auto_n_a_723"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_receipt_date_725"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRecDateDialog"
+                    android:layout_gravity="end"
+                    android:text="@string/auto_n_a_723"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_description_726"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_gravity="end"
+                    android:text="@string/auto_n_a_723"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <!-- PA / SC -->
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="@string/auto_due_principal_727"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvDuePA"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_rec_principal_728"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRecPA"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="@string/auto_due_service_charge_729"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvDueSC"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_rec_service_charge_730"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRecSC"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <!-- OD / PEN / ADJ -->
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="@string/auto_od_pa_731"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvOdPa"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/str_0"
+                    android:visibility="gone"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_od_sc_732"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvOdSc"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:visibility="gone"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_due_penalty_733"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvDuePen"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_adjustment_adj_734"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvAdj"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:visibility="gone"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_write_off_amount_735"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvWriteoff"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <!-- REFUNDS -->
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="@string/auto_refund_cheque_736"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRefundCheque"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/auto_n_a_723"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_refund_date_737"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRefundDate"
+                    android:layout_gravity="end"
+                    android:text="@string/auto_n_a_723"
+                    android:visibility="gone"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_refund_amount_738"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRefundAmount"
+                    android:layout_gravity="end"
+                    android:text="@string/auto_n_a_723"
+                    android:visibility="gone"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+
+                <!-- TOTALS -->
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:text="@string/auto_due_total_739"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvDueTotalD"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_EF4444"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:text="@string/auto_rec_total_740"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvRecTotalD"
+                    android:layout_gravity="end"
+                    android:text="@string/str_0"
+                    android:textColor="@color/auto_color_10B981"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+            </GridLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/teal_brand"
+            android:text="@string/str_close"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

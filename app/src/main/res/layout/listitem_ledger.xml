@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+        android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtRECEIPT_NO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/auto_color_374151"
+            android:textSize="11sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDueDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/auto_color_374151"
+            android:textSize="11sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtInstallments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/auto_color_374151"
+            android:textSize="11sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPaidDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/auto_color_374151"
+            android:textSize="11sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/auto_color_374151"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/auto_color_F3F4F6" />
+
+</LinearLayout>

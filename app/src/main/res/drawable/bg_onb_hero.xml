@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding hero panel: soft brand-teal gradient -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="315"
+        android:endColor="#C6ECE8"
+        android:startColor="#ECF9F8"
+        android:type="linear" />
+    <corners android:radius="32dp" />
+</shape>

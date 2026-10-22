@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/ai_report_desc"
+        android:textColor="@color/ug_body"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/rgAiReportReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@+id/rbAiReportWrong">
+
+        <RadioButton
+            android:id="@+id/rbAiReportWrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_report_reason_wrong" />
+
+        <RadioButton
+            android:id="@+id/rbAiReportOffensive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_report_reason_offensive" />
+
+        <RadioButton
+            android:id="@+id/rbAiReportOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_report_reason_other" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAiReportComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/ai_report_comment_hint"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLength="500"
+        android:maxLines="4" />
+</LinearLayout>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Delete account dialog: same look as dialog_logout (rounded card, round icon, two buttons) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="20dp"
+    tools:ignore="UnusedAttribute">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_voice_chat_dialog"
+        android:clipToOutline="true"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- ============ Step 1: confirm ============ -->
+            <LinearLayout
+                android:id="@+id/layoutDelAccForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/auto_color_FEE2E2">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="15dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_delete"
+                        app:tint="@color/auto_color_DC2626"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/del_acc_title"
+                    android:textColor="@color/on_surface"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/del_acc_message"
+                    android:textColor="@color/subtitle"
+                    android:textSize="14sp" />
+
+                <!-- Legal retention note -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_ug_tip"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/ug_amber_icon"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/del_acc_note"
+                        android:textColor="@color/ug_amber_text"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Password -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:text="@string/del_acc_password_label"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="*"
+                        android:textColor="@color/auto_color_EF4444"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="8dp"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/bg_input_field_selector"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDelAccLock"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_key"
+                        app:tint="@color/light_gray_label"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/btnDelAccTogglePassword"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/del_acc_show_password"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_eye_hide"
+                        app:tint="@color/light_gray_label" />
+
+                    <EditText
+                        android:id="@+id/etDelAccPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toStartOf="@id/btnDelAccTogglePassword"
+                        android:layout_toEndOf="@id/ivDelAccLock"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/del_acc_password_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/dark_navy"
+                        android:textColorHint="@color/light_gray_label"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvDelAccPasswordError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/auto_color_DC2626"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:text="The password is not correct."
+                    tools:visibility="visible" />
+
+                <!-- Reason (optional) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:letterSpacing="0.05"
+                    android:text="@string/del_acc_reason_label"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+                <EditText
+                    android:id="@+id/etDelAccReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_input_field_selector"
+                    android:gravity="top|start"
+                    android:hint="@string/del_acc_reason_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLength="300"
+                    android:maxLines="4"
+                    android:minHeight="54dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/cbDelAccConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:buttonTint="@color/auto_color_DC2626"
+                    android:paddingStart="6dp"
+                    android:text="@string/del_acc_checkbox"
+                    android:textColor="@color/on_surface"
+                    android:textSize="13sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tvDelAccError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/auto_color_DC2626"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    tools:text="Could not send your request."
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnDelAccCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_badge_rounded"
+                        android:backgroundTint="@color/auto_color_F3F4F6"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/del_acc_cancel"
+                        android:textColor="@color/auto_color_374151"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btnDelAccConfirm"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:alpha="0.5"
+                        android:background="@drawable/bg_badge_rounded"
+                        android:backgroundTint="@color/auto_color_DC2626"
+                        android:clickable="true"
+                        android:enabled="false"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:paddingHorizontal="8dp"
+                        android:text="@string/del_acc_confirm"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============ Step 2: done ============ -->
+            <LinearLayout
+                android:id="@+id/layoutDelAccDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/ug_teal_soft">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="14dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_shield_check"
+                        app:tint="@color/primary"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvDelAccDoneTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/on_surface"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Account deleted" />
+
+                <TextView
+                    android:id="@+id/tvDelAccDoneMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/subtitle"
+                    android:textSize="14sp"
+                    tools:text="Your account and personal data have been deleted." />
+
+                <TextView
+                    android:id="@+id/btnDelAccDoneOk"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_badge_rounded"
+                    android:backgroundTint="@color/primary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/del_acc_ok"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>

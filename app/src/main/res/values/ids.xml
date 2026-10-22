@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="phone_watcher_tag" type="id" />
+    <item name="cnic_watcher_tag" type="id" />
+    <item name="btn_original_text" type="id" />
+</resources>

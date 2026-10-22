@@ -1,0 +1,49 @@
+# ---------- Secrets: never commit ----------
+local.properties
+keystore.properties
+*.jks
+*.keystore
+app/google-services.json
+play-service-account*.json
+*.p12
+
+# ---------- Build output / caches ----------
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output.json
+
+# ---------- IDE / tools ----------
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.agent/
+.autoclaw/
+.claude/
+**/Claude outputs/
+
+# ---------- Not part of the app ----------
+# Presentation, promo video / banner and their node_modules
+presentation/
+promo_video/
+promo_banner/
+node_modules/
+# One-off helper scripts and archives in the project root
+/*.py
+/*.php
+/*.zip
+/*.txt
+/run_app.ps1
+/privacy_raw.txt
+# Backend code is handed to the backend developer separately
+backend_fix/

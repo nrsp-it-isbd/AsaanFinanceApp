@@ -1,0 +1,102 @@
+<resources>
+    
+    <color name="primary">#00B8A9</color>
+    <color name="primary_dark">#008B7F</color>
+    <color name="primary_light">#33C6B9</color>
+    <color name="accent">#00B8A9</color>
+
+    <!-- Splash: always white (not day/night), so the system splash and the animated logo match -->
+    <color name="splash_background">#FFFFFF</color>
+
+    
+    <color name="warning_yellow">#FFC107</color>
+
+    
+    <color name="background">#F1FBFB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#212121</color>
+    <color name="subtitle">#757575</color>
+
+    
+    <color name="teal_brand">#00B8A9</color>
+    <color name="dark_navy">#0A2540</color>
+    <color name="light_gray_label">#8E9AA8</color>
+    <color name="light_gray_border">#E2E8F0</color>
+    <color name="background_gradient_light">#F1FBFB</color>
+
+    
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    
+    <color name="calendar_selected_dark">#00B8A9</color>
+    <color name="calendar_selected_light">#5000B8A9</color>
+<color name="auto_color_666666">#666666</color>
+    <color name="auto_color_4CAF50">#4CAF50</color>
+    <color name="auto_color_333333">#333333</color>
+    <color name="auto_color_F5F5F5">#F5F5F5</color>
+    <color name="auto_color_555555">#555555</color>
+    <color name="auto_color_888888">#888888</color>
+    <color name="auto_color_E6FFFFFF">#E6FFFFFF</color>
+    <color name="auto_color_1F2937">#1F2937</color>
+    <color name="auto_color_E8F5E9">#E8F5E9</color>
+    <color name="auto_color_2E7D32">#2E7D32</color>
+    <color name="auto_color_C7E7D0">#C7E7D0</color>
+    <color name="auto_color_E5E7EB">#E5E7EB</color>
+    <color name="auto_color_F0FDF4">#F0FDF4</color>
+    <color name="auto_color_4B5563">#4B5563</color>
+    <color name="auto_color_9CA3AF">#9CA3AF</color>
+    <color name="auto_color_6B7280">#6B7280</color>
+    <color name="auto_color_10B981">#10B981</color>
+    <color name="auto_color_3B82F6">#3B82F6</color>
+    <color name="auto_color_64748B">#64748B</color>
+    <color name="auto_color_EF4444">#EF4444</color>
+    <color name="auto_color_94A3B8">#94A3B8</color>
+    <color name="auto_color_1E293B">#1E293B</color>
+    <color name="auto_color_F1F5F9">#F1F5F9</color>
+    <color name="auto_color_374151">#374151</color>
+    <color name="auto_color_B0BEC5">#B0BEC5</color>
+    <color name="auto_color_D7F2DC">#D7F2DC</color>
+    <color name="auto_color_F3F4F6">#F3F4F6</color>
+    <color name="auto_color_FEE2E2">#FEE2E2</color>
+    <color name="auto_color_DC2626">#DC2626</color>
+    <color name="auto_color_FFF1F2">#FFF1F2</color>
+    <color name="auto_color_475569">#475569</color>
+    <color name="auto_color_CBD5E1">#CBD5E1</color>
+    <color name="auto_color_D1D5DB">#D1D5DB</color>
+    <color name="auto_color_E6F8F7">#E6F8F7</color>
+    <color name="auto_color_25D366">#25D366</color>
+    <color name="auto_color_F8FAFC">#F8FAFC</color>
+    <color name="auto_color_334155">#334155</color>
+    <color name="auto_color_004D5B">#004D5B</color>
+    <color name="auto_color_E6000000">#E6000000</color>
+    <color name="auto_color_FFF3E0">#FFF3E0</color>
+    <color name="auto_color_E65100">#E65100</color>
+    <color name="auto_color_F4FBFB">#F4FBFB</color>
+    <color name="auto_color_E0F2F1">#E0F2F1</color>
+    <color name="auto_color_BDE8F5E9">#BDE8F5E9</color>
+    <color name="auto_color_A5D6A7">#A5D6A7</color>
+    <color name="auto_color_388E3C">#388E3C</color>
+    <color name="auto_color_C8E6C9">#C8E6C9</color>
+    <color name="auto_color_E1F5FE">#E1F5FE</color>
+    <color name="auto_color_0277BD">#0277BD</color>
+    <color name="auto_color_E0F7FA">#E0F7FA</color>
+    <color name="auto_color_00838F">#00838F</color>
+    <color name="auto_color_FFF8E1">#FFF8E1</color>
+    <color name="auto_color_F57F17">#F57F17</color>
+    <color name="auto_color_F3E5F5">#F3E5F5</color>
+    <color name="auto_color_8E24AA">#8E24AA</color>
+    <color name="auto_color_F1F8E9">#F1F8E9</color>
+    <color name="auto_color_558B2F">#558B2F</color>
+    <color name="auto_color_FFEBEE">#FFEBEE</color>
+    <color name="auto_color_C62828">#C62828</color>
+    <color name="auto_color_E0E0E0">#E0E0E0</color>
+    <color name="auto_color_4FC3F7">#4FC3F7</color>
+    <color name="auto_color_D32F2F">#D32F2F</color>
+    <color name="auto_color_6B21A8">#6B21A8</color>
+    <color name="auto_color_F9FAFB">#F9FAFB</color>
+    <color name="auto_color_CCEEF8">#CCEEF8</color>
+    <color name="gray_text">#757575</color>
+    <color name="auto_color_FEF3C7">#FEF3C7</color>
+    <color name="auto_color_D97706">#D97706</color>
+</resources>

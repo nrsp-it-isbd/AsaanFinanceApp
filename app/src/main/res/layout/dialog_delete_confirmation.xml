@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="UnusedAttribute">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_voice_chat_dialog"
+        android:clipToOutline="true"
+        android:padding="24dp">
+
+        <!-- Warning / Trash Icon Container -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvIcon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardBackgroundColor="@color/auto_color_FEE2E2"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/auto_color_DC2626"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Dialog Title -->
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/str_delete_record"
+            android:textColor="@color/on_surface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/cvIcon"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <!-- Dialog Message -->
+        <TextView
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/str_are_you_sure_you_wan"
+            android:textColor="@color/subtitle"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvDialogTitle"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDialogMessage">
+
+            <!-- Cancel Button -->
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/auto_color_F3F4F6"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/str_cancel"
+                android:textColor="@color/auto_color_374151"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <!-- Delete Button -->
+            <TextView
+                android:id="@+id/btnDeleteConfirm"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_badge_rounded"
+                android:backgroundTint="@color/auto_color_DC2626"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/str_delete"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

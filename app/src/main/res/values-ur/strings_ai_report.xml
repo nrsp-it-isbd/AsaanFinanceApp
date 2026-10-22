@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_report_action">جواب رپورٹ کریں</string>
+    <string name="ai_report_copy">کاپی کریں</string>
+    <string name="ai_report_title">اس جواب کی شکایت کریں</string>
+    <string name="ai_report_desc">بتائیں کہ اسسٹنٹ کے جواب میں کیا غلط ہے۔ ہماری ٹیم اس کا جائزہ لے گی۔</string>
+    <string name="ai_report_reason_wrong">غلط یا گمراہ کن معلومات</string>
+    <string name="ai_report_reason_offensive">نامناسب یا نقصان دہ</string>
+    <string name="ai_report_reason_other">کوئی اور مسئلہ</string>
+    <string name="ai_report_comment_hint">تفصیل لکھیں (اختیاری)</string>
+    <string name="ai_report_send">شکایت بھیجیں</string>
+    <string name="ai_report_cancel">منسوخ کریں</string>
+    <string name="ai_report_sent">شکریہ۔ آپ کی شکایت بھیج دی گئی ہے۔</string>
+    <string name="ai_report_failed">شکایت نہیں بھیجی جا سکی۔ اپنا انٹرنیٹ چیک کر کے دوبارہ کوشش کریں۔</string>
+    <string name="ai_report_nothing">ابھی رپورٹ کرنے کے لیے اسسٹنٹ کا کوئی جواب نہیں ہے۔</string>
+</resources>

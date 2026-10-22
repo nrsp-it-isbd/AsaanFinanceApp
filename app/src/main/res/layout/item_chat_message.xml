@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+        android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_chat_user"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:maxWidth="280dp"
+        android:baselineAligned="false">
+        <TextView
+            android:id="@+id/tvUserMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp" 
+        tools:ignore="SmallSp,SpUsage" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+        android:baselineAligned="false">
+            <TextView
+                android:id="@+id/tvUserTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/auto_color_888888"
+                android:textSize="11sp"
+                android:layout_marginEnd="4dp" 
+        tools:ignore="SmallSp,SpUsage" />
+            <ImageView
+                android:id="@+id/ivRetry"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="4dp"
+                android:src="@android:drawable/ic_popup_sync"
+                android:visibility="gone"
+                app:tint="@color/auto_color_D32F2F"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@android:drawable/checkbox_on_background"
+                app:tint="@color/auto_color_4FC3F7" 
+        tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_chat_ai"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:maxWidth="280dp"
+        android:baselineAligned="false">
+        <TextView
+            android:id="@+id/tvAiMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp" 
+        tools:ignore="SmallSp,SpUsage" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Report this AI answer (Google Play AI-generated content policy) -->
+            <TextView
+                android:id="@+id/tvAiReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:minHeight="24dp"
+                android:gravity="center_vertical"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text="@string/ai_report_action"
+                android:textColor="@color/auto_color_888888"
+                android:textSize="11sp"
+                android:visibility="gone"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <TextView
+                android:id="@+id/tvAiTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/auto_color_888888"
+                android:textSize="11sp"
+                tools:ignore="SmallSp,SpUsage" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

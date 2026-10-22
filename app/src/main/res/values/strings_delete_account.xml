@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Account deletion (Google Play requirement). Urdu: values-ur/strings_delete_account.xml -->
+<resources>
+    <string name="del_acc_settings_item">Delete Account</string>
+    <string name="del_acc_title">Delete your account?</string>
+    <string name="del_acc_message">Your Asaan Finance account and personal data (profile, photo, CNIC pictures and settings) will be deleted, and you will be logged out.</string>
+    <string name="del_acc_note">Records of financing you have taken are kept only as long as the law requires.</string>
+    <string name="del_acc_password_label">YOUR PASSWORD</string>
+    <string name="del_acc_password_hint">Enter your password</string>
+    <string name="del_acc_show_password">Show or hide password</string>
+    <string name="del_acc_reason_label">REASON (OPTIONAL)</string>
+    <string name="del_acc_reason_hint">Why are you leaving?</string>
+    <string name="del_acc_checkbox">I understand that my account will be deleted permanently.</string>
+    <string name="del_acc_confirm">Delete</string>
+    <string name="del_acc_deleting">Deleting…</string>
+    <string name="del_acc_cancel">Cancel</string>
+    <string name="del_acc_ok">OK</string>
+    <string name="del_acc_failed">Could not send your request. Please check your internet and try again.</string>
+    <string name="del_acc_password_required">Please enter your password.</string>
+    <string name="del_acc_wrong_password">The password is not correct. Please try again.</string>
+    <string name="del_acc_done_title">Request received</string>
+    <string name="del_acc_done_message">We have received your request. NRSP will delete your account and data, and you will now be logged out.</string>
+    <string name="del_acc_deleted_title">Account deleted</string>
+    <string name="del_acc_deleted_message">Your account and personal data have been deleted. You will now be logged out.</string>
+    <string name="del_acc_kept_message">Your account has been deleted. Records of your financing are kept only as long as the law requires. You will now be logged out.</string>
+</resources>

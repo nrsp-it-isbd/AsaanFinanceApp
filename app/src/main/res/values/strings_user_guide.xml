@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- In-app User Guide (UserGuideActivity). Urdu copy: values-ur/strings_user_guide.xml -->
+<resources>
+
+    <!-- Header -->
+    <string name="ug_hero_title">Asaan Finance Guide</string>
+    <string name="ug_hero_subtitle">Learn every feature of the app in easy steps.</string>
+    <string name="ug_hero_count">%1$d easy topics</string>
+
+    <!-- Quick start -->
+    <string name="ug_quick_title">Apply in 3 easy steps</string>
+    <string name="ug_quick_1">Create your account</string>
+    <string name="ug_quick_2">Scan your CNIC and fill the form</string>
+    <string name="ug_quick_3">Submit and track your status</string>
+
+    <!-- Topics -->
+    <string name="ug_topics_title">All topics</string>
+    <string name="ug_topics_hint">Tap a topic to open it.</string>
+    <string name="ug_tip_label">Good to know</string>
+    <string name="ug_screenshot_desc">Screenshot of this screen in the app</string>
+
+    <!-- Help footer -->
+    <string name="ug_help_title">Still need help?</string>
+    <string name="ug_help_body">Our team is ready to help you. Send us a WhatsApp message or call us.</string>
+    <string name="ug_help_whatsapp">WhatsApp</string>
+    <string name="ug_help_call">Call us</string>
+    <string name="ug_help_whatsapp_missing">WhatsApp is not installed on your phone. Please call us instead.</string>
+
+    <!-- 1. Who can apply -->
+    <string name="ug_c1_chip">Who can apply</string>
+    <string name="ug_c1_title">Who can apply?</string>
+    <string name="ug_c1_summary">Check this before you apply.</string>
+    <string-array name="ug_c1_steps">
+        <item>You are between 18 and 60 years old.</item>
+        <item>You have your own original CNIC. It must stay valid for at least 6 more months for 6-month financing, or 12 more months for 12 or 18-month financing.</item>
+        <item>You have an active mobile number.</item>
+        <item>You have a bank account and know its IBAN number (24 characters, starting with PK).</item>
+        <item>You have a recent photo of yourself and basic details of your business or income.</item>
+    </string-array>
+    <string name="ug_c1_tip">Asaan Financing is Sharia compliant and interest-free. You pay it back in easy monthly installments over 6, 12 or 18 months.</string>
+
+    <!-- 2. Create account -->
+    <string name="ug_c2_chip">Create account</string>
+    <string name="ug_c2_title">Create your account</string>
+    <string name="ug_c2_summary">Register once with your CNIC.</string>
+    <string-array name="ug_c2_steps">
+        <item>On the login screen, tap “Create Account”.</item>
+        <item>Add your photo if you want. It is optional.</item>
+        <item>Write your full name. When you tap the Username box, a username is suggested for you. You can change it, but it must be unique.</item>
+        <item>Enter your CNIC number, date of birth and CNIC expiry date.</item>
+        <item>Choose your gender, then enter your phone number, present address and permanent address.</item>
+        <item>Make a password and tap “Sign Up Account”.</item>
+    </string-array>
+    <string name="ug_c2_tip">Only people aged 18 to 60 can register. Keep your password secret and do not share it with anyone.</string>
+
+    <!-- 3. Login and forgot password -->
+    <string name="ug_c3_chip">Login</string>
+    <string name="ug_c3_title">Login and forgot password</string>
+    <string name="ug_c3_summary">Sign in with your CNIC and password.</string>
+    <string-array name="ug_c3_steps">
+        <item>Enter your CNIC number and password, then tap “Sign In Account”.</item>
+        <item>Forgot your password? Tap “Forgot Password?” on the login screen.</item>
+        <item>Enter your registered CNIC number or phone number.</item>
+        <item>Write a new password (at least 4 characters) and write it again to confirm.</item>
+        <item>Tap “Reset Password”. Now log in with your new password.</item>
+    </string-array>
+    <string name="ug_c3_tip">Choose a password that is easy for you to remember but hard for others to guess.</string>
+
+    <!-- 4. Home screen -->
+    <string name="ug_c4_chip">Home screen</string>
+    <string name="ug_c4_title">Your Home screen</string>
+    <string name="ug_c4_summary">Everything you need, on one screen.</string>
+    <string-array name="ug_c4_steps">
+        <item>At the top you see your name, CNIC and Borrower No. Tap your CNIC or Borrower No to copy it.</item>
+        <item>Tap your photo to see your profile.</item>
+        <item>“EN | اردو” changes the app language. The bell opens your notifications. The exit icon logs you out.</item>
+        <item>The financing card shows your disbursed amount, next due date, financing cycle and status.</item>
+        <item>Under “Asaan Services” you will find Financing Application, User Guide and Financing Ledger.</item>
+        <item>The green microphone button opens the Asaan Assistant. Pull the screen down to refresh it.</item>
+    </string-array>
+    <string name="ug_c4_tip">Read the Security Alert on the Home screen: NRSP never asks for your password.</string>
+
+    <!-- 5. Financing application -->
+    <string name="ug_c5_chip">Apply</string>
+    <string name="ug_c5_title">Apply for financing</string>
+    <string name="ug_c5_summary">Send your application from your phone in a few minutes.</string>
+    <string-array name="ug_c5_steps">
+        <item>On the Home screen, tap “Financing Application”.</item>
+        <item>Tap the circle at the top and add your photo.</item>
+        <item>Scan the front and back of your CNIC (see “Scan your CNIC”). Your name, CNIC number, dates, gender and addresses fill in by themselves.</item>
+        <item>Enter your phone number and marital status. Choose your district and tehsil.</item>
+        <item>Choose your bank and enter your IBAN number: 24 characters starting with PK, for example PK36SCBL0000001123456702.</item>
+        <item>Choose the purpose of financing, for example Enterprise, Tajarat, Agriculture, Livestock, House Improvement, New House Construction or Solar Tube Wells.</item>
+        <item>The allowed amount for that purpose is shown. Enter your amount and choose 6, 12 or 18 months.</item>
+        <item>Fill in your business or job details, the nearest NRSP branch city and your occupation.</item>
+        <item>Tick “I agree to the declaration” and tap “Submit”.</item>
+    </string-array>
+    <string name="ug_c5_tip">Boxes with a red star (*) must be filled. Need help? Tap the green chat button at the bottom of the form and the AI assistant will fill the form with you. After you submit, NRSP checks your application and you get a notification about its status.</string>
+
+    <!-- 6. Scan CNIC -->
+    <string name="ug_c6_chip">Scan CNIC</string>
+    <string name="ug_c6_title">Scan your CNIC</string>
+    <string name="ug_c6_summary">Your details come from your card. No typing needed.</string>
+    <string-array name="ug_c6_steps">
+        <item>In the form, tap the camera on “Front Side”. You can use the camera or choose a picture from your gallery.</item>
+        <item>Hold the front of your card inside the frame. The picture is taken by itself when the card is clear, or tap “Capture Front”.</item>
+        <item>Turn the card over and do the same for the back (“Capture Back”). The back must be of the same card.</item>
+        <item>Wait a few seconds while the app reads your card.</item>
+        <item>Check your details. They are locked and cannot be typed. If something is wrong, scan the card again with clearer pictures.</item>
+    </string-array>
+    <string name="ug_c6_tip">Place the card on a flat surface in good light and avoid shine on it. In a dark place, tap the flash button. If your card expires soon, the app will tell you.</string>
+
+    <!-- 7. Form assistant -->
+    <string name="ug_c7_chip">Form assistant</string>
+    <string name="ug_c7_title">AI assistant in the form</string>
+    <string name="ug_c7_summary">Tell it what you need. It fills the form for you.</string>
+    <string-array name="ug_c7_steps">
+        <item>In the financing form, tap the green chat button at the bottom.</item>
+        <item>Type or speak in Urdu, Roman Urdu or English. For example: “Mujhe 60 hazar chahiye 12 mahine ke liye, dairy ka kaam hai, bank Meezan.”</item>
+        <item>The assistant fills the amount, duration, purpose, bank, district and other details.</item>
+        <item>It asks you only for what is still missing. Answer its questions.</item>
+        <item>Tap the microphone to talk. It answers you in voice, like a phone call.</item>
+    </string-array>
+    <string name="ug_c7_tip">Your scanned CNIC details stay locked. Always check the form once before you tap “Submit”.</string>
+
+    <!-- 8. Asaan Assistant -->
+    <string name="ug_c8_chip">Asaan Assistant</string>
+    <string name="ug_c8_title">Asaan Assistant</string>
+    <string name="ug_c8_summary">Ask any question about the app.</string>
+    <string-array name="ug_c8_steps">
+        <item>On the Home screen, tap the green microphone button.</item>
+        <item>Type your question, or tap the microphone and speak.</item>
+        <item>If you speak, it answers in voice. If you type, it answers in writing.</item>
+        <item>Ask anything about Asaan Finance, for example “How do I apply?” or “Which documents do I need?”</item>
+    </string-array>
+    <string name="ug_c8_tip">The assistant cannot tell you about approval or your exact balance. For that, check your Financing Ledger and notifications, or contact us.</string>
+
+    <!-- 9. Ledger -->
+    <string name="ug_c9_chip">Ledger</string>
+    <string name="ug_c9_title">Financing Ledger</string>
+    <string name="ug_c9_summary">See your installments, payments and balance.</string>
+    <string-array name="ug_c9_steps">
+        <item>On the Home screen, tap “Financing Ledger”.</item>
+        <item>“Customer Summary” shows your remaining balance, product, financing amount and total recovered.</item>
+        <item>“Repayment Schedule” lists every installment: due date, amount due, date received and amount received.</item>
+        <item>Tap any installment to see its full details, like receipt number, principal, service charge and outstanding amount.</item>
+        <item>At the bottom you will see the agents and banks where you can pay your installment.</item>
+        <item>Pull the screen down to refresh it.</item>
+    </string-array>
+    <string name="ug_c9_tip">If you see “No Data Found”, your financing has not started yet. Keep your payment receipt safe after every installment.</string>
+
+    <!-- 10. Notifications -->
+    <string name="ug_c10_chip">Notifications</string>
+    <string name="ug_c10_title">Notifications</string>
+    <string name="ug_c10_summary">Stay updated about your application and payments.</string>
+    <string-array name="ug_c10_steps">
+        <item>Tap the bell on the Home screen.</item>
+        <item>Use “All”, “Unread” and “Read” to sort your messages.</item>
+        <item>Choose a category, for example Financing, Installment, Payment, Approved or Rejected.</item>
+        <item>Use “Today” or “Date Range” to see messages from a certain date.</item>
+        <item>Tap “Mark All as Read” when you have read your new messages.</item>
+    </string-array>
+    <string name="ug_c10_tip">You get alerts on your phone even when the app is closed. You can turn on-screen pop-ups on or off in Settings, under “Notification Popups”.</string>
+
+    <!-- 11. Profile and password -->
+    <string name="ug_c11_chip">Profile</string>
+    <string name="ug_c11_title">Profile and password</string>
+    <string name="ug_c11_summary">Keep your details up to date.</string>
+    <string-array name="ug_c11_steps">
+        <item>Tap “Profile” at the bottom of the screen, or go to Settings and tap “Update Profile”.</item>
+        <item>Tap the pencil (edit) button to start editing.</item>
+        <item>You can change your photo, name, phone number and date of birth. Your CNIC number cannot be changed.</item>
+        <item>To change your password, fill “Old Password”, “New Password” (at least 4 characters) and “Confirm New Password”. Leave them empty to keep your current password.</item>
+        <item>Tap “Update Data” to save.</item>
+    </string-array>
+
+    <!-- 12. Settings -->
+    <string name="ug_c12_chip">Settings</string>
+    <string name="ug_c12_title">Settings</string>
+    <string name="ug_c12_summary">Make the app work your way.</string>
+    <string-array name="ug_c12_steps">
+        <item>Tap “Settings” at the bottom of the screen.</item>
+        <item>Language: switch the app between English and Urdu.</item>
+        <item>Dark Mode: a dark screen that is easy on your eyes at night.</item>
+        <item>Auto Logout Session: logs you out by itself after 3 minutes without use, for your safety.</item>
+        <item>Always Screen ON keeps the screen awake. Notification Popups show alerts on your screen.</item>
+        <item>Here you can also read the Asaan Finance Introduction, Terms and Conditions and Privacy Policy, share the app, log out, or delete your account (Delete Account).</item>
+    </string-array>
+
+    <!-- 13. Help and feedback -->
+    <string name="ug_c13_chip">Help</string>
+    <string name="ug_c13_title">Help and feedback</string>
+    <string name="ug_c13_summary">We are here to help you.</string>
+    <string-array name="ug_c13_steps">
+        <item>WhatsApp Support: chat with our team on WhatsApp from Settings.</item>
+        <item>Contact Us: see our phone number, email and the NRSP office address in Settings.</item>
+        <item>To send feedback, tap “Feedback” at the bottom of the screen, or Settings and then “Provide Feedback”.</item>
+        <item>Choose a category (App Issue, Complaint, Suggestion or Other), add a picture if you want, write your comments and tap “Submit Feedback”.</item>
+    </string-array>
+    <string name="ug_c13_tip">A screenshot of the problem helps us fix it faster.</string>
+
+    <!-- 14. Stay safe -->
+    <string name="ug_c14_chip">Stay safe</string>
+    <string name="ug_c14_title">Stay safe</string>
+    <string name="ug_c14_summary">Protect your account and your money.</string>
+    <string-array name="ug_c14_steps">
+        <item>NRSP will never ask for your password or OTP. Never share them with anyone.</item>
+        <item>Only use the official Asaan Finance app.</item>
+        <item>If someone asks you for money or your password in the name of NRSP, do not trust them. Contact us first.</item>
+        <item>If other people use your phone, turn on Auto Logout Session and log out when you are done.</item>
+    </string-array>
+    <string name="ug_c14_tip">Something looks wrong? Contact WhatsApp Support right away.</string>
+
+</resources>

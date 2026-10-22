@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_ledger"
+            android:icon="@drawable/ic_history"
+            android:title="@string/check_ledger" />
+
+        <item
+            android:id="@+id/menu_status"
+            android:icon="@drawable/ic_baseline_calendar_view_month_24"
+            android:title="@string/check_loan_status" />
+    </group>
+
+    <item android:title="@string/str_support_security">
+        <menu>
+            <item
+                android:id="@+id/menu_change_password"
+                android:icon="@drawable/ic_lock"
+                android:title="@string/change_password" />
+
+            <item
+                android:id="@+id/menu_terms_condition"
+                android:icon="@drawable/ic_shield_check"
+                android:title="@string/terms_and_condition" />
+
+            <item
+                android:id="@+id/menu_about_us"
+                android:icon="@drawable/info"
+                android:title="@string/about_us" />
+        </menu>
+    </item>
+
+    <item android:title="@string/str_others">
+        <menu>
+            <item
+                android:id="@+id/menu_share"
+                android:icon="@drawable/share"
+                android:title="@string/share" />
+
+        </menu>
+    </item>
+
+</menu>

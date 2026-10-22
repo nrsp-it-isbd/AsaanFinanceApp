@@ -1,0 +1,1289 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name" translatable="false">Asaan Finance</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="back" translatable="false" />
+    <string-array name="months">
+        <item>Select</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="Type_of_loan_catagory">
+        <item>First Financing</item>
+        <item>Repeated Financing</item>
+    </string-array>
+    <string-array name="Bank_name">
+        <item>National Bank of Pakistan (NBP)</item>
+        <item>Habib Bank Limited (HBL)</item>
+        <item>United Bank Limited (UBL)</item>
+        <item>MCB Bank Limited</item>
+        <item>Allied Bank Limited (ABL)</item>
+        <item>Bank Alfalah Limited</item>
+        <item>Askari Bank Limited</item>
+        <item>Faysal Bank Limited</item>
+        <item>Bank Al-Habib Limited</item>
+        <item>Soneri Bank Limited</item>
+        <item>NRSP Microfinance Bank</item>
+    </string-array>
+    <string-array name="Type_of_loan_options">
+        <item>Type of Financing</item>
+        <item>Agriculture</item>
+        <item>Livestock</item>
+        <item>Enterprise</item>
+    </string-array>
+    <string-array name="yes_no_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="verity">
+        <item>Variety</item>
+        <item>Kainat-1121</item>
+        <item>Supri</item>
+        <item>1509</item>
+        <item>Al-Khalid</item>
+        <item>Rice</item>
+    </string-array>
+    <string-array name="Duration_of_Loan">
+        <item>6-months</item>
+        <item>12-months</item>
+        <item>18-months</item>
+    </string-array>
+    <string name="aboutUsText" translatable="false">&lt;b&gt;Asaan Finance: Programme Introduction&lt;/b&gt;&lt;br&gt;&lt;br&gt;Asaan Finance is a digital financing application designed for Pakistan, providing users with easy, fast, and secure financial solutions when needed.&lt;br&gt;&lt;br&gt;Our goal is to provide immediate financial assistance in the easiest and most secure way, through interest-free financing on easy installments, for Pakistanis tired of the complex traditional banking system. For any sudden need or business requirement, you can apply for a financing from the comfort of your home within minutes.&lt;br&gt;&lt;br&gt;Complete legal protection that keeps you safe from illegal apps in the market. Interest-free financing with transparent terms (no hidden charges). A specific initial limit for new clients, while the financing limit is increased for repeat clients who repay on time.&lt;br&gt;&lt;br&gt;The approved amount is transferred directly to your EasyPaisa, JazzCash, or Bank Account. Protection of your personal data and privacy is prioritized according to applicable laws and regulations.&lt;br&gt;&lt;br&gt;The mission of Asaan Finance is to make digital financing transparent, affordable, and easy in Pakistan. We value the loyalty of our repeat customers and provide them with better financial facilities so they don\'t have to wander elsewhere in difficult times.</string>
+    <string name="aboutUsUrduText" translatable="false">&lt;b&gt;آسان فنانس: پروگرام کا تعارف&lt;/b&gt;&lt;br&gt;&lt;br&gt;آسان فنانس پاکستان کے لیے ڈیزائن کی گئی ایک ڈیجیٹل فنانسنگ ایپلی کیشن ہے، جو صارفین کو ضرورت کے وقت آسان، تیز، اور محفوظ مالی حل فراہم کرتی ہے۔&lt;br&gt;&lt;br&gt;ہمارا مقصد ان پاکستانیوں کو سب سے آسان اور محفوظ طریقے سے، آسان اقساط پر بلا سود فنانسنگ کے ذریعے فوری مالی امداد فراہم کرنا ہے جو پیچیدہ روایتی بینکاری نظام سے تنگ ہیں۔ کسی بھی اچانک ضرورت یا کاروباری تقاضے کے لیے، آپ گھر بیٹھے چند منٹوں میں فنانسنگ کے لیے اپلائی کر سکتے ہیں۔&lt;br&gt;&lt;br&gt;مکمل قانونی تحفظ جو آپ کو مارکیٹ میں موجود غیر قانونی ایپس سے محفوظ رکھتا ہے۔ بلا سود فنانسنگ اور شفاف شرائط (کوئی پوشیدہ چارجز نہیں)۔ نئے کلائنٹس کے لیے ایک مخصوص ابتدائی حد، جبکہ وقت پر ادائیگی کرنے والے پرانے کلائنٹس کے لیے فنانسنگ کی حد بڑھا دی جاتی ہے۔&lt;br&gt;&lt;br&gt;منظور شدہ رقم براہ راست آپ کے ایزی پیسہ، جاز کیش، یا بینک اکاؤنٹ میں منتقل کی جاتی ہے۔ آپ کے ذاتی ڈیٹا اور رازداری کے تحفظ کو قابل اطلاق قوانین اور ضوابط کے مطابق ترجیح دی جاتی ہے۔&lt;br&gt;&lt;br&gt;آسان فنانس کا مشن پاکستان میں ڈیجیٹل لینڈنگ کو شفاف، سستا اور آسان بنانا ہے۔ ہم اپنے پرانے اور وفادار صارفین کی قدر کرتے ہیں اور انہیں بہتر مالی سہولیات فراہم کرتے ہیں تاکہ انہیں مشکل وقت میں کہیں اور بھٹکنا نہ پڑے۔</string>
+    <string name="aboutUsUrduHeadingText" translatable="false">آسان فنانس کا تعارف</string>
+    <string name="termsAndConditionsUrdu" translatable="false">I guarantee that I will abide by the following agreement.\n\n1.\t\tThe NRSP facility will not be available to members who, themselves or any member of their household, have obtained any kind of financing in cash or kind from a government or non-government institution and have not repaid it.\n2.\t\tThe customer guarantees to use the financing properly and ensure the timely recovery of their own as well as their group/organization members\' financing by the due date.\n3.\t\tIn case the customer fails to repay the financing on time, the NRSP institution will take legal action against the customer and will be authorized to collect the principal amount along with court expenses, including lawyer\'s fees.\n4.\t\tThe customer will deposit the recovery amount in the bank/agent (HBL Konnect, Easy Paisa, Jazz Cash) and if deposited with the institution\'s representative, will obtain a receipt. If the customer deposits the recovery amount with an agent (HBL Konnect, Easy Paisa, Jazz Cash), they should not leave the mobile agent\'s shop until the code is received, otherwise the institution will not be responsible.\n5.\t\tProfit: The customer will be obligated to pay profit on the financing amount according to NRSP policy.\n6.\t\tTakaful is provided with specific financing.\n7.\t\tThe customer will not obtain any kind of stay order from any court and will not take any legal action.\n8.\t\tIf the customer files any false or frivolous civil or criminal case against the institution, they will be obligated to pay damages and expenses to the institution.\n9.\t\tIn the event of the death of a household member of the customer, NRSP will postpone the financing installment for 7 days.\n10.\t\tNRSP will not provide information related to the customer and their household to any institution or individual. However, NRSP will be bound to provide this information to the institutions of the Government of Pakistan.\n11.\t\tThe customer permits NRSP to use their photograph and other credentials in various reports to promote the financing program.\n12.\t\tThe customer will have the right to complain to the higher officials of NRSP against unnecessary difficulties during the acquisition and repayment of the financing.\n13.\t\tThe member and guarantor will provide all possible help and cooperation to the NRSP staff to review the use of the financing.\n14.\t\tI acknowledge that the institution\'s staff has informed me of all my responsibilities and rights.\n15.\t\tThe NRSP institution will take a post-dated check from the customer as a guarantee. Upon repayment of the financing, the NRSP institution will be obligated to cancel and return the check upon the customer\'s demand.\n16.\t\tIf the customer changes or closes their place of business during the financing period, the NRSP institution will have the right to recover all outstanding amounts (principal amount along with profit) from the customer.\n17.\t\tThe customer will use the financing amount only for the stated purpose. And if any of the provided information proves to be false, the institution is authorized to stop the provision of the financing and can take action according to the rules and regulations in case of any forgery or concealment of facts.\n18.\t\tAccording to the laws of Pakistan, the customer will not use the financing for illegal activities, forced/child labor, black money, bribery, terrorism, gambling, damage to forests, business of weapons/alcohol/tobacco, use of prohibited medicines for crops like Capta, and harming protected animal species.\n19.\t\tI will have no objection if NRSP verifies my identity card information through Verisys from NADRA.</string>
+    <string name="termsAndConditionsHeadingUrdu" translatable="false">Terms and Conditions</string>
+    <string name="terms_and_conditions" translatable="false">Terms and Conditions</string>
+    <string name="AboutUs" translatable="false">About Us</string>
+    <string name="forgotPassword" translatable="false">Forgot Password</string>
+    <string name="loan_application" translatable="false">Financing Application</string>
+    <string name="first_loan_repeated_loan" translatable="false">First Financing / Repeated financing</string>
+    <string name="tenancy_agreement" translatable="false">Tenancy Agreement (Acres)</string>
+    <string name="take_photo" translatable="false">Take Photo</string>
+    <string name="start_capture" translatable="false">Start Capture</string>
+    <string name="stop_capture" translatable="false">Stop Capture</string>
+    <string name="check_ledger" translatable="false">Ledger</string>
+    <string name="user_guide" translatable="false">User guide</string>
+    <string name="feedback" translatable="false">Feedback</string>
+    <string name="share" translatable="false">Share</string>
+    <string name="about_us" translatable="false">About us</string>
+    <string name="terms_and_condition" translatable="false">Terms and Condition</string>
+    <string name="change_password" translatable="false">Change Password</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="exit" translatable="false">Exit</string>
+    <string name="check_loan_status" translatable="false">Check Financing Status</string>
+    <string name="book_agri_input" translatable="false">Book Agri Input</string>
+    <string name="book_machinery" translatable="false">Book Machinery</string>
+    <string name="book_machinery_urdu" translatable="false">Order Machinery</string>
+    <string name="book_sale_storage_both" translatable="false">Book Sale / Storage / Both</string>
+    <string name="generate_deposit_slip" translatable="false">Generate Deposit Slip</string>
+    <string name="loan_app_form" translatable="false">Financing App Form</string>
+    <string name="loan_app_form_urdu" translatable="false">Financing Application Form</string>
+    <string name="loan_app_guide_title" translatable="false">Financing Application Guide</string>
+    <string name="loan_app_guide_desc" translatable="false">Please fill out the form below carefully with correct details to apply for Sharia Compliant or interest-free financing repayable in installments. All fields marked with a star (*) are mandatory.</string>
+    <string name="applicant_name" translatable="false">Applicant Name</string>
+    <string name="loan_use_by_gender" translatable="false">Financing use by Gender</string>
+    <string name="gender" translatable="false">Gender</string>
+    <string name="male" translatable="false">Male</string>
+    <string name="female" translatable="false">Female</string>
+    <string name="applicant_cnic" translatable="false">Applicant CNIC</string>
+    <string name="date_of_birth" translatable="false">Date of Birth</string>
+    <string name="cnic_issue_date" translatable="false">CNIC Issue Date</string>
+    <string name="error_message_placeholder" translatable="false">Error Message Placeholder</string>
+    <string name="cnic_expiry_date" translatable="false">CNIC Expiry Date</string>
+    <string name="cnic_date_of_birth" translatable="false">CNIC Date of Birth</string>
+    <string name="marital_status" translatable="false">Marital Status</string>
+    <string name="single" translatable="false">Single</string>
+    <string name="married" translatable="false">Married</string>
+    <string name="father_s_name" translatable="false">Father Name</string>
+    <string name="father_cnic" translatable="false">Father CNIC</string>
+    <string name="father_mobile_number" translatable="false">Father Mobile Number</string>
+    <string name="husband_s_name" translatable="false">Father / Husband Name</string>
+    <string name="husband_s_cnic" translatable="false">Father / Husband CNIC</string>
+    <string name="husband_mobile_number" translatable="false">Father / Husband Mobile Number</string>
+    <string name="present_address" translatable="false">Present Address</string>
+    <string name="permanent_address_as_per_cnic" translatable="false">Permanent Address (as per cnic)</string>
+    <string name="district_name" translatable="false">District Name</string>
+    <string name="city_name" translatable="false">City Name</string>
+    <string name="city" translatable="false">City</string>
+    <string name="district" translatable="false">District Name</string>
+    <string name="tehsil_name" translatable="false">Tehsil Name</string>
+    <string name="land_owned_acres" translatable="false">Land Owned (Acres)</string>
+    <string name="bank_account_number" translatable="false">Bank Account Number (Optional)</string>
+    <string name="bank_name" translatable="false">Bank Name (Optional)</string>
+    <string name="bank_branch" translatable="false">Bank Branch Address (Optional)</string>
+    <string name="bank_branch_code" translatable="false">Bank Branch Code (Optional)</string>
+    <string name="loan_amount" translatable="false">Financing Amount</string>
+    <string name="occupation" translatable="false">Occupation</string>
+    <string name="purpose_of_loan" translatable="false">Purpose of Financing</string>
+    <string name="crop_seasons" translatable="false">Crop Seasons</string>
+    <string name="kharif" translatable="false">Kharif</string>
+    <string name="rabi" translatable="false">Rabi</string>
+    <string name="duration_of_loan" translatable="false">Duration of Financing</string>
+    <string name="business_address" translatable="false">Complete Business Address</string>
+    <string name="how_old_is_your_business" translatable="false">Duration of Business</string>
+    <string name="any_other_loan_active" translatable="false">Any Other Financing Active</string>
+    <string name="any_other_loan_active_urdu" translatable="false" />
+    <string name="yes_no" translatable="false">YES / NO</string>
+    <string name="name_of_financial_institution" translatable="false">Name of Financial Institution</string>
+    <string name="type_of_loan" translatable="false">Type of Financing</string>
+    <string name="select_loan_type" translatable="false">Select Financing Type</string>
+    <string name="remaining_balance" translatable="false">Remaining Balance</string>
+    <string name="do_you_want_to_place_a_lien_on_the_land" translatable="false">Do you want to place a lien on the land?</string>
+    <string name="yes_default" translatable="false">Yes (Default)</string>
+    <string name="no" translatable="false">No</string>
+    <string name="capture_cnic_front" translatable="false">Capture CNIC front</string>
+    <string name="capture_cnic_back" translatable="false">Capture CNIC back</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="apply" translatable="false">Apply for Financing</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="no_receipts" translatable="false">No ledger data or records found for this borrower.</string>
+    <string name="enter_your_borrower_no" translatable="false">Enter your Borrower No</string>
+    <string name="no_data_found" translatable="false">No Data Found</string>
+    <string name="total_due_amount" translatable="false">Total Due Amount</string>
+    <string name="due_date" translatable="false">Due Date</string>
+    <string name="please_click_back_again_to_exit" translatable="false">Please click BACK again to exit</string>
+    <string name="network_error" translatable="false">Network Error</string>
+    <string name="loan_applied_successfully" translatable="false">Financing Applied Successfully</string>
+    <string name="deposited_receipt" translatable="false">Deposited Receipt</string>
+    <string name="current_outstanding" translatable="false">Current Outstanding</string>
+    <string name="you_can_pay_by_using_the_following_channels" translatable="false">You can pay by using the following channels.</string>
+    <string name="you_can_pay_by_using_the_following_channels_urdu" translatable="false">" "</string>
+    <string name="enter_your_phone_number" translatable="false">Enter your Phone Number</string>
+    <string name="sign_up_and_let_s_begin_an_amazing_journey" translatable="false">Sign up and let\'s begin an amazing journey.</string>
+    <string name="create_your_account" translatable="false">Create your account</string>
+    <string name="enter_your_full_name" translatable="false">Enter your Full Name</string>
+    <string name="enter_your_cnic_number" translatable="false">Enter your CNIC Number</string>
+    <string name="cnic_expiry_date_" translatable="false">CNIC Expiry Date:*</string>
+    <string name="pin" translatable="false">Pin Code</string>
+    <string name="assan_id" translatable="false">Asaan ID:</string>
+    <string name="live_stock" translatable="false">Livestock</string>
+    <string name="service_product_registration" translatable="false">Service Product Registration</string>
+    <string name="payment_method" translatable="false">Payment Method</string>
+    <string name="crop_sale_store" translatable="false">Crop Sale / Store</string>
+    <string name="book_farm_machinery" translatable="false">Book Farm Machinery</string>
+    <string name="buy_agri_inputs" translatable="false">Buy Agri-Inputs</string>
+    <string name="loan_application_status" translatable="false">Financing Application Status</string>
+    <string name="loan_application_" translatable="false">Financing Application</string>
+    <string name="loan_application_urdu" translatable="false">Financing Application</string>
+    <string name="which_source_do_you_need" translatable="false" />
+    <string name="welcome" translatable="false">Welcome,</string>
+    <string name="noInternetMessage" translatable="false">Network is not available.</string>
+    <string name="order_placement" translatable="false">Order Placement</string>
+    <string name="order_placement_" translatable="false">Order Placement</string>
+    <string name="order_placement_urdu" translatable="false" />
+    <string name="place_order" translatable="false">Place Order</string>
+    <string name="loan_application_status_urdu" translatable="false" />
+    <string name="product_type" translatable="false">Product Type</string>
+    <string name="product_name" translatable="false">Product Name</string>
+    <string name="unit_type" translatable="false">Unit Type</string>
+    <string name="borrower_no" translatable="false">Borrower No.</string>
+    <string name="product_name_" translatable="false">Product Name:</string>
+    <string name="quantity" translatable="false">Quantity:</string>
+    <string name="crop_sale_or_warehousing" translatable="false">Crop Sale or Warehousing</string>
+    <string name="crop_sale_or_warehousing_urdu" translatable="false" />
+    <string name="variety" translatable="false">Variety</string>
+    <string name="sale_storage" translatable="false">Sale / Storage</string>
+    <string name="sale" translatable="false">Sale</string>
+    <string name="storage" translatable="false">Storage</string>
+    <string name="sale_store" translatable="false">Sale / Store</string>
+    <string name="select_date_and_time" translatable="false">Select Date and Time</string>
+    <string name="quantity_for_sale_kg" translatable="false">Quantity for Sale (kg)</string>
+    <string name="quantity_for_storage_kg" translatable="false">Quantity for Storage (kg)</string>
+    <string name="tentative_days_for_rent" translatable="false">Tentative Days for Rent</string>
+    <string name="book_my_crop" translatable="false">Submit</string>
+    <string name="select_quantity" translatable="false">Select Quantity</string>
+    <string name="payment_method_" translatable="false">Payment Method</string>
+    <string name="send_payment" translatable="false">Send Payment</string>
+    <string name="select_payment_method" translatable="false">Select Payment Method</string>
+    <string name="select_payment_method_en" translatable="false">Select Payment Method</string>
+    <string name="wallet" translatable="false">Wallet</string>
+    <string name="cash" translatable="false">Cash</string>
+    <string name="bank_account" translatable="false">Bank Account</string>
+    <string name="enter_account_number" translatable="false">Enter Account Number</string>
+    <string name="enter_branch_code" translatable="false">Enter Branch Code</string>
+    <string name="enter_bank_name" translatable="false">Enter Bank Name</string>
+    <string name="enter_mobile_number" translatable="false">Enter Mobile Number</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="supplier_registration_urdu" translatable="false" />
+    <string name="supplier_registration" translatable="false">Supplier Registration</string>
+    <string name="supplier_registration_" translatable="false">Supplier Registration</string>
+    <string name="number_of_goat" translatable="false">Number of Goat</string>
+    <string name="cow" translatable="false">Cow</string>
+    <string name="number_of_cow" translatable="false">Number of Cow</string>
+    <string name="camel" translatable="false">Camel</string>
+    <string name="buffalo" translatable="false">Buffalo</string>
+    <string name="number_of_buffalo" translatable="false">Number of Buffalo</string>
+    <string name="type_of_services" translatable="false">TYPE OF SERVICES</string>
+    <string name="health_improvement" translatable="false">Health Improvement</string>
+    <string name="feed_wanda" translatable="false">Feed / Wanda</string>
+    <string name="medicine" translatable="false">Medicine</string>
+    <string name="doctor_visit" translatable="false">Doctor Visit</string>
+    <string name="breed" translatable="false">Breed</string>
+    <string name="siemens" translatable="false">Siemens</string>
+    <string name="embryo" translatable="false">Embryo</string>
+    <string name="farm_improvement" translatable="false">Farm Improvement</string>
+    <string name="water_system" translatable="false">Water System</string>
+    <string name="clean" translatable="false">Clean</string>
+    <string name="infrastructure" translatable="false">Infrastructure</string>
+    <string name="environment" translatable="false">Environment</string>
+    <string name="solar" translatable="false">Solar</string>
+    <string name="description" translatable="false">
+        <b>Description</b>
+        (optional)
+    </string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="goat" translatable="false">Goat</string>
+    <string name="livestock" translatable="false">Livestock</string>
+    <string name="livestock_urdu" translatable="false" />
+    <string name="select_livestock" translatable="false">Select Livestock</string>
+    <string name="download_deposit_slip" translatable="false">Download Deposit Slip</string>
+    <string name="downloading_deposit_slip" translatable="false">Downloading Deposit Slip</string>
+    <string name="select_sub_machinery" translatable="false">Select Sub Machinery</string>
+    <string name="select_unit" translatable="false">Select Unit</string>
+    <string name="hour" translatable="false">Hour</string>
+    <string name="day" translatable="false">Day</string>
+    <string name="acre" translatable="false">Acre</string>
+    <string name="start_date" translatable="false">Start Date</string>
+    <string name="end_date" translatable="false">End Date</string>
+    <string name="total_amount" translatable="false">Total Amount:</string>
+    <string name="hours" translatable="false">Hours</string>
+    <string name="calculate_amount" translatable="false">Calculate Amount</string>
+    <string name="Successful_Registration" translatable="false">Successful Registration</string>
+    <string name="registration_failed" translatable="false">Registration Failed</string>
+    <string name="server_response_unsuccessful" translatable="false">Server Response Unsuccessful</string>
+    <string name="successfully_booked_your_crop" translatable="false">Successfully Booked your crop</string>
+    <string name="enter_hour" translatable="false">Enter number of hours</string>
+    <string name="enter_number_of_days" translatable="false">Enter number of Days</string>
+    <string name="enter_per_acre" translatable="false">Enter per Acre</string>
+    <string name="rate_per_acre" translatable="false">Rate Per Acre:</string>
+    <string name="hour_rate" translatable="false">Hour Rate:</string>
+    <string name="day_rate" translatable="false">Day Rate:</string>
+    <string name="update_profile" translatable="false">Update Profile</string>
+    <string name="enter_old_password" translatable="false">Enter Old Password</string>
+    <string name="enter_new_password" translatable="false">Enter New Password</string>
+    <string name="confirm_password" translatable="false">Enter Confirm Password</string>
+    <string name="update" translatable="false">Update</string>
+    <string name="deposit_receipt" translatable="false">Deposit Receipt</string>
+    <string name="select_machinery" translatable="false">Select Machinery</string>
+    <string name="applied_for_livestock" translatable="false">Applied for Livestock</string>
+    <string name="order_successfully_placed" translatable="false">Order Successfully Placed</string>
+    <string name="loan_amount_should_be_10_000_to_150_000_rupees" translatable="false">Financing Amount Should be 10,000 to 150,000 Rupees</string>
+    <string name="terms_and_conditions_loan_application" translatable="false">
+        I have read and accept the
+        <u>Terms and Conditions</u>
+    </string>
+    <string name="please_select_at_least_one_option_and_enter_a_value_for_each_option" translatable="false">Please select at least one option and enter a value for each option.</string>
+    <string name="server_error_please_try_again_later" translatable="false">Server error. Please try again later.</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="network_or_server_problem" translatable="false">Network or Server Problem</string>
+    <string name="specify_other_occupation" translatable="false">Specify other occupation</string>
+    <string name="powered_by_nrsp" translatable="false">Powered by NRSP</string>
+    <string name="services" translatable="false">Services</string>
+    <string name="registration" translatable="false">Registration</string>
+    <string name="land_owned" translatable="false">Land Owned?</string>
+    <string name="city_of_business" translatable="false">City of Business</string>
+    <string name="nature_of_business" translatable="false">Nature of Business</string>
+    <string name="please_wait" translatable="false">Please wait..</string>
+    <string name="add_to_cart" translatable="false">Add to cart</string>
+    <string name="add" translatable="false">Add</string>
+    <string name="product_details" translatable="false">Product Details</string>
+    <string name="Buy_Now" translatable="false">Place Order</string>
+    <string name="introText" translatable="false" />
+    <string name="checkout" translatable="false">Checkout</string>
+    <string name="Agri_products_list" translatable="false">Agri Products List</string>
+    <string-array name="Occupation_list">
+        <item>Farmer</item>
+        <item>Business</item>
+        <item>Employment</item>
+    </string-array>
+    <string name="product_image" translatable="false">Product Image</string>
+    <string name="decrease_quantity" translatable="false">Decrease Quantity</string>
+    <string name="increase_quantity" translatable="false">Increase Quantity</string>
+    <string name="otp" translatable="false">OTP</string>
+    <string name="update_password" translatable="false">Update Password</string>
+    <string name="something_went_wrong" translatable="false">Something Went Wrong</string>
+    <string name="care_instructions" translatable="false">Care Instructions</string>
+    <string name="water" translatable="false">Water</string>
+    <string name="sunlight" translatable="false">Sunlight</string>
+    <string name="soil" translatable="false">Soil</string>
+    <string name="disease_info" translatable="false">Disease Information</string>
+    <string name="symptoms" translatable="false">Symptoms</string>
+    <string name="causes" translatable="false">Causes</string>
+    <string name="growth_stage" translatable="false">Growth Stage</string>
+    <string name="health_status" translatable="false">Health Status</string>
+    <string name="plant_identity" translatable="false">Plant Identity</string>
+    <string name="confidence_score" translatable="false">Confidence Score</string>
+    <string name="treatment" translatable="false">Treatment</string>
+    <string name="organic_treatment" translatable="false">Organic Treatment</string>
+    <string name="chemical_treatment" translatable="false">Chemical Treatment</string>
+    <string name="toggle_flash" translatable="false">Toggle Flash</string>
+    <string name="open_gallery" translatable="false">Open Gallery</string>
+    <string name="capture_photo" translatable="false">Capture Photo</string>
+    <string name="analysis_results" translatable="false">Analysis Results</string>
+    <string name="plant_image_desc" translatable="false">Plant Image Description</string>
+    <string name="error" translatable="false">Error</string>
+    <string name="analysis_failed" translatable="false">Analysis Failed</string>
+    <string name="retry" translatable="false">Retry</string>
+    <string name="unknown_plant" translatable="false">Unknown Plant</string>
+    <string name="app_logo_desc" translatable="false">App Logo</string>
+    <string name="save_to_gallery" translatable="false">Save to Gallery</string>
+    <string name="new_scan" translatable="false">New Scan</string>
+    <string name="analyzing_plant" translatable="false">Analyzing Plant</string>
+    <string name="view_details" translatable="false">View Details</string>
+    <string name="camera_permission_denied" translatable="false">Camera permission denied.</string>
+    <string name="str_fertillizers" translatable="false">Fertillizers</string>
+    <string name="str_price" translatable="false">Price:</string>
+    <string name="str_rs_2000" translatable="false">Rs. 2000</string>
+    <string name="str_total_price" translatable="false">Total Price:</string>
+    <string name="str_rs" translatable="false">Rs.</string>
+    <string name="txt_empty" translatable="false">-</string>
+    <string name="str_1" translatable="false">1</string>
+    <string name="txt_empty_1" translatable="false">+</string>
+    <string name="str_add_to_cart" translatable="false">Add to Cart</string>
+    <string name="str_888888888888" translatable="false">888888888888</string>
+    <string name="str_99999999999999" translatable="false">99999999999999</string>
+    <string name="str_00000" translatable="false">00000</string>
+    <string name="str_time" translatable="false">Time:</string>
+    <string name="str_product_name" translatable="false">Product Name</string>
+    <string name="str_price_1" translatable="false">price</string>
+    <string name="str_product_category" translatable="false">Product Category</string>
+    <string name="str_0" translatable="false">0</string>
+    <string name="str_product_description" translatable="false">Product Description</string>
+    <string name="str_product">Product</string>
+    <string name="str_payment_network">Payment Network</string>
+    <string name="str_secure_your_account" translatable="false">Secure Your Account</string>
+    <string name="str_create_a_strong_pass" translatable="false">Create a strong password to keep your Asaan Finance data safe.</string>
+    <string name="str_checkout" translatable="false">Checkout</string>
+    <string name="str_items" translatable="false">Items</string>
+    <string name="str_qty" translatable="false">Qty:</string>
+    <string name="str_unit_price" translatable="false">Unit Price</string>
+    <string name="str_price_2" translatable="false">Price</string>
+    <string name="str_total" translatable="false">Total:</string>
+    <string name="str_rs_0" translatable="false">Rs. 0</string>
+    <string name="str_delivery_details" translatable="false">Delivery Details</string>
+    <string name="str_name" translatable="false">Name:</string>
+    <string name="str_address" translatable="false">Address:</string>
+    <string name="str_phone_number" translatable="false">Phone Number:</string>
+    <string name="str_payment_method" translatable="false">Payment Method:</string>
+    <string name="str_cash_on_delivery" translatable="false">Cash on delivery</string>
+    <string name="str_delivery_time" translatable="false">Delivery Time:</string>
+    <string name="str_asap" translatable="false">ASAP</string>
+    <string name="str_submit" translatable="false">Submit</string>
+    <string name="str_deposit_receipt" translatable="false">DEPOSIT RECEIPT</string>
+    <string name="str_total_due_amount" translatable="false">TOTAL DUE AMOUNT</string>
+    <string name="str_pkr_0" translatable="false">PKR 0</string>
+    <string name="str_due_date" translatable="false">DUE DATE</string>
+    <string name="txt_empty_2" translatable="false">-- -- ----</string>
+    <string name="str_total_paid" translatable="false">TOTAL PAID</string>
+    <string name="str_receipt" translatable="false">RECEIPT</string>
+    <string name="str_inst" translatable="false">INST.</string>
+    <string name="str_total_1" translatable="false">TOTAL</string>
+    <string name="str_total_receipts_0" translatable="false">Total Receipts: 0</string>
+    <string name="str_payment_channels" translatable="false">PAYMENT CHANNELS</string>
+    <string name="str_you_can_pay_using_th" translatable="false">You can pay using these verified methods:</string>
+    <string name="str_authorized_agents" translatable="false">Authorized Agents</string>
+    <string name="str_bank_channels" translatable="false">Bank Channels</string>
+    <string name="str_no_transactions" translatable="false">No Transactions</string>
+    <string name="str_your_digital_deposit" translatable="false">Your digital deposit receipts will appear here once your payment is processed.</string>
+    <string name="str_receipt_no" translatable="false">RECEIPT NO</string>
+    <string name="str_instalments" translatable="false">INSTALMENTS</string>
+    <string name="str_paid_date" translatable="false">PAID DATE</string>
+    <string name="str_receipts" translatable="false">Receipts:</string>
+    <string name="str_agents" translatable="false">Agents:</string>
+    <string name="str_banks" translatable="false">Banks:</string>
+    <string name="str_location_details" translatable="false">Location Details</string>
+    <string name="str_applicant_details" translatable="false">Applicant Details</string>
+    <string name="str_user_name" translatable="false">User Name</string>
+    <string name="str_00000_0000000_0" translatable="false">00000-0000000-0</string>
+    <string name="str_01_01_1990" translatable="false">01-01-1990</string>
+    <string name="str_loan_used_by" translatable="false">Financing Used By</string>
+    <string name="str_self" translatable="false">Self</string>
+    <string name="str_other" translatable="false">Other</string>
+    <string name="str_name_1" translatable="false">Name</string>
+    <string name="str_cnic" translatable="false">CNIC</string>
+    <string name="str_address_details" translatable="false">Address Details</string>
+    <string name="str_bank_account_informa" translatable="false">Bank Account Information</string>
+    <string name="str_format_aaaaaaaaaaaa" translatable="false">Format: ( AAAAAAAAAAAA )</string>
+    <string name="str_format_bbbbbb" translatable="false">Format: ( BBBBBB )</string>
+    <string name="str_loan_requirements" translatable="false">Financing Requirements</string>
+    <string name="str_loan_category" translatable="false">Financing Category</string>
+    <string name="str_agriculture" translatable="false">Agriculture</string>
+    <string name="str_non_agriculture" translatable="false">Non-Agriculture</string>
+    <string name="str_work_on_family_farm" translatable="false">Work on Family Farm</string>
+    <string name="str_work_on_other_farm" translatable="false">Work on other farm</string>
+    <string name="str_share_cropping_on_fa" translatable="false">Share Cropping on Farm</string>
+    <string name="str_keep_other_s_livesto" translatable="false">Keep other’s livestock</string>
+    <string name="str_fishing_business" translatable="false">Fishing Business</string>
+    <string name="str_food_processing_and_" translatable="false">Food Processing and vending</string>
+    <string name="str_trading_buy_and_sell" translatable="false">Trading / Buy and Sell</string>
+    <string name="str_handicrafts" translatable="false">Handicrafts</string>
+    <string name="str_garments" translatable="false">Garments</string>
+    <string name="str_mechanic" translatable="false">Mechanic</string>
+    <string name="str_carpentry_metal_work" translatable="false">Carpentry / Metal Work</string>
+    <string name="str_transport_service" translatable="false">Transport Service</string>
+    <string name="str_wage_earner_construc" translatable="false">Wage Earner / Construction</string>
+    <string name="str_office_work" translatable="false">Office Work</string>
+    <string name="str_sewing" translatable="false">Sewing</string>
+    <string name="str_government_employee" translatable="false">Government Employee</string>
+    <string name="str_private_job" translatable="false">Private Job</string>
+    <string name="str_house_wife" translatable="false">House Wife</string>
+    <string name="str_source_of_income" translatable="false">Source of Income</string>
+    <string name="str_business" translatable="false">Business</string>
+    <string name="str_salary" translatable="false">Salary</string>
+    <string name="str_limit_min_max" translatable="false">Limit: Min - Max</string>
+    <string name="str_new" translatable="false">New</string>
+    <string name="str_existing" translatable="false">Existing</string>
+    <string name="str_application_status" translatable="false">APPLICATION STATUS</string>
+    <string name="str_loan_status" translatable="false">Financing Status</string>
+    <string name="txt_empty_3" translatable="false" />
+    <string name="str_application_submitte" translatable="false">Application Submitted</string>
+    <string name="str_verified_by_digital_" translatable="false">Verified by Digital Signature</string>
+    <string name="str_under_review" translatable="false">Under Review</string>
+    <string name="str_credit_score_process" translatable="false">Credit Score Processing</string>
+    <string name="str_disbursement_pending" translatable="false">Disbursement Pending</string>
+    <string name="str_final_verification_p" translatable="false">Final verification phase</string>
+    <string name="str_assan_transparent_tr" translatable="false">ASSAN TRANSPARENT TRACKING</string>
+    <string name="str_assan_card" translatable="false">Asaan Finance</string>
+    <string name="str_nrsp_digital_portal" translatable="false">NRSP Digital Portal</string>
+    <string name="str_phone_number_1" translatable="false">Phone Number</string>
+    <string name="str_0323_7939393" translatable="false">0302-8582454</string>
+    <string name="str_4_digit_pin" translatable="false">4-Digit PIN</string>
+    <string name="str_0001" translatable="false">0001</string>
+    <string name="str_forgot_pin" translatable="false">Forgot PIN?</string>
+    <string name="str_login" translatable="false">Login</string>
+    <string name="str_new_to_assan_card" translatable="false">New to Asaan Finance?</string>
+    <string name="str_register" translatable="false">Register</string>
+    <string name="str_notifications" translatable="false">Notifications</string>
+    <string name="str_mark_all_as_read" translatable="false">Mark All as Read</string>
+    <string name="str_all" translatable="false">All</string>
+    <string name="str_category" translatable="false">Category</string>
+    <string name="str_advisory" translatable="false">Advisory</string>
+    <string name="str_community" translatable="false">Community</string>
+    <string name="str_today" translatable="false">Today</string>
+    <string name="str_next" translatable="false">Next</string>
+    <string name="str_skip" translatable="false">Skip</string>
+    <string name="str_verify_phone" translatable="false">Verify Phone</string>
+    <string name="str_we_have_sent_a_4_dig" translatable="false">We have sent a 4-digit verification code to your registered number +92 xxx •••• xxx</string>
+    <string name="str_didn_t_receive_code" translatable="false">Didn\'t receive code?</string>
+    <string name="str_resend_in_00_54" translatable="false">Resend in 00:54</string>
+    <string name="str_verify_amp_continue" translatable="false">Verify &amp; Continue</string>
+    <string name="str_enter_otp_send_to_yo" translatable="false">Enter OTP send to your phone number</string>
+    <string name="str_join_us" translatable="false">Join Us</string>
+    <string name="str_expiry" translatable="false">Expiry</string>
+    <string name="str_dob" translatable="false">DOB</string>
+    <string name="str_create_pin" translatable="false">Create PIN</string>
+    <string name="str_select_gender" translatable="false">Select Gender</string>
+    <string name="str_already_have_an_acco" translatable="false">Already have an account?</string>
+    <string name="txt_empty_4" translatable="false" />
+    <string name="str_enter_digital_portal" translatable="false">Enter Digital Portal</string>
+    <string name="str_urdu_language" translatable="false">Urdu Language</string>
+    <string name="str_last_updated_may_202" translatable="false">Last Updated: May 2026</string>
+    <string name="str_profile" translatable="false">Profile</string>
+    <string name="str_txtname" translatable="false">txtName</string>
+    <string name="str_txtassanid" translatable="false">txtAssanId</string>
+    <string name="str_txtusername" translatable="false">txtUsername</string>
+    <string name="str_edit_profile" translatable="false">Edit Profile</string>
+    <string name="str_full_name" translatable="false">Full Name</string>
+    <string name="str_cnic_number" translatable="false">CNIC Number</string>
+    <string name="str_date_of_birth" translatable="false">Date of Birth</string>
+    <string name="str_agri_input_type" translatable="false">Agri Input Type</string>
+    <string name="str_agri_input_type_id" translatable="false">Agri Input Type ID</string>
+    <string name="str_name_2" translatable="false">name</string>
+    <string name="str_qty_1" translatable="false">Qty</string>
+    <string name="str_please_wait" translatable="false">Please wait...</string>
+    <string name="str_bank_name" translatable="false">Bank Name</string>
+    <string name="str_do_you_want_to_clear" translatable="false">Do you want to clear the cart?</string>
+    <string name="str_delete_record" translatable="false">Delete Record?</string>
+    <string name="str_are_you_sure_you_wan" translatable="false">Are you sure you want to delete this record? This action cannot be undone.</string>
+    <string name="str_cancel" translatable="false">Cancel</string>
+    <string name="str_delete" translatable="false">Delete</string>
+    <string name="str_request_failed" translatable="false">Request Failed</string>
+    <string name="str_close" translatable="false">Close</string>
+    <string name="str_try_again" translatable="false">Try Again</string>
+    <string name="str_assan_service_diagno" translatable="false">ASSAN SERVICE DIAGNOSTICS</string>
+    <string name="str_success" translatable="false">Success!</string>
+    <string name="str_your_application_has" translatable="false">Your application has been submitted successfully. We will contact you soon.</string>
+    <string name="str_done" translatable="false">Done</string>
+    <string name="str_camera" translatable="false">Camera</string>
+    <string name="str_gallery" translatable="false">Gallery</string>
+    <string name="str_sign_out" translatable="false">Sign Out?</string>
+    <string name="str_are_you_sure_you_wan_1" translatable="false">Are you sure you want to exit the Asaan Finance portal?</string>
+    <string name="str_sign_out_1" translatable="false">Sign Out</string>
+    <string name="txt_empty_5" translatable="false">🌿</string>
+    <string name="str_plants_amp_crops" translatable="false">Plants &amp; Crops</string>
+    <string name="txt_empty_6" translatable="false" />
+    <string name="str_identify_crops_veget" translatable="false">Identify crops, vegetables, flowers &amp; trees</string>
+    <string name="txt_empty_7" translatable="false" />
+    <string name="str_camera_1" translatable="false">📷 Camera</string>
+    <string name="str_gallery_1" translatable="false">🖼️ Gallery</string>
+    <string name="str_action" translatable="false">Action</string>
+    <string name="str_assan_user" translatable="false">Asaan User</string>
+    <string name="str_92_300_0000000" translatable="false">+92 300 0000000</string>
+    <string name="str_save_field_boundary" translatable="false">Save Field Boundary</string>
+    <string name="str_please_provide_farme" translatable="false">Please provide farmer information to link the marked land.</string>
+    <string name="str_marked_area" translatable="false">Marked Area:</string>
+    <string name="str_1_45_acres" translatable="false">1.45 Acres</string>
+    <string name="str_farmer_name" translatable="false">Farmer Name</string>
+    <string name="str_assan_card_number" translatable="false">Asaan Finance Number</string>
+    <string name="str_current_crop_type_e_" translatable="false">Current Crop Type (e.g. Wheat, Rice)</string>
+    <string name="str_congratulations" translatable="false">Congratulations!</string>
+    <string name="str_your_loan_applicatio" translatable="false">Your financing application has been submitted successfully. Our agent will contact you soon.</string>
+    <string name="str_back_to_home" translatable="false">Back to Home</string>
+    <string name="str_transaction_secured_" translatable="false">TRANSACTION SECURED BY SSL</string>
+    <string name="txt_empty_8" translatable="false">📍</string>
+    <string name="str_islamabad" translatable="false">Islamabad</string>
+    <string name="txt_empty_9" translatable="false">☀️</string>
+    <string name="str_32_c" translatable="false">32°C</string>
+    <string name="str_hot" translatable="false">Hot</string>
+    <string name="str_h_37_c_l_25_c" translatable="false">H: 37°C - L: 25°C</string>
+    <string name="str_feels_like_35_4_c" translatable="false">Feels like: 35.4 °C</string>
+    <string name="txt_empty_10" translatable="false">🎯</string>
+    <string name="str_weather_point_700_m_" translatable="false">Weather Point ~ 700 m away</string>
+    <string name="str_hourly" translatable="false">Hourly</string>
+    <string name="str_weekly" translatable="false">Weekly</string>
+    <string name="str_about_us" translatable="false">About Us</string>
+    <string name="str_plants_amp_crops_1" translatable="false">🌿 Plants &amp; Crops</string>
+    <string name="str_change_password" translatable="false">Change Password</string>
+    <string name="str_update_your_account_" translatable="false">Update your account security</string>
+    <string name="str_old_password" translatable="false">Old Password</string>
+    <string name="str_new_password" translatable="false">New Password</string>
+    <string name="str_confirm_password" translatable="false">Confirm Password</string>
+    <string name="str_update_password" translatable="false">Update Password</string>
+    <string name="str_select_two_images_to" translatable="false">Select two images to compare:</string>
+    <string name="str_tap_to_select_image_" translatable="false">Tap to select Image 1</string>
+    <string name="str_tap_to_select_image__1" translatable="false">Tap to select Image 2</string>
+    <string name="str_analyzing_images" translatable="false">Analyzing images...</string>
+    <string name="str_ai_comparison_report" translatable="false">AI Comparison Report</string>
+    <string name="str_image_category" translatable="false">Image Category</string>
+    <string name="str_satellite" translatable="false">Satellite</string>
+    <string name="str_similarity_score" translatable="false">Similarity Score</string>
+    <string name="str_0_1" translatable="false">0%</string>
+    <string name="str_health_comparison" translatable="false">Health Comparison</string>
+    <string name="str_image_1" translatable="false">Image 1:</string>
+    <string name="str_n_a" translatable="false">N / A</string>
+    <string name="str_image_2" translatable="false">Image 2:</string>
+    <string name="str_overall_status" translatable="false">Overall Status:</string>
+    <string name="str_unknown" translatable="false">Unknown</string>
+    <string name="str_quantitative_metrics" translatable="false">Quantitative Metrics</string>
+    <string name="str_no_metrics_found" translatable="false">No metrics found.</string>
+    <string name="str_similarities" translatable="false">Similarities</string>
+    <string name="str_no_similarities_foun" translatable="false">No similarities found.</string>
+    <string name="str_key_differences" translatable="false">Key Differences</string>
+    <string name="str_no_differences_found" translatable="false">No differences found.</string>
+    <string name="str_damage_assessment" translatable="false">Damage Assessment</string>
+    <string name="str_high_risk" translatable="false">High Risk</string>
+    <string name="str_type_drought" translatable="false">Type: Drought</string>
+    <string name="str_detailed_explanation" translatable="false">Detailed explanation...</string>
+    <string name="str_automated_expert_rep" translatable="false">Automated Expert Report</string>
+    <string name="str_condition_summary" translatable="false">Condition Summary</string>
+    <string name="txt_empty_11" translatable="false">...</string>
+    <string name="str_irrigation_need" translatable="false">Irrigation Need</string>
+    <string name="str_suggested_action" translatable="false">Suggested Action</string>
+    <string name="str_compare_images" translatable="false">Compare Images</string>
+    <string name="str_forgot_password" translatable="false">Forgot Password?</string>
+    <string name="str_enter_your_phone_to_" translatable="false">Enter your phone to receive OTP</string>
+    <string name="str_send_otp" translatable="false">Send OTP</string>
+    <string name="str_analysis_history" translatable="false">Analysis History</string>
+    <string name="str_select" translatable="false">Select</string>
+    <string name="str_plant_diseases" translatable="false">Plant Diseases</string>
+    <string name="str_land_marking" translatable="false">Land Marking</string>
+    <string name="str_search_history" translatable="false">Search history...</string>
+    <string name="str_no_history_found" translatable="false">No history found</string>
+    <string name="txt_empty_12" translatable="false">English</string>
+    <string name="str_locating" translatable="false">📍 Locating...</string>
+    <string name="str_weather_point_0_7_km" translatable="false">◎ Weather point 0.7 km</string>
+    <string name="txt_empty_13" translatable="false">⏳</string>
+    <string name="str_loading" translatable="false">Loading...</string>
+    <string name="str_scan_your_plants" translatable="false">Scan Your Plants 🪴</string>
+    <string name="txt_empty_14" translatable="false">📸</string>
+    <string name="str_scan_plant" translatable="false">Scan Plant</string>
+    <string name="txt_empty_15" translatable="false">&gt;&gt;</string>
+    <string name="txt_empty_16" translatable="false">🔍</string>
+    <string name="str_analyse" translatable="false">Analyse</string>
+    <string name="txt_empty_17" translatable="false">📋</string>
+    <string name="str_results" translatable="false">Results</string>
+    <string name="str_scan_your_plant" translatable="false">📷 Scan Your Plant</string>
+    <string name="str_scan_history" translatable="false">🕒 Scan History</string>
+    <string name="str_assan_services" translatable="false">Asaan Services</string>
+    <string name="str_discover" translatable="false">Discover</string>
+    <string name="str_ai_services" translatable="false">AI Services</string>
+    <string name="str_welcome_back" translatable="false">Welcome back,</string>
+    <string name="str_no_active_loan" translatable="false">No Active Financing</string>
+    <string name="str_limit" translatable="false">Limit</string>
+    <string name="str_pkr_0_00" translatable="false">PKR 0.00</string>
+    <string name="str_main_services" translatable="false">Main Services</string>
+    <string name="str_loan_apply" translatable="false">apply for financing</string>
+    <string name="str_ledger" translatable="false">Ledger</string>
+    <string name="str_supplier_registratio" translatable="false">Supplier Registration</string>
+    <string name="str_services" translatable="false">Services</string>
+    <string name="str_special_discounts" translatable="false">Special Discounts</string>
+    <string name="str_up_to_20_off_on_agri" translatable="false">Up to 20% off on Agri-Inputs</string>
+    <string name="str_assan_features_will" translatable="false">Asaan Features will be migrated here.</string>
+    <string name="str_welcome_back_1" translatable="false">Welcome Back,</string>
+    <string name="str_not_applied" translatable="false">Not Applied</string>
+    <string name="str_available_services" translatable="false">Available Services</string>
+    <string name="str_welcome_back_2" translatable="false">Welcome Back!</string>
+    <string name="str_login_to_access_kiss" translatable="false">Login to access Asaan Services</string>
+    <string name="str_03028582454" translatable="false">03028582454</string>
+    <string name="str_password" translatable="false">Password</string>
+    <string name="str_don_t_have_an_accoun" translatable="false">Don\'t have an account?</string>
+    <string name="str_sign_up" translatable="false">Sign Up</string>
+    <string name="str_tap_to_select_photo" translatable="false">Tap to select photo</string>
+    <string name="str_username" translatable="false">Username</string>
+    <string name="str_cnic_number_e_g_1234" translatable="false">CNIC Number (e.g. 12345-1234567-1)</string>
+    <string name="str_cnic_expiry" translatable="false">CNIC Expiry</string>
+    <string name="str_gender" translatable="false">Gender</string>
+    <string name="str_male" translatable="false">Male</string>
+    <string name="str_female" translatable="false">Female</string>
+    <string name="str_search_location_e_g_" translatable="false">Search location (e.g. Gojra, Pakistan)</string>
+    <string name="str_length_0m" translatable="false">Length: 0m</string>
+    <string name="str_area_0_00_acres" translatable="false">Area: 0.00 Acres</string>
+    <string name="str_corners_0" translatable="false">Corners: 0</string>
+    <string name="str_center_n_a" translatable="false">Center: N / A</string>
+    <string name="str_save" translatable="false">SAVE</string>
+    <string name="str_clear" translatable="false">CLEAR</string>
+    <string name="txt_empty_18" translatable="false">--</string>
+    <string name="str_receipts_1" translatable="false">Receipts</string>
+    <string name="str_total_paid_1" translatable="false">Total Paid</string>
+    <string name="str_agents_1" translatable="false">Agents</string>
+    <string name="str_banks_1" translatable="false">Banks</string>
+    <string name="str_verify_otp" translatable="false">Verify OTP</string>
+    <string name="str_enter_the_4_digit_co" translatable="false">Enter the 4-digit code sent to you</string>
+    <string name="str_verify_amp_proceed" translatable="false">Verify &amp; Proceed</string>
+    <string name="str_assan_dost_ai_scan_" translatable="false">Asaan Finance AI - Scan Report</string>
+    <string name="txt_empty_19" translatable="false">💾</string>
+    <string name="str_scan_auto_saved_to_h" translatable="false">Scan auto-saved to history</string>
+    <string name="str_listen_to_analysis" translatable="false">🔊 Listen to Analysis</string>
+    <string name="txt_empty_20" translatable="false">🇵🇰</string>
+    <string name="str_select_machinery" translatable="false">Select Machinery</string>
+    <string name="str_smart_services" translatable="false">Smart Services</string>
+    <string name="str_advanced_solutions_f" translatable="false">Advanced solutions for your farm</string>
+    <string name="str_assan_id_0000" translatable="false">Asaan ID: 0000</string>
+    <string name="str_account_settings" translatable="false">Settings</string>
+    <string name="str_update_profile" translatable="false">Update Profile</string>
+    <string name="str_support_amp_informat" translatable="false">Support &amp; Information</string>
+    <string name="str_terms_amp_conditions" translatable="false">Terms &amp; Conditions</string>
+    <string name="str_share_app" translatable="false">Share App</string>
+    <string name="str_logout" translatable="false">Logout</string>
+    <string name="str_reset_password" translatable="false">Reset Password</string>
+    <string name="str_create_a_new_secure_" translatable="false">Create a new secure password</string>
+    <string name="str_assan_id_12345" translatable="false">Asaan ID: 12345</string>
+    <string name="str_assan_assistant" translatable="false">Asaan Assistant</string>
+    <string name="str_assan_card_app" translatable="false">Asaan Finance App</string>
+    <string name="str_ask_assan_assistant" translatable="false">Ask Asaan Assistant...</string>
+    <string name="str_category_name" translatable="false">Category Name</string>
+    <string name="str_plant_detection" translatable="false">PLANT DETECTION</string>
+    <string name="str_item_title" translatable="false">Item Title</string>
+    <string name="str_category_subtitle" translatable="false">Category / Subtitle</string>
+    <string name="str_date" translatable="false">Date</string>
+    <string name="txt_empty_21" translatable="false" />
+    <string name="str_notification_title" translatable="false">Title</string>
+    <string name="str_notifications_desc" translatable="false">description</string>
+    <string name="str_jun_7_2026" translatable="false">Jun 7, 2026</string>
+    <string name="str_mon" translatable="false">Mon</string>
+    <string name="str_32" translatable="false">32°</string>
+    <string name="str_24" translatable="false">24°</string>
+    <string name="str_50" translatable="false">50% 💧</string>
+    <string name="str_3_pm" translatable="false">3 PM</string>
+    <string name="str_40" translatable="false">💧 40%</string>
+    <string name="str_10_am" translatable="false">10 AM</string>
+    <string name="str_33_c" translatable="false">33°C</string>
+    <string name="str_sun" translatable="false">SUN</string>
+    <string name="txt_empty_22" translatable="false">⛅</string>
+    <string name="str_37_25" translatable="false">37° | 25°</string>
+    <string name="str_0_items" translatable="false">0 items</string>
+    <string name="str_total_rs_0" translatable="false">Total: Rs. 0</string>
+    <string name="str_plus_tax" translatable="false">plus tax</string>
+    <string name="str_view_cart" translatable="false">View Cart</string>
+    <string name="str_home" translatable="false">Home</string>
+    <string name="str_ledger_1" translatable="false">LEDGER</string>
+    <string name="str_advisor" translatable="false">ADVISOR</string>
+    <string name="str_account" translatable="false">ACCOUNT</string>
+    <string name="str_bank_name_1" translatable="false">BANK NAME</string>
+    <string name="str_tractors" translatable="false">Tractors</string>
+    <string name="str_book_the_best" translatable="false">Book the best</string>
+    <string name="str_book_now" translatable="false">Book Now</string>
+    <string name="str_assan_id" translatable="false">Asaan ID: --</string>
+    <string name="str_account_number_forma" translatable="false">Account Number Format- ( AAAAAAAAAAAA )</string>
+    <string name="str_branch_code_format_b" translatable="false">Branch Code Format- ( BBBBBB )</string>
+    <string name="str_source_of_income_1" translatable="false">Source Of Income</string>
+    <string name="my_orders" translatable="false">My Orders</string>
+    <string name="my_orders_urdu" translatable="false">My Orders</string>
+    <string name="no_orders_placed" translatable="false">No orders placed yet.</string>
+    <string name="no_orders_placed_urdu" translatable="false">No orders placed yet.</string>
+    <string name="status_placed" translatable="false">Order Placed</string>
+    <string name="status_placed_urdu" translatable="false">Order Booked</string>
+    <string name="auto_an_update_has_just_been_d_616" translatable="false">An update has just been downloaded.</string>
+    <string name="auto_no_internet_connection_617" translatable="false">No Internet Connection</string>
+    <string name="auto_back_online_618" translatable="false">Back Online</string>
+    <string name="auto_camera_initialization_fai_619" translatable="false">Camera initialization failed</string>
+    <string name="auto_failed_to_capture_both_si_620" translatable="false">Failed to capture both sides</string>
+    <string name="auto_error_e_message_621" translatable="false">An unexpected error occurred. Please try again.</string>
+    <string name="auto_failed_to_return_data_e_m_622" translatable="false">Unable to fetch required data at this time.</string>
+    <string name="auto_get_started_623" translatable="false">Get Started</string>
+    <string name="auto_locked_speak_now_tap_mic_624" translatable="false">🎙 Locked... speak now. Tap Mic to stop</string>
+    <string name="auto_processing_625" translatable="false">⏳ Processing…</string>
+    <string name="auto_scan_completed_626" translatable="false">Scan Completed</string>
+    <string name="auto_image_saved_to_scoped_sto_627" translatable="false">Image saved to scoped storage</string>
+    <string name="auto_loan_details_successfully_628" translatable="false">Financing details successfully applied to the form!</string>
+    <string name="auto_cnic_scanned_successfully_629" translatable="false">CNIC scanned successfully</string>
+    <string name="auto_could_not_share_pdf_630" translatable="false">Could not share PDF.</string>
+    <string name="auto_no_pdf_viewer_found_631" translatable="false">No PDF viewer found.</string>
+    <string name="auto_ledger_deleted_632" translatable="false">Ledger deleted</string>
+    <string name="auto_failed_to_delete_file_633" translatable="false">Failed to delete file</string>
+    <string name="auto_press_play_to_listen_634" translatable="false">Press play to listen</string>
+    <string name="auto_playing_introduction_audi_635" translatable="false">Playing introduction audio...</string>
+    <string name="auto_opening_jhelum_team_progr_636" translatable="false">Opening Jhelum Team Program Intro Video...</string>
+    <string name="auto_please_enter_a_custom_tit_637" translatable="false">Please enter a custom title</string>
+    <string name="auto_network_error_t_message_638" translatable="false">Unable to connect. Please check your network connection.</string>
+    <string name="auto_error_making_request_639" translatable="false">Error making request</string>
+    <string name="auto_privacy_policy_640" translatable="false">Privacy Policy</string>
+    <string name="auto_please_enter_username_and_641" translatable="false">Please enter username and password</string>
+    <string name="auto_please_enter_a_valid_15_d_642" translatable="false">Please enter a valid 15-digit CNIC (e.g. xxxxx-xxxxxxx-x)</string>
+    <string name="auto_cannot_open_dialer_e_mess_643" translatable="false">Unable to open phone dialer.</string>
+    <string name="auto_cannot_open_whatsapp_e_me_644" translatable="false">Unable to open WhatsApp.</string>
+    <string name="auto_login_successful_645" translatable="false">Login Successful</string>
+    <string name="auto_token_registered_successf_646" translatable="false">Token registered successfully!</string>
+    <string name="auto_failed_to_register_token_647" translatable="false">Failed to register token.</string>
+    <string name="auto_token_registration_error_648" translatable="false">Unable to register token.</string>
+    <string name="auto_server_error_response_cod_649" translatable="false">Server error occurred. Please try again.</string>
+    <string name="auto_cnic_successfully_scanned_650" translatable="false">CNIC successfully scanned!</string>
+    <string name="auto_camera_permission_denied_651" translatable="false">Camera permission denied</string>
+    <string name="auto_please_fill_all_required_652" translatable="false">Please fill all required fields</string>
+    <string name="auto_please_enter_a_valid_11_d_653" translatable="false">Please enter a valid 11-digit phone number (e.g. 03xx-xxxxxxx)</string>
+    <string name="auto_error_creating_request_654" translatable="false">Error creating request</string>
+    <string name="auto_microphone_permission_is_655" translatable="false">Microphone permission is required for Voice Chat.</string>
+    <string name="auto_recording_failed_or_too_s_656" translatable="false">Recording failed or too short.</string>
+    <string name="auto_image_selected_successful_657" translatable="false">Image selected successfully</string>
+    <string name="auto_please_fill_all_fields_658" translatable="false">Please fill all fields</string>
+    <string name="auto_invalid_amount_or_duratio_659" translatable="false">Invalid amount or duration</string>
+    <string name="auto_amount_must_be_between_mi_660" translatable="false">Amount must be between $min and $max for this product</string>
+    <string name="auto_str_661" translatable="false">💡</string>
+    <string name="auto_scan_your_cnic_662" translatable="false">Scan Your CNIC</string>
+    <string name="auto_automatically_fill_your_l_663" translatable="false">CNIC scan is required. Your details are filled only from your original card and cannot be typed.</string>
+    <string name="auto_align_the_front_side_of_y_664" translatable="false">Align the FRONT side of your CNIC inside the frame.</string>
+    <string name="auto_capture_front_665" translatable="false">Capture Front</string>
+    <string name="auto_name_n_cnic_number_n_dat_666" translatable="false">✔ Name, CNIC number, date of birth, father / husband name, gender, issue &amp; expiry dates and addresses will be filled automatically.</string>
+    <string name="auto_tips_for_best_results_667" translatable="false">💡 Tips for Best Results</string>
+    <string name="auto_place_your_cnic_on_a_fla_668" translatable="false">• Use the original CNIC, not a photocopy or a screen photo.\n• Flat surface, good light, no glare.\n• Whole card inside the frame, fingers off the text.\n• Hold the phone steady while it focuses; tap the screen to refocus.</string>
+    <string name="auto_your_cnic_information_is_669" translatable="false">🔒 Your CNIC information is used only to automatically fill your financing application. Your data remains secure.</string>
+    <string name="auto_extracting_cnic_data_670" translatable="false">Extracting CNIC Data...</string>
+    <string name="auto_cnic_verification_require_671" translatable="false">CNIC Verification (Required)</string>
+    <string name="auto_please_scan_both_front_an_672" translatable="false">Please scan both Front and Back of your CNIC to auto-fill applicant information.</string>
+    <string name="auto_scan_cnic_card_front_amp_673" translatable="false">Scan CNIC Card (Front &amp; Back)</string>
+    <string name="auto_not_scanned_674" translatable="false">Not Scanned</string>
+    <string name="auto_str_675" translatable="false">*</string>
+    <string name="auto_enter_name_676" translatable="false">Enter Name</string>
+    <string name="auto_enter_cnic_e_g_12345_1234_677" translatable="false">Enter CNIC (e.g., 12345-1234567-1)</string>
+    <string name="auto_enter_present_address_678" translatable="false">Enter Present Address</string>
+    <string name="auto_enter_permanent_address_679" translatable="false">Enter Permanent Address</string>
+    <string name="auto_enter_branch_address_680" translatable="false">Enter Branch Address</string>
+    <string name="auto_specify_other_occupation_681" translatable="false">Specify Other Occupation</string>
+    <string name="auto_enter_loan_amount_682" translatable="false">Enter Financing Amount</string>
+    <string name="auto_enter_duration_months_683" translatable="false">Enter Duration (Months)</string>
+    <string name="auto_enter_business_age_e_g_2_684" translatable="false">Enter Business Age (e.g., 2 Years)</string>
+    <string name="auto_enter_business_address_685" translatable="false">Enter Business Address</string>
+    <string name="auto_unread_686" translatable="false">Unread</string>
+    <string name="auto_read_687" translatable="false">Read</string>
+    <string name="auto_general_688" translatable="false">General</string>
+    <string name="auto_recovery_689" translatable="false">Recovery</string>
+    <string name="auto_installment_690" translatable="false">Installment</string>
+    <string name="auto_loan_691" translatable="false">Financing</string>
+    <string name="auto_payment_692" translatable="false">Payment</string>
+    <string name="auto_approved_693" translatable="false">Approved</string>
+    <string name="auto_rejected_694" translatable="false">Rejected</string>
+    <string name="auto_promotion_695" translatable="false">Promotion</string>
+    <string name="auto_date_range_696" translatable="false">Date Range</string>
+    <string name="auto_no_recovery_notifications_697">No notifications yet</string>
+    <string name="auto_you_will_see_a_notificati_698">Updates about your financing application, installments and payments will appear here.</string>
+    <string name="auto_assan_finance_introductio_699" translatable="false">Asaan Finance Introduction</string>
+    <string name="auto_english_700" translatable="false">English</string>
+    <string name="auto_choose_application_method_701" translatable="false">Choose Application Method</string>
+    <string name="auto_how_would_you_like_to_fil_702" translatable="false">How would you like to fill your financing form?</string>
+    <string name="auto_fill_with_ai_assistant_vo_703" translatable="false">Fill with AI Assistant (Voice)</string>
+    <string name="auto_fill_form_manually_704" translatable="false">Fill Form Manually</string>
+    <string name="auto_str_705" translatable="false">Forgot Password?</string>
+    <string name="auto_if_you_are_experiencing_i_706" translatable="false">If you are experiencing issues resetting your password, please contact the NRSP IT Department for support.</string>
+    <string name="auto_str_707" translatable="false">If you face any issues logging in or changing your password, please contact the IT Department for guidance via the buttons below.</string>
+    <string name="auto_nrsp_it_department_708" translatable="false">NRSP IT Department</string>
+    <string name="auto_muhammad_usman_709" translatable="false">Muhammad Usman</string>
+    <string name="auto_senior_software_developer_710" translatable="false">Senior Software Developer</string>
+    <string name="auto_contact_03028582454_call_711" translatable="false">Contact: 03028582454 (Call &amp; WhatsApp)</string>
+    <string name="auto_call_712" translatable="false">Call</string>
+    <string name="auto_whatsapp_713" translatable="false">WhatsApp</string>
+    <string name="auto_close_714" translatable="false">Close</string>
+    <string name="auto_select_photo_source_715" translatable="false">Select Photo Source</string>
+    <string name="auto_str_716" translatable="false">Image Source</string>
+    <string name="auto_choose_how_you_want_to_up_717" translatable="false">Choose how you want to upload your profile picture</string>
+    <string name="auto_str_718" translatable="false">Camera</string>
+    <string name="auto_str_719" translatable="false">Gallery</string>
+    <string name="auto_cancel_720" translatable="false">Cancel</string>
+    <string name="auto_installment_details_721" translatable="false">Installment Details</string>
+    <string name="auto_receipt_no_722" translatable="false">Receipt No:</string>
+    <string name="auto_n_a_723" translatable="false">N/A</string>
+    <string name="auto_due_date_724" translatable="false">Due Date:</string>
+    <string name="auto_receipt_date_725" translatable="false">Receipt Date:</string>
+    <string name="auto_description_726" translatable="false">Description:</string>
+    <string name="auto_due_principal_727" translatable="false">Due Principal:</string>
+    <string name="auto_rec_principal_728" translatable="false">Rec Principal:</string>
+    <string name="auto_due_service_charge_729" translatable="false">Due Service Charge:</string>
+    <string name="auto_rec_service_charge_730" translatable="false">Rec Service Charge:</string>
+    <string name="auto_od_pa_731" translatable="false">OD PA:</string>
+    <string name="auto_od_sc_732" translatable="false">OD SC:</string>
+    <string name="auto_due_penalty_733" translatable="false">Due Penalty:</string>
+    <string name="auto_adjustment_adj_734" translatable="false">Adjustment (ADJ):</string>
+    <string name="auto_write_off_amount_735" translatable="false">Write-off Amount:</string>
+    <string name="auto_refund_cheque_736" translatable="false">Refund Cheque:</string>
+    <string name="auto_refund_date_737" translatable="false">Refund Date:</string>
+    <string name="auto_refund_amount_738" translatable="false">Refund Amount:</string>
+    <string name="auto_due_total_739" translatable="false">Due Total:</string>
+    <string name="auto_rec_total_740" translatable="false">Rec Total:</string>
+    <string name="auto_assan_loan_ai_assistant_741" translatable="false">Asaan Financing AI Assistant</string>
+    <string name="auto_ai_742" translatable="false">AI</string>
+    <string name="auto_assalamu_alaikum_main_aap_743" translatable="false">Hello! I am your Financing Assistant. You can tell me — how much financing you need, for how many months, and your business or job?</string>
+    <string name="auto_amount_duration_occupati_744" translatable="false">📋  Amount: —  |  Duration: —  |  Occupation: —</string>
+    <string name="auto_type_or_speak_your_messag_745" translatable="false">Type or speak your message...</string>
+    <string name="auto_loan_calculator_746" translatable="false">Financing Calculator</string>
+    <string name="auto_estimate_your_monthly_ins_747" translatable="false">Estimate your monthly installments based on active financing products. All standard micro-financing are currently interest-free.</string>
+    <string name="auto_select_loan_purpose_748" translatable="false">Select Financing Purpose</string>
+    <string name="auto_loan_amount_pkr_749" translatable="false">Financing Amount (PKR)</string>
+    <string name="auto_min_0_max_0_750" translatable="false">Min: 0  |  Max: 0</string>
+    <string name="auto_duration_months_751" translatable="false">Duration (Months)</string>
+    <string name="auto_calculate_752" translatable="false">Calculate</string>
+    <string name="auto_estimated_monthly_install_753" translatable="false">Estimated Monthly Installment</string>
+    <string name="auto_total_markup_754" translatable="false">Total Markup</string>
+    <string name="auto_total_payable_755" translatable="false">Total Payable</string>
+    <string name="auto_review_amp_edit_loan_deta_756" translatable="false">Review &amp; Edit Financing Details</string>
+    <string name="auto_loan_amount_raqam_757" translatable="false">Financing Amount (Raqam)</string>
+    <string name="auto_bank_account_number_758" translatable="false">Bank Account Number</string>
+    <string name="auto_permanent_address_759" translatable="false">Permanent Address</string>
+    <string name="auto_district_760" translatable="false">District</string>
+    <string name="auto_tehsil_761" translatable="false">Tehsil</string>
+    <string name="auto_loan_used_by_name_762" translatable="false">Financing Used By Name</string>
+    <string name="auto_loan_used_by_cnic_763" translatable="false">Financing Used By CNIC</string>
+    <string name="auto_branch_code_764" translatable="false">Branch Code</string>
+    <string name="auto_branch_address_765" translatable="false">Branch Address</string>
+    <string name="auto_business_nature_766" translatable="false">Business Nature</string>
+    <string name="auto_business_city_767" translatable="false">Business City</string>
+    <string name="auto_confirm_amp_fill_768" translatable="false">Confirm &amp; Fill</string>
+    <string name="auto_loan_used_by_self_other_769" translatable="false">Financing Used By (Self/Other)</string>
+    <string name="auto_login_failed_770" translatable="false">Login Failed</string>
+    <string name="auto_user_not_found_or_inactiv_771" translatable="false">User not found or inactive</string>
+    <string name="auto_notification_title_772" translatable="false">Notification Title</string>
+    <string name="auto_notification_message_deta_773" translatable="false">Notification message details...</string>
+    <string name="auto_assan_member_774" translatable="false">Asaan Member</string>
+    <string name="auto_assan_id_775" translatable="false">Asaan ID</string>
+    <string name="auto_0000_776" translatable="false">0000</string>
+    <string name="auto_phone_777" translatable="false">Phone</string>
+    <string name="auto_01_jan_1990_778" translatable="false">01-Jan-1990</string>
+    <string name="auto_program_introduction_779" translatable="false">Program Introduction</string>
+    <string name="auto_assan_finance_program_780" translatable="false">Asaan Finance Program</string>
+    <string name="auto_assan_finance_provides_mi_781" translatable="false">Asaan Finance provides micro-financing to small-scale farmers and businesses to empower local production. With interest-free schemes and easy installments, applying is made fast and digitized.</string>
+    <string name="auto_listen_to_program_intro_782" translatable="false">Listen to Program Intro</string>
+    <string name="auto_watch_introduction_video_783" translatable="false">Watch Introduction Video</string>
+    <string name="auto_assan_dashboard_784" translatable="false">Asaan Dashboard</string>
+    <string name="auto_assan_785" translatable="false">Asaan</string>
+    <string name="auto_finance_786" translatable="false">Finance</string>
+    <string name="auto_securely_manage_your_assa_787" translatable="false">Securely manage your Asaan finances</string>
+    <string name="auto_password_123_789" translatable="false">12345678</string>
+    <string name="auto_sign_in_account_790" translatable="false">Sign In Account</string>
+    <string name="auto_create_account_791" translatable="false">Create Account</string>
+    <string name="auto_xxxxx_xxxxxxx_x_792" translatable="false">xxxxx-xxxxxxx-x</string>
+    <string name="auto_str_793" translatable="false">••••••</string>
+    <string name="auto_tap_to_select_photo_optio_794" translatable="false">Tap to select photo (optional)</string>
+    <string name="auto_full_name_795" translatable="false">FULL NAME</string>
+    <string name="auto_username_796" translatable="false">USERNAME</string>
+    <string name="auto_cnic_number_797" translatable="false">CNIC NUMBER</string>
+    <string name="auto_date_of_birth_798" translatable="false">DATE OF BIRTH</string>
+    <string name="auto_cnic_expiry_799" translatable="false">CNIC EXPIRY</string>
+    <string name="auto_gender_800" translatable="false">GENDER</string>
+    <string name="auto_phone_number_801" translatable="false">PHONE NUMBER</string>
+    <string name="auto_password_802" translatable="false">PASSWORD</string>
+    <string name="auto_sign_up_account_803" translatable="false">Sign Up Account</string>
+    <string name="auto_your_full_name_804" translatable="false">Your Full Name</string>
+    <string name="auto_username_805" translatable="false">username</string>
+    <string name="auto_dd_mm_yyyy_806" translatable="false">DD-MMM-YYYY</string>
+    <string name="auto_03xxxxxxxxx_807" translatable="false">03XXXXXXXXX</string>
+    <string name="auto_select_range_808" translatable="false">Select Range</string>
+    <string name="auto_range_selected_809" translatable="false">Range Selected</string>
+    <string name="auto_july_2026_810" translatable="false">July 2026</string>
+    <string name="auto_s_811" translatable="false">S</string>
+    <string name="auto_m_812" translatable="false">M</string>
+    <string name="auto_t_813" translatable="false">T</string>
+    <string name="auto_w_814" translatable="false">W</string>
+    <string name="auto_f_815" translatable="false">F</string>
+    <string name="auto_clear_dates_816" translatable="false">CLEAR DATES</string>
+    <string name="auto_my_downloads_817" translatable="false">My Downloads</string>
+    <string name="auto_no_downloaded_files_found_818" translatable="false">No downloaded files found.</string>
+    <string name="auto_search_files_819" translatable="false">Search files...</string>
+    <string name="auto_provide_feedback_820" translatable="false">Provide Feedback</string>
+    <string name="auto_how_was_your_experience_821" translatable="false">How was your experience?</string>
+    <string name="auto_your_feedback_helps_us_im_822" translatable="false">Your feedback helps us improve our services.</string>
+    <string name="auto_select_category_823" translatable="false">Select Category</string>
+    <string name="auto_attach_image_optional_824" translatable="false">Attach Image (Optional)</string>
+    <string name="auto_choose_image_825" translatable="false">Choose Image</string>
+    <string name="auto_additional_comments_optio_826" translatable="false">Additional Comments (Optional)</string>
+    <string name="auto_submit_feedback_827" translatable="false">Submit Feedback</string>
+    <string name="auto_enter_your_feedback_title_828" translatable="false">Enter your feedback title...</string>
+    <string name="auto_tell_us_what_you_think_829" translatable="false">Tell us what you think...</string>
+    <string name="auto_cnic_n_a_830" translatable="false">CNIC: N/A</string>
+    <string name="auto_borrower_no_n_a_831" translatable="false">Borrower No: N/A</string>
+    <string name="auto_get_instant_agricultural_832" translatable="false">Get interest-free agricultural financing on easy installments! Apply now...</string>
+    <string name="auto_active_disbursed_amount_833" translatable="false">ACTIVE DISBURSED AMOUNT</string>
+    <string name="auto_18_sep_2024_834" translatable="false">18 Sep, 2024</string>
+    <string name="auto_loan_cycle_835" translatable="false">FINANCING CYCLE</string>
+    <string name="auto_first_cycle_836" translatable="false">First Cycle</string>
+    <string name="auto_status_837" translatable="false">STATUS</string>
+    <string name="auto_disbursed_838" translatable="false">Disbursed</string>
+    <string name="auto_assan_digital_loan_scheme_839" translatable="false">Asaan Digital Financing Scheme 2026</string>
+    <string name="auto_get_interest_free_micro_l_840" translatable="false">Get interest-free micro-financing up to Rs. 150,000 using digital card scanning &amp; voice submission.</string>
+    <string name="auto_apply_now_841" translatable="false">Apply Now</string>
+    <string name="auto_loan_ledger_842" translatable="false">Financing Ledger</string>
+    <string name="auto_borrower_summary_843" translatable="false">Customer Summary</string>
+    <string name="auto_loan_details_844" translatable="false">Financing Details</string>
+    <string name="auto_borrower_name_845" translatable="false">Customer Name</string>
+    <string name="auto_borrower_no_846" translatable="false">Customer No</string>
+    <string name="auto_total_recovered_847" translatable="false">Total Recovered</string>
+    <string name="auto_ledger_schedule_848" translatable="false">Ledger Schedule</string>
+    <string name="str_repayment_schedule">Repayment Schedule</string>
+    <string name="auto_inst_849" translatable="false">Inst #</string>
+    <string name="auto_due_total_850" translatable="false">Due Total</string>
+    <string name="auto_rec_date_851" translatable="false">Rec. Date</string>
+    <string name="auto_rec_amt_852" translatable="false">Rec. Amt</string>
+    <string name="auto_settings_853" translatable="false">Settings</string>
+    <string name="auto_str_854" translatable="false">🌾</string>
+    <string name="auto_str_855" translatable="false">✅</string>
+    <string name="auto_verified_856" translatable="false">Verified</string>
+    <string name="auto_str_857" translatable="false">🏦</string>
+    <string name="auto_nrsp_portal_858" translatable="false">NRSP Portal</string>
+    <string name="auto_notification_popups_859" translatable="false">Notification Popups</string>
+    <string name="auto_show_alert_on_screen_860" translatable="false">Show alert on screen</string>
+    <string name="auto_support_amp_information_861" translatable="false">Support &amp; Information</string>
+    <string name="auto_assan_finance_nrsp_portal_862" translatable="false">Asaan Finance · NRSP Portal · v1.0</string>
+    <string name="auto_old_password_863" translatable="false">OLD PASSWORD</string>
+    <string name="auto_new_password_864" translatable="false">NEW PASSWORD</string>
+    <string name="auto_confirm_new_password_865" translatable="false">CONFIRM NEW PASSWORD</string>
+    <string name="auto_update_data_866" translatable="false">Update Data</string>
+    <string name="auto_old_password_optional_867" translatable="false">Old Password (Optional)</string>
+    <string name="auto_new_password_optional_868" translatable="false">New Password (Optional)</string>
+    <string name="auto_confirm_new_password_opti_869" translatable="false">Confirm New Password (Optional)</string>
+    <string name="auto_2021_870" translatable="false">2021</string>
+    <string name="auto_ledger_20230101_pdf_871" translatable="false">Ledger_20230101.pdf</string>
+    <string name="auto_12_jan_2023_872" translatable="false">12 Jan 2023</string>
+    <string name="auto_str_873" translatable="false"> • </string>
+    <string name="auto_1_2_mb_874" translatable="false">1.2 MB</string>
+    <string name="auto_2023_01_01_875" translatable="false">2023-01-01</string>
+    <string name="auto_5000_876" translatable="false">5000</string>
+    <string name="auto_2023_01_05_877" translatable="false">2023-01-05</string>
+    <string name="auto_assan_finance_services_878" translatable="false">Asaan Finance Services</string>
+    <string name="privacy_policy_text" translatable="false">&lt;b&gt;Privacy Policy – Asaan Finance&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;Last updated:&lt;/b&gt; 16 October 2026&lt;br&gt;&lt;br&gt;
+This Privacy Policy explains how the National Rural Support Programme (NRSP) (\"NRSP\", \"we\", \"our\" or \"us\") collects, uses, shares and protects your information when you use the Asaan Finance mobile app (the \"App\"). The App lets you apply for and manage interest-free micro-financing from NRSP.&lt;br&gt;&lt;br&gt;
+By registering for or using the App, you agree to this Privacy Policy. If you do not agree, please do not use the App.&lt;br&gt;&lt;br&gt;
+&lt;b&gt;1. Information We Collect&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;A. Information you give us&lt;/b&gt;&lt;br&gt;
+• Identity details: full name, CNIC number, CNIC issue and expiry dates, date of birth, gender and marital status.&lt;br&gt;
+• Contact details: mobile number, present and permanent address, district and tehsil.&lt;br&gt;
+• Photos: your profile photo and photos of the front and back of your CNIC.&lt;br&gt;
+• Bank details: bank name, account number, branch code and branch address.&lt;br&gt;
+• Financing details: purpose, amount and duration of financing, business or occupation details, source of income and nearest NRSP branch city.&lt;br&gt;
+• Payments: receipt photos and details you submit for manual payments.&lt;br&gt;
+• Support: feedback, attachments and the messages or voice questions you send to the in-app assistants.&lt;br&gt;
+&lt;b&gt;B. Information collected automatically&lt;/b&gt;&lt;br&gt;
+• A notification token (Google Firebase Cloud Messaging) so we can send you updates about your application.&lt;br&gt;
+• Your device ID at registration, and basic technical information (such as app version and device model) needed to keep the App working.&lt;br&gt;
+The App does not show advertisements and does not use your location.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;2. App Permissions&lt;/b&gt;&lt;br&gt;
+• Camera: to scan your CNIC and take your profile photo or a payment receipt photo.&lt;br&gt;
+• Photos / media: to choose a CNIC photo, profile photo or receipt from your gallery.&lt;br&gt;
+• Microphone: only while you use voice mode in the assistants. Your speech is converted to text by your phone\'s speech service.&lt;br&gt;
+• Notifications: to tell you about application status and payments.&lt;br&gt;
+• Internet: to send your application and load your financing records.&lt;br&gt;
+You can withdraw any permission in your phone\'s settings; some features will then stop working.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;3. How We Use Your Information&lt;/b&gt;&lt;br&gt;
+• To create and manage your account and verify your identity.&lt;br&gt;
+• To receive, assess and process your financing application, including eligibility checks such as existing NRSP financing, repeat-client status, NADRA biometric verification and AML/CFT screening.&lt;br&gt;
+• To disburse financing, record repayments and show your Financing Ledger.&lt;br&gt;
+• To send notifications about your application and payments.&lt;br&gt;
+• To answer your questions, handle feedback and provide support.&lt;br&gt;
+• To prevent fraud and meet our legal and regulatory obligations.&lt;br&gt;
+• To improve the App.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;4. AI Features&lt;/b&gt;&lt;br&gt;
+CNIC scanning and the in-app assistants use Google Gemini, a service of Google LLC, to read the details on your CNIC and to understand and answer your questions. CNIC photos and the messages you send to the assistants are sent to Google for this processing. Please do not share passwords, PINs or OTPs with the assistants; NRSP never asks for them.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;5. Sharing Your Information&lt;/b&gt;&lt;br&gt;
+We do not sell your personal information. We share it only with:&lt;br&gt;
+• NRSP staff and branches who process your application and financing.&lt;br&gt;
+• Banks and payment channels used for disbursement and repayment.&lt;br&gt;
+• NADRA, regulators and law enforcement authorities when required by law.&lt;br&gt;
+• Service providers who help us run the App: Google Firebase (notifications) and Google Gemini (AI features).&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;6. Data Security&lt;/b&gt;&lt;br&gt;
+We use reasonable technical and organisational measures to protect your information against unauthorised access, loss or misuse. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;7. Data Retention&lt;/b&gt;&lt;br&gt;
+We keep your information while your account is active and for as long as required by law and NRSP\'s record-keeping rules for financial records, after which it is deleted or anonymised.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;8. Your Rights&lt;/b&gt;&lt;br&gt;
+• Access: ask for a copy of the information we hold about you.&lt;br&gt;
+• Correction: update your profile in the App (Settings, Update Profile) or ask us to correct it.&lt;br&gt;
+• Deletion: ask us to delete your account. Financing and repayment records may be kept where the law requires it.&lt;br&gt;
+To make a request, email mer_dojlm@yahoo.com with the subject \"Data Deletion Request\" or \"Data Access Request\". We will respond within 14 business days.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;9. Children&lt;/b&gt;&lt;br&gt;
+The App is for adults aged 18 and over. We do not knowingly collect information from anyone under 18.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;10. Changes to This Policy&lt;/b&gt;&lt;br&gt;
+We may update this Privacy Policy. When we do, we will change the \"Last updated\" date above. Continuing to use the App after an update means you accept the updated policy.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;11. Contact Us&lt;/b&gt;&lt;br&gt;
+• Organisation: National Rural Support Programme (NRSP)&lt;br&gt;
+• Email: mer_dojlm@yahoo.com&lt;br&gt;
+• WhatsApp / Phone: +92 302 8582454</string>
+    <string name="agri_work_on_family_farm">Work on Family Farm</string>
+    <string name="agri_work_on_other_farm">Work on Other Farm</string>
+    <string name="agri_share_cropping">Share Cropping on Farm</string>
+    <string name="agri_keep_others_livestock">Keep other\'s Livestock</string>
+    <string name="agri_fishing_business">Fishing Business</string>
+    <string name="non_agri_food_processing">Food Processing &amp; Vending</string>
+    <string name="non_agri_trading">Trading / Buy and Sell</string>
+    <string name="non_agri_handicrafts">Handicrafts</string>
+    <string name="non_agri_garments">Garments</string>
+    <string name="non_agri_mechanic">Mechanic</string>
+    <string name="non_agri_carpentry">Carpentry / Metal Work</string>
+    <string name="non_agri_transport">Transport Service</string>
+    <string name="non_agri_wage_earner">Wage Earner / Construction</string>
+    <string name="non_agri_office_work">Office Work</string>
+    <string name="non_agri_sewing">Sewing</string>
+    <string name="non_agri_govt_employee">Government Employee</string>
+    <string name="non_agri_private_job">Private Job</string>
+    <string name="non_agri_house_wife">House Wife</string>
+    <string name="str_"> *</string>
+    <string name="str_cnic_expiry_date">CNIC Expiry Date</string>
+    <string name="str_cnic_pictures_front_amp_ba">CNIC Pictures (Front &amp; Back)</string>
+    <string name="str_front_side">Front Side</string>
+    <string name="str_back_side">Back Side</string>
+    <string name="str_marital_status">Marital Status</string>
+    <string name="str_single">Single</string>
+    <string name="str_married">Married</string>
+    <string name="str_present_address">Present Address</string>
+    <string name="str_permanent_address">Permanent Address</string>
+    <string name="str_district">District</string>
+    <string name="str_tehsil">Tehsil</string>
+    <string name="str_account_number">IBAN Number</string>
+    <string name="str_0_0">0/0</string>
+    <string name="str_iban_hint">PK00XXXXXXXXXXXXXXXXXXXX</string>
+    <string name="str_branch_code">Branch Code</string>
+    <string name="str_branch_address">Branch Address</string>
+    <string name="str_purpose_of_financing">Purpose of Financing</string>
+    <string name="str_financing_amount_pkr">Financing Amount (PKR)</string>
+    <string name="str_loan_duration">Financing Duration</string>
+    <string name="str_nature_of_business">Nature of Business</string>
+    <string name="str_business_duration_years">Business Duration (Years)</string>
+    <string name="str_complete_business_address">Complete Business Address</string>
+    <string name="str_business_city">Nearest NRSP Branch City</string>
+    <string name="str_select_occupation_type">Select Occupation Type</string>
+    <string name="str_agriculture_occupation">Agriculture Occupation</string>
+    <string name="str_non_agriculture_occupation">Non-Agriculture Occupation</string>
+    <string name="str_i_confirm_that_all_informa">I confirm that all information provided is accurate and complete. I understand that this financing application will be reviewed by NRSP\'s team, and I may be contacted for verification. I agree to the program\'s terms and conditions.</string>
+    <string name="str_i_agree_to_the_declaration">I agree to the declaration</string>
+    <string name="str_powered_by">Powered by</string>
+    <string name="str__1">اردو</string>
+    <string name="str_listening">Listening...</string>
+    <string name="str_applicant_name">Applicant Name</string>
+    <string name="str_applicant_cnic">Applicant CNIC</string>
+    <string name="str_purpose_of_loan">Purpose of Financing</string>
+    <string name="str_loan_amount">Financing Amount</string>
+    <string name="str_business_address">Business Address</string>
+    <string name="str_occupation_type">Occupation Type</string>
+    <string name="str_specific_occupation">Specific Occupation</string>
+    <string name="str_select_whatsapp_version">Select WhatsApp version</string>
+    <string name="str_whatsapp">WhatsApp</string>
+    <string name="str_whatsapp_business">WhatsApp Business</string>
+    <string name="str_tupac_420">Tupac@420</string>
+    <string name="str_username_already_exists">Username already exists</string>
+    <string name="str_always_screen_on">Always Screen ON</string>
+    <string name="str_keep_the_screen_awake_whil">Keep the screen awake while using app</string>
+    <string name="str_dark_mode">Dark Mode</string>
+    <string name="str_enable_dark_theme_for_the">Enable dark theme for the app</string>
+    <string name="str_whatsapp_support">WhatsApp Support</string>
+    <string name="str_auto_logout_session">Auto Logout Session</string>
+    <string name="str_easypaisa">Easypaisa</string>
+    <string name="str_manual_payment_verificatio">Manual Payment Verification</string>
+    <string name="str_1_send_money_to_our_master">1. Send money to our Master Account:</string>
+    <string name="str_bank_nrsp_microfinance_ban">Bank: NRSP Microfinance Bank\nTitle: NRSP Collection Account</string>
+    <string name="str_pk1234567890">PK1234567890</string>
+    <string name="str_open_app_to_pay">Open App to Pay</string>
+    <string name="str_2_enter_transaction_id_tid">2. Enter Transaction ID (TID) after payment:</string>
+    <string name="str_transaction_id_e_g_1234567">Transaction ID (e.g. 1234567890)</string>
+    <string name="str_amount_paid_pkr">Amount Paid (PKR)</string>
+    <string name="str_submit_proof">Submit Proof</string>
+    <string name="str_about_Asaan_finance">About Asaan Finance</string>
+    <string name="str_change_pin">Change PIN</string>
+    <string name="str_documents">Documents</string>
+    <string name="str_me">Me</string>
+    <string name="str_history">History</string>
+    <string name="str_apply_financing">Financing</string>
+    <string name="str_support_security">Support &amp; Security</string>
+    <string name="str_others">Others</string>
+    <string name="msg_camera_permission">Camera permission is required to scan CNIC</string>
+    <string name="msg_security_alert">Security Alert</string>
+    <string name="msg_rooted_device">This app cannot be run on a rooted device or emulator due to security</string>
+    <string name="action_exit">Exit</string>
+    <string name="hint_select_district">Select District</string>
+    <string name="hint_select_city">Select City of Business</string>
+    <string name="msg_district_not_found">District Not Found</string>
+    <string name="msg_network_error">Unable to connect to the server. Please check your internet connection.</string>
+    <string name="hint_select_tehsil">Select Tehsil</string>
+    <string name="msg_no_tehsil_found">No Tehsil Found against this district</string>
+    <string name="lbl_pkr">PKR</string>
+    <string name="msg_no_bank_channels">No bank channels found</string>
+    <string name="msg_failed_retrieve_banks">Failed to retrieve bank channels</string>
+    <string name="hint_select_bank">Select Bank</string>
+    <string name="msg_select_gender">Please select Gender</string>
+    <string name="msg_select_marital_status">Select Marital Status</string>
+    <string name="msg_select_income_source">Please select Source of Income</string>
+    <string name="lbl_financing_limit">Financing Limit:</string>
+    <string name="msg_select_business_nature">Please select Nature of Business</string>
+    <string name="msg_select_occupation_type">Please select Occupation Type (Agriculture or Non-Agriculture)</string>
+    <string name="msg_select_agri_occupation">Please select an Agriculture Occupation</string>
+    <string name="msg_select_non_agri_occupation">Please select a Non-Agriculture Occupation</string>
+    <string name="msg_session_expired">Session expired or not logged in. Please log in again.</string>
+    <string name="hint_select_purpose">Select Purpose of Financing</string>
+    <string name="msg_thinking">Thinking...</string>
+    <string name="msg_listening">Listening...</string>
+    <string name="msg_speaking">Speaking...</string>
+    <string name="action_delete_ledger">Delete Ledger</string>
+    <string name="msg_confirm_delete_ledger">Are you sure you want to delete this downloaded ledger?</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="lbl_borrower_no">Borrower No:</string>
+    <string name="lbl_recovery_details">Recovery Details - Installment #</string>
+    <string name="lbl_deposit_slip">Deposit Slip</string>
+    <string name="msg_could_not_share_pdf">Could not share PDF</string>
+    <string name="msg_saved_to_documents">Saved to Documents:</string>
+    <string name="msg_failed_generate_pdf">Failed to generate PDF.</string>
+    <string name="lbl_Asaan_id">Asaan ID:</string>
+    <string name="lbl_Asaan_finance_intro">Asaan Finance Introduction</string>
+    <string name="lbl_Asaan_user">Asaan User</string>
+    <string name="lbl_name_upper">NAME</string>
+    <string name="lbl_cnic_upper">CNIC</string>
+    <string name="lbl_phone_upper">PHONE</string>
+    <string name="msg_text_copied">Text copied</string>
+    <string name="msg_please_wait">Please wait</string>
+    <string name="ug_title">User Guide</string>
+    <string name="scam_alert_title">Security Alert</string>
+    <string name="scam_alert_desc">NRSP never asks for your password. Always use this official application to avoid scams.</string>
+    <string name="contact_us_title">Contact Us</string>
+    <string name="contact_address_label">Address</string>
+    <string name="contact_support_phone_label">Asaan Finance Support (Call / WhatsApp)</string>
+    <string name="contact_support_email_label">Support Email</string>
+    <string name="contact_address_value">7th Floor, UBL Building, Islamabad, Pakistan.</string>
+    <string name="contact_tel_label">Tel</string>
+    <string name="contact_tel_value">92-51-2822319, 2822324</string>
+    <string name="contact_fax_label">Fax</string>
+    <string name="contact_fax_value">92-51-2822779</string>
+    <string name="contact_email_label">Email</string>
+    <string name="contact_email_value">info@nrsp.org.pk</string>
+    <string name="contact_website_label">Website</string>
+    <string name="contact_website_value">https://nrsp.org.pk/contact/</string>
+    <string name="str_account_security">ACCOUNT &amp; SECURITY</string>
+    <string name="str_display_preferences">DISPLAY &amp; PREFERENCES</string>
+    <string name="str_i_have_read_and_accept_the">I have read and accept the </string>
+    <string name="str_scanning_front_side">Scanning Front Side...</string>
+    <string name="str_scanning_back_side">Scanning Back Side...</string>
+    <string name="str_front_captured_align_back">Front captured!\nAlign the BACK side and press Capture</string>
+    <string name="str_capture_back">Capture Back</string>
+    <string name="str_extracting_cnic_data">Extracting CNIC Data...</string>
+    <string name="str_offline_ai_extraction">Offline AI Extraction (PaddleOCR)...</string>
+    <string name="str_error_exclamation">Error!</string>
+    <string name="str_align_front_inside_frame">Align the FRONT side of your CNIC\ninside the frame.</string>
+    <string name="str_capture_front">Capture Front</string>
+    <string name="str_submitting_feedback">Submitting...</string>
+    <string name="str_submit_feedback_btn">Submit Feedback</string>
+    <string name="str_unable_to_process_request">Unable to process your request at this time. Please try again later.</string>
+    <string name="str_open_easypaisa_app">Open Easypaisa App</string>
+    <string name="str_open_jazzcash_app">Open JazzCash App</string>
+    <string name="str_account_number_copied">Account number copied</string>
+    <string name="str_app_not_found">App not found</string>
+    <string name="str_no_specific_app_mapped">No specific app mapped for this channel</string>
+    <string name="str_coming_soon">Coming Soon</string>
+    <string name="str_payment_proof_submitted">Payment proof submitted successfully</string>
+    <string name="str_listening_tap_to_send">Listening... (tap ↑ to send)</string>
+    <string name="str_listening_speak_then_tap">Listening... (speak, then tap ↑)</string>
+    <string name="str_thinking">Thinking...</string>
+    <string name="str_speaking">Speaking...</string>
+    <string name="str_borrower_no">Borrower No: </string>
+    <string name="str_Asaan_id">Asaan ID</string>
+    <string name="str_Asaan_id_colon">Asaan ID: </string>
+    <string name="str_cnic_number_label">CNIC Number</string>
+    <string name="str_phone_number_label">Phone Number</string>
+    <string name="str_date_of_birth_label">Date of Birth</string>
+    <string name="str_gender_label">Gender</string>
+    <string name="str_Asaan_member">Asaan Member</string>
+    <string name="str_close_label">Close</string>
+    <string name="str_edit_profile_label">Edit Profile</string>
+    <string name="str_applied">applied</string>
+    <string name="str_applied_cap">Applied</string>
+    <string name="str_sanctioned">sanctioned</string>
+    <string name="str_sanctioned_cap">Sanctioned</string>
+    <string name="str_disbursed">disbursed</string>
+    <string name="str_disbursed_cap">Disbursed</string>
+    <string name="str_recovery_details_installment">Recovery Details - Installment # </string>
+    <string name="str_camera_permission_required">Camera permission is required</string>
+    <string name="share_app_subject">Asaan Finance App</string>
+    <string name="share_app_message">Asaan Finance Pakistan ke liye tayyar ki gayi ek digital financing application hai jo users ko zaroorat ke waqt aasan, tez aur mehfooz financial solutions faraham karne ke liye design ki gayi hai.
+Download the Asaan Finance App now:
+https://play.google.com/store/apps/details?id=com.assan.finance</string>
+    <string name="share_via">Share via</string>
+    <string name="whatsapp_support_msg">Hello Asaan Finance Support, I need help regarding my financing.</string>
+    <string name="app_version_label">Version %s</string>
+    <string name="str_service_unavailable">Service Unavailable</string>
+    <string name="str_quota_exceeded_msg">The CNIC Card scanning service quota has been exceeded. Please contact the technical team for assistance.</string>
+    <string name="str_okay">Okay</string>
+    <string name="str_coc" translatable="false">COC</string>
+    <string name="str_bt" translatable="false">BT</string>
+    <string name="str_closed_loan" translatable="false">Closed Loan</string>
+    <string name="error_cnic_expired_title">CNIC Expired / Expiring Soon</string>
+    <string name="error_cnic_expired_message_6">You cannot avail financing right now. Please renew your CNIC. To apply for a 6-month financing plan, your CNIC must have at least 6 months of validity remaining.</string>
+    <string name="error_cnic_expired_message_12">You cannot avail financing right now. Please renew your CNIC. To apply for financing, your CNIC must have at least 1 year of validity remaining.</string>
+    <string name="error_cnic_expired_message_18">You cannot avail financing right now. Please renew your CNIC. To apply for an 18-month financing plan, your CNIC must have at least 18 months of validity remaining.</string>
+    <string name="str_tap_to_select_photo_mandatory">Tap to select photo *</string>
+    <string name="str_code">12345678</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="str_scanner_focusing">Focusing…</string>
+    <string name="str_scanner_not_clear">The picture is not clear. Hold the phone steady, keep the card inside the frame and capture again.</string>
+    <string name="str_scanner_checking">Checking card…</string>
+
+    <!-- Onboarding -->
+    <string name="onb_language_switch">اردو</string>
+    <string name="onb1_title">Welcome to Asaan Finance</string>
+    <string name="onb1_desc">Sharia-compliant financing from NRSP. Apply from your phone, from home.</string>
+    <string name="onb1_badge">Official NRSP app</string>
+    <string name="onb2_title">Scan your CNIC</string>
+    <string name="onb2_desc">Your name, CNIC number and address are filled in for you. No typing needed.</string>
+    <string name="onb2_badge">Filled automatically</string>
+    <string name="onb3_title">Help in Urdu, by voice</string>
+    <string name="onb3_desc">Just speak or type. The Asaan assistant helps you complete your application.</string>
+    <string name="onb3_badge">Urdu · English</string>
+    <string name="onb4_title">Track every installment</string>
+    <string name="onb4_desc">See your balance, repayment schedule and payments, and get instant updates.</string>
+    <string name="onb4_badge">Instant updates</string>
+</resources>

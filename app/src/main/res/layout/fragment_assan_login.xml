@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_gradient"
+    android:filterTouchesWhenObscured="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingTop="80dp"
+            android:paddingBottom="24dp">
+
+            <!-- Header Brand Logo Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_assan_logo"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:lineSpacingMultiplier="0.9"
+                        android:text="@string/auto_assan_785"
+                        android:textColor="@color/dark_navy"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:lineSpacingMultiplier="0.9"
+                        android:text="@string/auto_finance_786"
+                        android:textColor="@color/dark_navy"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Login Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/str_login"
+                android:textColor="@color/dark_navy"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="36dp"
+                android:text="@string/auto_securely_manage_your_assa_787"
+                android:textColor="@color/light_gray_label"
+                android:textSize="14sp"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <LinearLayout
+                android:id="@+id/llLoginForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Username label -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:text="@string/str_cnic"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="*"
+                        android:textColor="@color/auto_color_EF4444"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+
+                <!-- Username input box -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/bg_input_field_selector"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivUsernameIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_user"
+                        app:tint="@color/light_gray_label"
+                        tools:ignore="ContentDescription" />
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/ivUsernameIcon"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/auto_xxxxx_xxxxxxx_x_792"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:paddingVertical="12dp"
+                        android:textColor="@color/dark_navy"
+                        android:textColorHint="@color/light_gray_label"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!-- Password/Secret PIN label -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:text="@string/str_password"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="*"
+                        android:textColor="@color/auto_color_EF4444"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+
+                <!-- Password input box -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="36dp"
+                    android:background="@drawable/bg_input_field_selector"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivLockIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_key"
+                        app:tint="@color/light_gray_label"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/btnToggleVisibility"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_eye_hide"
+                        app:tint="@color/light_gray_label"
+                        tools:ignore="ContentDescription" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toStartOf="@id/btnToggleVisibility"
+                        android:layout_toEndOf="@id/ivLockIcon"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/auto_str_793"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingVertical="12dp"
+
+                        android:textColor="@color/dark_navy"
+                        android:textColorHint="@color/light_gray_label"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!-- Sign In button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:text="@string/auto_sign_in_account_790"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/teal_brand"
+                    app:cornerRadius="14dp"
+                    app:elevation="0dp"
+                    app:rippleColor="@color/white" />
+
+                <!-- Forgot PIN link -->
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="@string/str_forgot_password"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <!-- Create Account link -->
+                <TextView
+                    android:id="@+id/tvSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="@string/auto_create_account_791"
+                    android:textColor="@color/teal_brand"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+            </LinearLayout>
+
+            <!-- Spacer to push content up if viewport allows -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Footer -->
+            <LinearLayout
+                android:id="@+id/llFooterBranding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.2"
+                    android:text="@string/str_powered_by"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nrsp_logo" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

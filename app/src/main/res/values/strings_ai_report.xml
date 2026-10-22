@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reporting AI assistant answers (Google Play AI-generated content policy). Urdu: values-ur/strings_ai_report.xml -->
+<resources>
+    <string name="ai_report_action">Report answer</string>
+    <string name="ai_report_copy">Copy</string>
+    <string name="ai_report_title">Report this answer</string>
+    <string name="ai_report_desc">Tell us what is wrong with the assistant\'s answer. Our team will review it.</string>
+    <string name="ai_report_reason_wrong">Wrong or misleading information</string>
+    <string name="ai_report_reason_offensive">Offensive or harmful</string>
+    <string name="ai_report_reason_other">Other problem</string>
+    <string name="ai_report_comment_hint">Add details (optional)</string>
+    <string name="ai_report_send">Send report</string>
+    <string name="ai_report_cancel">Cancel</string>
+    <string name="ai_report_sent">Thank you. Your report has been sent.</string>
+    <string name="ai_report_failed">Could not send the report. Please check your internet and try again.</string>
+    <string name="ai_report_nothing">There is no assistant answer to report yet.</string>
+</resources>

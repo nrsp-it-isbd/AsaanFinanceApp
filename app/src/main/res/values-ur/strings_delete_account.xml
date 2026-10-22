@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="del_acc_settings_item">اکاؤنٹ ختم کریں</string>
+    <string name="del_acc_title">کیا آپ اپنا اکاؤنٹ ختم کرنا چاہتے ہیں؟</string>
+    <string name="del_acc_message">آپ کا آسان فنانس اکاؤنٹ اور ذاتی معلومات (پروفائل، تصویر، شناختی کارڈ کی تصویریں اور سیٹنگز) ختم کر دی جائیں گی، اور آپ لاگ آؤٹ ہو جائیں گے۔</string>
+    <string name="del_acc_note">آپ کی لی گئی فنانسنگ کا ریکارڈ صرف اتنی مدت تک رکھا جائے گا جتنا قانون کے مطابق ضروری ہے۔</string>
+    <string name="del_acc_password_label">آپ کا پاس ورڈ</string>
+    <string name="del_acc_password_hint">اپنا پاس ورڈ لکھیں</string>
+    <string name="del_acc_show_password">پاس ورڈ دکھائیں یا چھپائیں</string>
+    <string name="del_acc_reason_label">وجہ (اختیاری)</string>
+    <string name="del_acc_reason_hint">آپ کیوں جا رہے ہیں؟</string>
+    <string name="del_acc_checkbox">میں سمجھتا/سمجھتی ہوں کہ میرا اکاؤنٹ ہمیشہ کے لیے ختم ہو جائے گا۔</string>
+    <string name="del_acc_confirm">ختم کریں</string>
+    <string name="del_acc_deleting">ختم کیا جا رہا ہے…</string>
+    <string name="del_acc_cancel">منسوخ کریں</string>
+    <string name="del_acc_ok">ٹھیک ہے</string>
+    <string name="del_acc_failed">آپ کی درخواست نہیں بھیجی جا سکی۔ اپنا انٹرنیٹ چیک کر کے دوبارہ کوشش کریں۔</string>
+    <string name="del_acc_password_required">مہربانی کر کے اپنا پاس ورڈ لکھیں۔</string>
+    <string name="del_acc_wrong_password">پاس ورڈ درست نہیں۔ دوبارہ کوشش کریں۔</string>
+    <string name="del_acc_done_title">درخواست موصول ہو گئی</string>
+    <string name="del_acc_done_message">ہمیں آپ کی درخواست مل گئی ہے۔ این آر ایس پی آپ کا اکاؤنٹ اور معلومات ختم کر دے گا، اور اب آپ لاگ آؤٹ ہو جائیں گے۔</string>
+    <string name="del_acc_deleted_title">اکاؤنٹ ختم ہو گیا</string>
+    <string name="del_acc_deleted_message">آپ کا اکاؤنٹ اور ذاتی معلومات ختم کر دی گئی ہیں۔ اب آپ لاگ آؤٹ ہو جائیں گے۔</string>
+    <string name="del_acc_kept_message">آپ کا اکاؤنٹ ختم کر دیا گیا ہے۔ آپ کی فنانسنگ کا ریکارڈ صرف اتنی مدت تک رکھا جائے گا جتنا قانون کے مطابق ضروری ہے۔ اب آپ لاگ آؤٹ ہو جائیں گے۔</string>
+</resources>

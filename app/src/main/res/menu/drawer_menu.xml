@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_ledger"
+            android:icon="@drawable/ic_history"
+            android:title="@string/check_ledger" />
+        <item
+            android:id="@+id/menu_about_us"
+            android:icon="@drawable/ic_shield_check"
+            android:title="@string/str_about_Asaan_finance" />
+        <item
+            android:id="@+id/menu_terms_condition"
+            android:icon="@drawable/ic_file_text"
+            android:title="@string/str_terms_amp_conditions" />
+        <item
+            android:id="@+id/menu_share"
+            android:icon="@drawable/share"
+            android:title="@string/str_share_app" />
+    </group>
+
+    <item android:title="@string/str_account_settings">
+        <menu>
+            <item
+                android:id="@+id/menu_change_password"
+                android:icon="@drawable/ic_user"
+                android:title="@string/str_change_pin" />
+
+            <item
+                android:id="@+id/menu_Exit_application"
+                android:icon="@drawable/ic_assan_logo"
+                android:title="@string/str_logout" />
+        </menu>
+    </item>
+</menu>

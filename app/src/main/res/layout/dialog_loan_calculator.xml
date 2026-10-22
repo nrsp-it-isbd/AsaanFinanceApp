@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Handle line -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_bottom_sheet_handle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/auto_loan_calculator_746"
+            android:textColor="@color/dark_navy"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/auto_estimate_your_monthly_ins_747"
+            android:textColor="@color/light_gray_label"
+            android:textSize="12sp"
+            tools:ignore="SmallSp,SpUsage" />
+
+
+
+        <!-- Loan Amount -->
+        <!-- Extracted Hint Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="@string/auto_loan_amount_pkr_749"
+            android:textColor="@color/light_gray_label"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input_field_selector"
+            android:paddingHorizontal="16dp">
+
+            <EditText
+                android:id="@+id/etCalcAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/auto_loan_amount_pkr_749"
+                android:inputType="number"
+                android:maxLength="7"
+                android:paddingVertical="12dp"
+                android:textColor="@color/dark_navy"
+                android:textColorHint="@color/light_gray_label"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+
+        <!-- Loan Duration -->
+        <!-- Extracted Hint Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="@string/auto_duration_months_751"
+            android:textColor="@color/light_gray_label"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input_field_selector"
+            android:paddingHorizontal="16dp">
+
+            <EditText
+                android:id="@+id/etCalcDuration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/auto_duration_months_751"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingVertical="12dp"
+                android:textColor="@color/dark_navy"
+                android:textColorHint="@color/light_gray_label"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/auto_calculate_752"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/teal_brand"
+            app:cornerRadius="14dp" />
+
+        <!-- Results Section -->
+        <LinearLayout
+            android:id="@+id/layoutCalcResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill_light_green"
+            android:backgroundTint="@color/background_gradient_light"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_estimated_monthly_install_753"
+                android:textColor="@color/light_gray_label"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <TextView
+                android:id="@+id/tvCalcMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/str_pkr_0"
+                android:textColor="@color/teal_brand"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/light_gray_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_total_markup_754"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/tvCalcTotalMarkup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/str_pkr_0"
+                        android:textColor="@color/dark_navy"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_total_payable_755"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/tvCalcTotalPayable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/str_pkr_0"
+                        android:textColor="@color/dark_navy"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

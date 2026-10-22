@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dialog_rounded"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Green AI dot indicator -->
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_pill_light_green"
+                    android:backgroundTint="@color/primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/auto_assan_loan_ai_assistant_741"
+                    android:textColor="@color/auto_color_1E293B"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <!-- Report the assistant's latest answer, also spoken ones (Google Play AI content policy) -->
+            <ImageView
+                android:id="@+id/btnReportAnswer"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="6dp"
+                android:layout_toStartOf="@id/btnDismiss"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/ai_report_action"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="6dp"
+                android:src="@drawable/ic_report_flag"
+                app:tint="@color/auto_color_64748B" />
+
+            <ImageView
+                android:id="@+id/btnDismiss"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="4dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/auto_color_64748B"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/auto_color_F1F5F9" />
+
+        <!-- Chat Area -->
+        <ScrollView
+            android:id="@+id/chatScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@color/auto_color_F8FAFC"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/layoutChatLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <!-- Initial AI greeting bubble -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:baselineAligned="false"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_pill_light_green"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="@string/auto_ai_742"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_pill_light_green"
+                        android:backgroundTint="@color/light_gray_border"
+                        android:maxWidth="260dp"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/auto_assalamu_alaikum_main_aap_743"
+                        android:textColor="@color/auto_color_334155"
+                        android:textSize="13sp"
+                        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Live status row -->
+        <TextView
+            android:id="@+id/tvLiveStatusSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginBottom="8dp"
+            android:background="@color/auto_color_F1F5F9"
+            android:padding="6dp"
+            android:text="@string/auto_amount_duration_occupati_744"
+            android:textColor="@color/auto_color_475569"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            tools:ignore="SmallSp,SpUsage" />
+
+        <!-- WhatsApp-style input row: text + mic + send -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Text input and Voice recording container -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_pill_light_green"
+                android:backgroundTint="@color/auto_color_F1F5F9">
+
+                <LinearLayout
+                    android:id="@+id/layoutInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/etManualText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Type your message..."
+                        android:imeOptions="actionSend"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/auto_color_1E293B"
+                        android:textColorHint="@color/auto_color_94A3B8"
+                        android:textSize="13sp" />
+
+                    <!-- Mic button inside EditText (hidden as per user request) -->
+                    <ImageButton
+                        android:id="@+id/btnMic"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="2dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Voice Input"
+                        android:src="@drawable/ic_mic"
+                        android:visibility="gone"
+                        app:tint="@color/primary"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutVoiceRecording"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="4dp"
+                    android:visibility="gone"
+                    android:baselineAligned="false">
+                    
+                    <ImageView
+                        android:id="@+id/ivRecordingDot"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/bg_red_dot"
+                        android:layout_marginEnd="12dp"
+                        tools:ignore="ContentDescription" />
+                    
+                    <TextView
+                        android:id="@+id/tvVoiceStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/str_listening"
+                        android:textColor="@color/auto_color_1E293B"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Send button -->
+            <ImageButton
+                android:id="@+id/btnSendText"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_pill_light_green"
+                android:backgroundTint="@color/primary"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!-- Listening state label (shown below input when mic active) -->
+        <TextView
+            android:id="@+id/tvMicInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/auto_color_2E7D32"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            tools:ignore="SmallSp,SpUsage" />
+
+    </LinearLayout>
+</FrameLayout>

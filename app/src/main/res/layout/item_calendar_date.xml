@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDateContainer"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:orientation="vertical"
+        android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/str_1"
+        android:textColor="@color/auto_color_1F2937"
+        android:textSize="16sp" 
+        tools:ignore="SmallSp,SpUsage" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<b>Privacy Policy – Asaan Finance</b><br>
+<b>Last updated:</b> 16 October 2026<br><br>
+This Privacy Policy explains how the National Rural Support Programme (NRSP) ("NRSP", "we", "our" or "us") collects, uses, shares and protects your information when you use the Asaan Finance mobile app (the "App"). The App lets you apply for and manage interest-free micro-financing from NRSP.<br><br>
+By registering for or using the App, you agree to this Privacy Policy. If you do not agree, please do not use the App.<br><br>
+<b>1. Information We Collect</b><br>
+<b>A. Information you give us</b><br>
+• Identity details: full name, CNIC number, CNIC issue and expiry dates, date of birth, gender and marital status.<br>
+• Contact details: mobile number, present and permanent address, district and tehsil.<br>
+• Photos: your profile photo and photos of the front and back of your CNIC.<br>
+• Bank details: bank name, account number, branch code and branch address.<br>
+• Financing details: purpose, amount and duration of financing, business or occupation details, source of income and nearest NRSP branch city.<br>
+• Payments: receipt photos and details you submit for manual payments.<br>
+• Support: feedback, attachments and the messages or voice questions you send to the in-app assistants.<br>
+<b>B. Information collected automatically</b><br>
+• A notification token (Google Firebase Cloud Messaging) so we can send you updates about your application.<br>
+• Your device ID at registration, and basic technical information (such as app version and device model) needed to keep the App working.<br>
+The App does not show advertisements and does not use your location.<br>
+<br>
+<b>2. App Permissions</b><br>
+• Camera: to scan your CNIC and take your profile photo or a payment receipt photo.<br>
+• Photos / media: to choose a CNIC photo, profile photo or receipt from your gallery.<br>
+• Microphone: only while you use voice mode in the assistants. Your speech is converted to text by your phone's speech service.<br>
+• Notifications: to tell you about application status and payments.<br>
+• Internet: to send your application and load your financing records.<br>
+You can withdraw any permission in your phone's settings; some features will then stop working.<br>
+<br>
+<b>3. How We Use Your Information</b><br>
+• To create and manage your account and verify your identity.<br>
+• To receive, assess and process your financing application, including eligibility checks such as existing NRSP financing, repeat-client status, NADRA biometric verification and AML/CFT screening.<br>
+• To disburse financing, record repayments and show your Financing Ledger.<br>
+• To send notifications about your application and payments.<br>
+• To answer your questions, handle feedback and provide support.<br>
+• To prevent fraud and meet our legal and regulatory obligations.<br>
+• To improve the App.<br>
+<br>
+<b>4. AI Features</b><br>
+CNIC scanning and the in-app assistants use Google Gemini, a service of Google LLC, to read the details on your CNIC and to understand and answer your questions. CNIC photos and the messages you send to the assistants are sent to Google for this processing. Please do not share passwords, PINs or OTPs with the assistants; NRSP never asks for them.<br>
+<br>
+<b>5. Sharing Your Information</b><br>
+We do not sell your personal information. We share it only with:<br>
+• NRSP staff and branches who process your application and financing.<br>
+• Banks and payment channels used for disbursement and repayment.<br>
+• NADRA, regulators and law enforcement authorities when required by law.<br>
+• Service providers who help us run the App: Google Firebase (notifications) and Google Gemini (AI features).<br>
+<br>
+<b>6. Data Security</b><br>
+We use reasonable technical and organisational measures to protect your information against unauthorised access, loss or misuse. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.<br>
+<br>
+<b>7. Data Retention</b><br>
+We keep your information while your account is active and for as long as required by law and NRSP's record-keeping rules for financial records, after which it is deleted or anonymised.<br>
+<br>
+<b>8. Your Rights</b><br>
+• Access: ask for a copy of the information we hold about you.<br>
+• Correction: update your profile in the App (Settings, Update Profile) or ask us to correct it.<br>
+• Deletion: ask us to delete your account. Financing and repayment records may be kept where the law requires it.<br>
+To make a request, email mer_dojlm@yahoo.com with the subject "Data Deletion Request" or "Data Access Request". We will respond within 14 business days.<br>
+<br>
+<b>9. Children</b><br>
+The App is for adults aged 18 and over. We do not knowingly collect information from anyone under 18.<br>
+<br>
+<b>10. Changes to This Policy</b><br>
+We may update this Privacy Policy. When we do, we will change the "Last updated" date above. Continuing to use the App after an update means you accept the updated policy.<br>
+<br>
+<b>11. Contact Us</b><br>
+• Organisation: National Rural Support Programme (NRSP)<br>
+• Email: mer_dojlm@yahoo.com<br>
+• WhatsApp / Phone: +92 302 8582454

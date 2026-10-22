@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ug_page_bg">#121212</color>
+    <color name="ug_card_bg">#1C2224</color>
+    <color name="ug_card_stroke">#2C3639</color>
+    <color name="ug_title">#F1F5F9</color>
+    <color name="ug_body">#C3CDD5</color>
+    <color name="ug_muted">#8E9CA7</color>
+    <color name="ug_teal">#2FC9CF</color>
+    <color name="ug_teal_deep">#7FDCDF</color>
+    <color name="ug_teal_soft">#123236</color>
+    <color name="ug_amber_bg">#2E2512</color>
+    <color name="ug_amber_text">#F2C875</color>
+    <color name="ug_amber_icon">#F5A524</color>
+    <color name="ug_hero_start">#0A555B</color>
+    <color name="ug_hero_end">#00848A</color>
+    <color name="ug_on_hero">#FFFFFF</color>
+    <color name="ug_on_hero_soft">#33FFFFFF</color>
+    <color name="ug_whatsapp">#1FA855</color>
+    <color name="ug_number_bg">#7FDCDF</color>
+    <color name="ug_number_text">#0A2540</color>
+    <color name="ug_button_teal">#00848A</color>
+</resources>

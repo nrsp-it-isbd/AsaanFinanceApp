@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_gradient"
+    android:filterTouchesWhenObscured="true">
+
+    <!-- Custom Header Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_pill_grey"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/auto_create_account_791"
+            android:textColor="@color/dark_navy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,SpUsage" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svSignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llSignupForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="32dp">
+
+            <!-- Profile Picture Section (Hidden: optional, only collected in financing form) -->
+            <LinearLayout
+                android:id="@+id/layoutProfilePictureSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:baselineAligned="false"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle_bg"
+                    android:padding="2dp"
+                    tools:ignore="UnusedAttribute">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfilePicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dummy_profile_image"
+                        app:civ_border_color="@color/border_slate_100"
+                        app:civ_border_width="4dp" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/auto_tap_to_select_photo_optio_794"
+                    android:textColor="@color/teal_brand"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <!-- Full Name -->
+            <TextView
+                android:id="@+id/tvFullNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/auto_full_name_795"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/ivUserIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_user"
+                    app:tint="@color/light_gray_label"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/ivUserIcon"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/auto_your_full_name_804"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tvUsernameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/auto_username_796"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/ivUserIcon2"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_user"
+                    app:tint="@color/light_gray_label"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/ivUserIcon2"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/auto_username_805"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvUsernameError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/str_username_already_exists"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+
+            <!-- CNIC Number -->
+            <TextView
+                android:id="@+id/tvCnicLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/auto_cnic_number_797"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/ivCnicIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_cnic"
+                    app:tint="@color/light_gray_label"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etCnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toEndOf="@id/ivCnicIcon"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/auto_xxxxx_xxxxxxx_x_792"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- DOB & CNIC Expiry Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- DOB -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDobLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:text="@string/auto_date_of_birth_798"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_input_field_selector"
+                        android:paddingHorizontal="12dp">
+
+                        <ImageView
+                            android:id="@+id/ivDobIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_calendar_month"
+                            app:tint="@color/light_gray_label"
+                            tools:ignore="ContentDescription" />
+
+                        <EditText
+                            android:id="@+id/etDob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_toEndOf="@id/ivDobIcon"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:hint="@string/auto_dd_mm_yyyy_806"
+                            android:paddingVertical="12dp"
+                            android:textColor="@color/dark_navy"
+                            android:textColorHint="@color/light_gray_label"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- CNIC Expiry -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvExpiryLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:text="@string/auto_cnic_expiry_799"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,SpUsage" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_input_field_selector"
+                        android:paddingHorizontal="12dp">
+
+                        <ImageView
+                            android:id="@+id/ivExpiryIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_calendar_month"
+                            app:tint="@color/light_gray_label"
+                            tools:ignore="ContentDescription" />
+
+                        <EditText
+                            android:id="@+id/etCnicExpiry"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_toEndOf="@id/ivExpiryIcon"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:hint="@string/auto_dd_mm_yyyy_806"
+                            android:paddingVertical="12dp"
+                            android:textColor="@color/dark_navy"
+                            android:textColorHint="@color/light_gray_label"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Gender -->
+            <TextView
+                android:id="@+id/tvGenderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/auto_gender_800"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_radio_button_custom"
+                    android:buttonTint="@color/color_radio_button_tint"
+                    android:checked="true"
+                    android:paddingVertical="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/str_male"
+                    android:textColor="@color/gray_text"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_radio_button_custom"
+                    android:buttonTint="@color/color_radio_button_tint"
+                    android:paddingVertical="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/str_female"
+                    android:textColor="@color/gray_text"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_radio_button_custom"
+                    android:buttonTint="@color/color_radio_button_tint"
+                    android:paddingVertical="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/str_other"
+                    android:textColor="@color/gray_text"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/tvPhoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/auto_phone_number_801"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/ivPhoneIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/light_gray_label"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/ivPhoneIcon"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/auto_03xxxxxxxxx_807"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Present Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_present_address"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_"
+                    android:textColor="#EF4444"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_etPresentAddress_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_home_24"
+                    app:tint="@color/light_gray_label" 
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etPresentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/iv_etPresentAddress_icon"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_present_address"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp" />
+            </RelativeLayout>
+
+            <!-- Permanent Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_permanent_address"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_"
+                    android:textColor="#EF4444"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_etPermanentAddress_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_home_24"
+                    app:tint="@color/light_gray_label" 
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etPermanentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/iv_etPermanentAddress_icon"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_permanent_address"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp" />
+            </RelativeLayout>
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/tvPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/auto_password_802"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/ivLockIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_key"
+                    app:tint="@color/light_gray_label"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/btnToggleVisibility"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_eye_hide"
+                    app:tint="@color/light_gray_label"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toStartOf="@id/btnToggleVisibility"
+                    android:layout_toEndOf="@id/ivLockIcon"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/auto_str_793"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Sign Up Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/auto_sign_up_account_803"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/teal_brand"
+                app:cornerRadius="14dp"
+                app:elevation="0dp"
+                app:rippleColor="@color/white" />
+
+
+            <!-- Already Have Account link -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_already_have_an_acco"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:text="@string/str_login"
+                    android:textColor="@color/teal_brand"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <!-- Footer -->
+            <LinearLayout
+                android:id="@+id/llFooterBranding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.2"
+                    android:text="@string/str_powered_by"
+                    android:textColor="@color/light_gray_label"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nrsp_logo" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+        android:baselineAligned="false">
+
+    <!-- Main Prominent Active Card Shimmer -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/auto_color_F3F4F6"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+        android:baselineAligned="false">
+
+            <!-- Title -->
+            <View
+                android:layout_width="150dp"
+                android:layout_height="11dp"
+                android:background="@color/auto_color_E5E7EB" />
+
+            <!-- Big bold amount -->
+            <View
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/auto_color_E5E7EB" />
+
+            <!-- Horizontal Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/auto_color_E5E7EB" />
+
+            <!-- Bottom columns section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- Left Column: Due Date -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+        android:baselineAligned="false">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="10dp"
+                        android:background="@color/auto_color_E5E7EB" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/auto_color_E5E7EB" />
+                </LinearLayout>
+
+                <!-- Middle Column: Loan Cycle -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+        android:baselineAligned="false">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="10dp"
+                        android:background="@color/auto_color_E5E7EB" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/auto_color_E5E7EB" />
+                </LinearLayout>
+
+                <!-- Right Column: Status -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="vertical"
+        android:baselineAligned="false">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="10dp"
+                        android:background="@color/auto_color_E5E7EB" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/auto_color_E5E7EB" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Asaan Services Header Shimmer -->
+    <View
+        android:layout_width="140dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/auto_color_E5E7EB" />
+
+    <!-- Horizontal Services Row Shimmer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!-- Button 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+        android:baselineAligned="false">
+            
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_pill_grey"
+                android:backgroundTint="@color/auto_color_F3F4F6"/>
+            <View
+                android:layout_width="70dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/auto_color_E5E7EB" />
+        </LinearLayout>
+
+        <!-- Button 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+        android:baselineAligned="false">
+            
+            <View
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_pill_grey"
+                android:backgroundTint="@color/auto_color_F3F4F6"/>
+            <View
+                android:layout_width="70dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/auto_color_E5E7EB" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Promotion Banner Shimmer -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/auto_color_F3F4F6"
+        app:cardCornerRadius="20dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+        android:baselineAligned="false">
+
+            <View
+                android:layout_width="220dp"
+                android:layout_height="16dp"
+                android:background="@color/auto_color_E5E7EB" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/auto_color_E5E7EB" />
+            
+            <View
+                android:layout_width="150dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/auto_color_E5E7EB" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_pill_grey"
+                android:backgroundTint="@color/auto_color_E5E7EB" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Discover Header Shimmer -->
+    <View
+        android:layout_width="100dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/auto_color_E5E7EB" />
+
+    <!-- Auto-scrolling Image Banner Shimmer -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/auto_color_F3F4F6"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="0dp">
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

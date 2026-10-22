@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_login_gradient"
+        android:baselineAligned="false">
+
+    <!-- ── Header (History style) ── -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="8dp"
+            android:background="@drawable/bg_pill_grey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+        tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_ledger"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_navy"
+        tools:ignore="SmallSp,SpUsage" />
+
+        <ImageView
+            android:id="@+id/btnViewDownloads"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:src="@drawable/baseline_folder_24"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            app:tint="@color/dark_navy"
+        tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/btnDownloadPdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/download_file"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_toStartOf="@id/btnViewDownloads"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            app:tint="@color/dark_navy"
+        tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLedger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:shimmer_auto_start="true">
+        <include layout="@layout/layout_shimmer_ledger" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLedger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/svParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layoutParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="visible"
+        android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/layoutLedgerData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Summary Hero Card                    -->
+            <!-- ══════════════════════════════════════ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_borrower_summary_843"
+                android:textColor="@color/dark_navy"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+        tools:ignore="SmallSp,SpUsage" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/auto_color_F4FBFB"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/auto_color_E0F2F1"
+                app:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+        android:baselineAligned="false">
+
+                    <!-- Total Due -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remaining_balance"
+                        android:textColor="@color/light_gray_label"
+                        android:textSize="12sp"
+                        android:alpha="0.85"
+        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/TotalDueAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/auto_loan_details_844"
+                        android:textColor="@color/dark_navy"
+                        android:textSize="22sp"
+                        android:fontFamily="sans-serif-black"
+        tools:ignore="SmallSp,SpUsage" />
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="14dp"
+                        android:background="@color/light_gray_border" />
+
+                    <!-- Borrower Info Rows -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/auto_borrower_name_845"
+                                android:textColor="@color/light_gray_label"
+                                android:textSize="11sp"
+                                android:alpha="0.8"
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvBorrowerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/dark_navy"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/auto_borrower_no_846"
+                                android:textColor="@color/light_gray_label"
+                                android:textSize="11sp"
+                                android:alpha="0.8"
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvBorrowerNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/dark_navy"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/light_gray_border" />
+
+                    <!-- Second Row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_product"
+                                android:textColor="@color/light_gray_label"
+                                android:textSize="11sp"
+                                android:alpha="0.8"
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvProduct"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/dark_navy"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loan_amount"
+                                android:textColor="@color/light_gray_label"
+                                android:textSize="11sp"
+                                android:alpha="0.8"
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvLoanAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/dark_navy"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Third Row -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/light_gray_border" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/str_cnic"
+                                android:textColor="@color/light_gray_label"
+                                android:textSize="11sp"
+                                android:alpha="0.8"
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvCnic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/dark_navy"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical"
+        android:baselineAligned="false">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/auto_total_recovered_847"
+                                android:textColor="@color/light_gray_label"
+                                android:textSize="11sp"
+                                android:alpha="0.8"
+        tools:ignore="SmallSp,SpUsage" />
+
+                            <TextView
+                                android:id="@+id/tvTotalRecovered"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/txt_empty_18"
+                                android:textColor="@color/auto_color_10B981"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Ledger Receipts Table Card           -->
+            <!-- ══════════════════════════════════════ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_ledger_schedule_848"
+                android:textColor="@color/dark_navy"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+        tools:ignore="SmallSp,SpUsage" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/auto_color_E5E7EB"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+        android:baselineAligned="false">
+
+                    <!-- Card Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+        android:baselineAligned="false">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="18dp"
+                            android:background="@color/teal_brand"
+                            android:layout_marginEnd="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_repayment_schedule"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <!-- Table Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/auto_color_F4FBFB"
+                        android:divider="@drawable/divider_vertical_light"
+                        android:showDividers="middle"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="0dp"
+        android:baselineAligned="false">
+
+                        <TextView
+                            android:id="@+id/txtHeaderInst"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="@string/auto_inst_849"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtHeaderDueDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/due_date"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtHeaderDueTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/auto_due_total_850"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtHeaderRecDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/auto_rec_date_851"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/txtHeaderRecAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="center"
+                            android:text="@string/auto_rec_amt_852"
+                            android:textColor="@color/auto_color_4B5563"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/auto_color_E5E7EB" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ledgerRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:minHeight="@dimen/_120sdp"
+                        android:nestedScrollingEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/txtNoDataFound"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="@string/no_data_found"
+                        android:textColor="@color/auto_color_9CA3AF"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+        tools:ignore="SmallSp,SpUsage" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- No receipts empty state -->
+            <TextView
+                android:id="@+id/txtNoReceipts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="32dp"
+                android:text="@string/no_receipts"
+                android:textColor="@color/auto_color_9CA3AF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawablePadding="16dp"
+                android:visibility="gone"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Payment Channels Header              -->
+            <!-- ══════════════════════════════════════ -->
+            <LinearLayout
+                android:id="@+id/layoutPaymentChannelsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"
+        android:baselineAligned="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_can_pay_by_using_the_following_channels"
+                    android:textColor="@color/auto_color_1F2937"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+        tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/you_can_pay_by_using_the_following_channels_urdu"
+                    android:textColor="@color/auto_color_6B7280"
+                    android:textSize="12sp"
+        tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <!-- ══════════════════════════════════════ -->
+            <!--  Dynamic Payment Channels              -->
+            <!-- ══════════════════════════════════════ -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPaymentChannelCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.assan.finance.activities.CnicScannerActivity">
+
+    <!-- Scrollable so the tips and the privacy note are visible on small screens and in Urdu -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+    <!-- Cancel Button -->
+
+    <ImageView
+        android:id="@+id/btnCancelScan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_pill_grey"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtTitle" 
+        tools:ignore="ContentDescription" />
+
+
+    <!-- Torch Button -->
+    <TextView
+        android:id="@+id/btnTorch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:padding="8dp"
+        android:text="@string/auto_str_661"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/txtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtTitle" 
+        tools:ignore="SmallSp,SpUsage" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/auto_scan_your_cnic_662"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" 
+        tools:ignore="SmallSp,SpUsage" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:paddingHorizontal="32dp"
+        android:text="@string/auto_automatically_fill_your_l_663"
+        android:textColor="@color/auto_color_666666"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" 
+        tools:ignore="SmallSp,SpUsage" />
+
+
+    <!-- CameraX Preview in Rounded Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cameraCard"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubtitle">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivCapturedPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" 
+        tools:ignore="ContentDescription" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- CNIC Frame Overlay -->
+    <View
+        android:id="@+id/cnicFrameOverlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cnic_frame_border"
+        app:layout_constraintBottom_toBottomOf="@id/cameraCard"
+        app:layout_constraintEnd_toEndOf="@id/cameraCard"
+        app:layout_constraintStart_toStartOf="@id/cameraCard"
+        app:layout_constraintTop_toTopOf="@id/cameraCard" />
+
+    <!-- Scan line animation -->
+    <View
+        android:id="@+id/scanLine"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/auto_color_4CAF50"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/cnicFrameOverlay"
+        app:layout_constraintStart_toStartOf="@id/cnicFrameOverlay"
+        app:layout_constraintTop_toTopOf="@id/cnicFrameOverlay" />
+
+    <!-- Hint text -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCameraHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:text="@string/auto_align_the_front_side_of_y_664"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cameraCard" />
+
+    <!-- Capture Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/auto_capture_front_665"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCameraHint" />
+
+    <!-- Checklist -->
+    <TextView
+        android:id="@+id/txtChecklist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/auto_name_n_cnic_number_n_dat_666"
+        android:textColor="@color/auto_color_333333"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCapture" 
+        tools:ignore="SmallSp,SpUsage" />
+
+    <!-- Tips Box -->
+    <LinearLayout
+        android:id="@+id/layoutTips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/auto_color_F5F5F5"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtChecklist"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/auto_tips_for_best_results_667"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/auto_place_your_cnic_on_a_fla_668"
+            android:textColor="@color/auto_color_555555"
+            android:textSize="12sp" 
+        tools:ignore="SmallSp,SpUsage" />
+    </LinearLayout>
+
+    <!-- Trust Message -->
+    <TextView
+        android:id="@+id/txtTrust"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/auto_your_cnic_information_is_669"
+        android:textColor="@color/auto_color_888888"
+        android:textSize="11sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutTips"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" 
+        tools:ignore="SmallSp,SpUsage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Processing overlay -->
+    <LinearLayout
+        android:id="@+id/processingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/auto_color_E6FFFFFF"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:baselineAligned="false">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminateTint="@color/colorPrimary" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtProcessingHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/auto_extracting_cnic_data_670"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

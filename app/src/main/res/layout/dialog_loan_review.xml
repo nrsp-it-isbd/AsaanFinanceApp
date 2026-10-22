@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="UnusedAttribute">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pill_light_green"
+        android:backgroundTint="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/auto_review_amp_edit_loan_deta_756"
+                android:textColor="@color/auto_color_1E293B"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <!-- Applicant Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_applicant_name"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewApplicantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_applicant_name"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Applicant CNIC -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_applicant_cnic"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewApplicantCnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_applicant_cnic"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- CNIC Expiry -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_cnic_expiry"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewCnicExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_cnic_expiry"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Date of Birth -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_date_of_birth"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_date_of_birth"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Phone Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_phone_number"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_phone_number"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Gender -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_gender"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_gender"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Marital Status -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_marital_status"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewMaritalStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_marital_status"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Present Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_present_address"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewPresentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_present_address"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Permanent Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_permanent_address"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewPermanentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_permanent_address"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- District -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_district"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_district"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Tehsil -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_tehsil"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewTehsil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_tehsil"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Bank Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_bank_name"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_bank_name"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Account Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_account_number"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewAccountNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_account_number"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Branch Code -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_branch_code"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewBranchCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_branch_code"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Branch Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_branch_address"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewBranchAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_branch_address"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Purpose of Loan -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_purpose_of_loan"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewPurposeOfLoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_purpose_of_loan"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Source of Income -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_source_of_income"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewSourceOfIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_source_of_income"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Loan Amount -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_loan_amount"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_loan_amount"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Loan Duration -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_loan_duration"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_loan_duration"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Business Duration (Years) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_business_duration_years"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewBusinessDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_business_duration_years"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Business Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_business_address"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewBusinessAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_business_address"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Business City -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_business_city"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewBusinessCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_business_city"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Occupation Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_occupation_type"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewOccupationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_occupation_type"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- Specific Occupation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="@string/str_specific_occupation"
+                android:textColor="@color/light_gray_label"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input_field_selector"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/etReviewSpecificOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_specific_occupation"
+                    android:inputType="text"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/dark_navy"
+                    android:textColorHint="@color/light_gray_label"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <!-- Buttons -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancelReview"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_cancel"
+                    android:textColor="@color/auto_color_475569"
+                    app:cornerRadius="8dp"
+                    app:strokeColor="@color/auto_color_CBD5E1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnConfirmReview"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:text="@string/auto_confirm_amp_fill_768"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/auto_color_2E7D32"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <!-- Bottom Sheet Drag Handle -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@color/auto_color_D1D5DB" />
+
+        <!-- ── Gradient Header ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_login_gradient"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/dummy_profile_image"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/str_assan_user"
+                android:textColor="@color/light_gray_label"
+                android:textSize="20sp"
+                tools:ignore="SmallSp,SpUsage" />
+
+            <TextView
+                android:id="@+id/tvProfileBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_pill_light_teal"
+                android:fontFamily="sans-serif-medium"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="4dp"
+                android:text="@string/auto_assan_member_774"
+                android:textColor="@color/auto_color_004D5B"
+                android:textSize="11sp"
+                tools:ignore="SmallSp,SpUsage" />
+
+        </LinearLayout>
+
+        <!-- ── Details Body ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp">
+
+            <!-- Asaan ID -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_assan_logo"
+                    app:tint="@color/teal_brand"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/lblAssanId"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/auto_assan_id_775"
+                    android:textColor="@color/auto_color_64748B"
+                    android:textSize="13sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvProfileAssanId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/auto_0000_776"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/auto_color_F1F5F9" />
+
+            <!-- CNIC -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_cnic"
+                    app:tint="@color/teal_brand"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/lblCnic"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/str_cnic_number"
+                    android:textColor="@color/auto_color_64748B"
+                    android:textSize="13sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvProfileCnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/str_00000_0000000_0"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/auto_color_F1F5F9" />
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/teal_brand"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/lblPhone"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/auto_phone_777"
+                    android:textColor="@color/auto_color_64748B"
+                    android:textSize="13sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvProfilePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/str_92_300_0000000"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/auto_color_F1F5F9" />
+
+            <!-- Date of Birth -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_calendar_month"
+                    app:tint="@color/teal_brand"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/lblDob"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/str_date_of_birth"
+                    android:textColor="@color/auto_color_64748B"
+                    android:textSize="13sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvProfileDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/auto_01_jan_1990_778"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/auto_color_F1F5F9" />
+
+            <!-- Gender -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_user"
+                    app:tint="@color/teal_brand"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/lblGender"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/str_gender"
+                    android:textColor="@color/auto_color_64748B"
+                    android:textSize="13sp"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvProfileGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/str_male"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── Divider ── -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/border_slate_100" />
+
+        <!-- ── Action Buttons ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="36dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/str_edit_profile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="@color/teal_brand"
+                app:cornerRadius="14dp"
+                app:elevation="0dp"
+                app:icon="@drawable/ic_edit"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="@color/white" />
+
+            <TextView
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/auto_close_714"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,SpUsage" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

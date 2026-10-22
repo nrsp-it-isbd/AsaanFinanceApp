@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <!-- App Bar / Header: scrolls away with the content so the whole Home screen scrolls.
+         fitsSystemWindows + statusBarForeground keep a solid strip behind the status bar, so
+         scrolled content (e.g. the ticker) never shows under the clock/battery icons
+         (the status bar is transparent on Android 15+ edge-to-edge). -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:statusBarForeground="@color/white"
+        app:liftOnScroll="false"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp">
+
+                <!-- Left side: profile + name & ID -->
+                <LinearLayout
+                    android:id="@+id/layoutProfileHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/layoutRightContainer"
+                    android:layout_marginEnd="8dp"
+                    android:layout_centerVertical="true"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_user"
+                        app:civ_border_color="@color/teal_brand"
+                        app:civ_border_width="1.5dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:baselineAligned="false"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvHomeUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/auto_muhammad_usman_709"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tvHomeAssanId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="@string/auto_cnic_n_a_830"
+                            android:textColor="@color/light_gray_label"
+                            android:textSize="12sp"
+                            android:visibility="visible"
+                            tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tvBorrowerNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/auto_borrower_no_n_a_831"
+                            android:textColor="@color/light_gray_label"
+                            android:textSize="12sp"
+                            android:visibility="visible"
+                            tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Right side: notification & hamburger menu -->
+                <LinearLayout
+                    android:id="@+id/layoutRightContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        tools:ignore="UnusedAttribute">
+
+                        <ImageView
+                            android:id="@+id/ivNotification"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_notification"
+                            app:tint="@color/dark_navy"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvNotificationBadge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|end"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/bg_red_dot"
+                            android:gravity="center"
+                            android:minWidth="16dp"
+                            android:minHeight="16dp"
+                            android:paddingStart="4dp"
+                            android:paddingEnd="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp,SpUsage"
+                            tools:text="9+"
+
+                            tools:visibility="visible" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/ivLogout"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_logout"
+                        app:tint="@color/dark_navy"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Toggle button container (right-aligned, below logout button) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingHorizontal="20dp"
+            app:layout_scrollFlags="scroll">
+
+            <TextView
+                android:id="@+id/tvHomeLangToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="اردو | EN"
+                android:textColor="@color/teal_brand"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Marquee Text -->
+        <TextView
+            android:id="@+id/tvMarqueeInfo"
+            app:layout_scrollFlags="scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/auto_color_FFF3E0"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:fontFamily="@font/urdufont"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/auto_get_instant_agricultural_832"
+            android:textColor="@color/auto_color_E65100"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,SpUsage" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:shimmer_auto_start="true">
+
+        <include layout="@layout/layout_shimmer_home" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/svHomeContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Main Prominent Active Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardActiveDisbursed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_home_active_card"
+                        android:baselineAligned="false"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+
+                        android:paddingBottom="10dp">
+
+                        <!-- Title -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.05"
+                            android:text="@string/auto_active_disbursed_amount_833"
+                            android:textColor="@color/light_gray_label"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp,SpUsage" />
+
+                        <!-- Big bold amount -->
+                        <TextView
+                            android:id="@+id/tvActiveAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="@string/str_pkr_0"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp,SpUsage" />
+
+                        <!-- Horizontal Divider -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/light_gray_border" />
+
+                        <!-- Bottom columns section -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+                            <!-- Left Column: Due Date -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:baselineAligned="false"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="0.03"
+                                    android:text="@string/str_due_date"
+                                    android:textColor="@color/light_gray_label"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="SmallSp,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/tvDueDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/auto_18_sep_2024_834"
+                                    android:textColor="@color/dark_navy"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="SmallSp,SpUsage" />
+                            </LinearLayout>
+
+                            <!-- Middle Column: Loan Cycle -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.2"
+                                android:baselineAligned="false"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvLoanCycleTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="0.03"
+                                    android:text="@string/auto_loan_cycle_835"
+                                    android:textColor="@color/light_gray_label"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="SmallSp,SpUsage" />
+
+                                <TextView
+                                    android:id="@+id/tvLoanCycleText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/auto_first_cycle_836"
+                                    android:textColor="@color/dark_navy"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="SmallSp,SpUsage" />
+                            </LinearLayout>
+
+                            <!-- Right Column: Status -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:baselineAligned="false"
+                                android:gravity="end"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:letterSpacing="0.03"
+                                    android:text="@string/auto_status_837"
+                                    android:textColor="@color/light_gray_label"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="SmallSp,SpUsage" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:baselineAligned="false"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <!-- Small teal status dot -->
+                                    <View
+                                        android:layout_width="6dp"
+                                        android:layout_height="6dp"
+                                        android:layout_marginEnd="6dp"
+                                        android:background="@drawable/bg_teal_dot" />
+
+                                    <TextView
+                                        android:id="@+id/tvLoanStatusText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="@string/auto_disbursed_838"
+                                        android:textColor="@color/teal_brand"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="SmallSp,SpUsage" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Scam Awareness Banner -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardScamAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:cardBackgroundColor="#FFF3E0"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#FFB74D"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center_vertical">
+                        
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/ic_shield_check"
+                            app:tint="#F57C00"
+                            tools:ignore="ContentDescription" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/scam_alert_title"
+                                android:textColor="#E65100"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/scam_alert_desc"
+                                android:textColor="#E65100"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Asaan Services Header -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/str_assan_services"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+                <!-- Horizontal Services Row (Apply, Store, Tools, Status) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="28dp"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Apply Button -->
+                    <LinearLayout
+                        android:id="@+id/btnApplyHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_squircle_pink"
+                            android:clipToOutline="true"
+                            android:duplicateParentState="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            tools:ignore="UnusedAttribute">
+
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_money_bag"
+                                tools:ignore="ContentDescription" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tvApplyHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lineSpacingExtra="2dp"
+                            android:minLines="2"
+                            android:text="@string/loan_application_urdu"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="11.5sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <!-- User Guide Button -->
+                    <LinearLayout
+                        android:id="@+id/btnUserGuideHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_squircle_purple"
+                            android:clipToOutline="true"
+                            android:duplicateParentState="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            tools:ignore="UnusedAttribute">
+
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_info"
+                                app:tint="@color/white"
+                                tools:ignore="ContentDescription" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tvUserGuideHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lineSpacingExtra="2dp"
+                            android:minLines="2"
+                            android:text="@string/user_guide"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="11.5sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+
+                    <!-- Status Button -->
+                    <LinearLayout
+                        android:id="@+id/btnStatusHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_squircle_blue"
+                            android:clipToOutline="true"
+                            android:duplicateParentState="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            tools:ignore="UnusedAttribute">
+
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_scroll"
+                                tools:ignore="ContentDescription" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tvStatusHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lineSpacingExtra="2dp"
+                            android:minLines="2"
+                            android:text="@string/auto_loan_ledger_842"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="11.5sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Promotion Banner (Static) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardPromotionBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@color/background_gradient_light"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/light_gray_border"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvPromoTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/auto_assan_digital_loan_scheme_839"
+                            android:textColor="@color/dark_navy"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tvPromoDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/auto_get_interest_free_micro_l_840"
+                            android:textColor="@color/light_gray_label"
+                            android:textSize="12sp"
+                            tools:ignore="SmallSp,SpUsage" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPromoApply"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="12dp"
+                            android:backgroundTint="@color/teal_brand"
+                            android:text="@string/auto_apply_now_841"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:cornerRadius="18dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:text="@string/str_discover"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,SpUsage" />
+
+
+                <!-- Auto-scrolling Image Banner -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginBottom="16dp">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="1dp"
+                        app:strokeWidth="0dp">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/vpPromoBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabVoiceChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_mic"
+        app:backgroundTint="@color/teal_brand"
+        app:tint="@color/white"
+        tools:ignore="ContentDescription" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login_gradient"
+        android:baselineAligned="false">
+
+    <!-- Header Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="8dp"
+            android:background="@drawable/bg_pill_grey"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" 
+        tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/auto_program_introduction_779"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/auto_color_1F2937" 
+        tools:ignore="SmallSp,SpUsage" />
+    </RelativeLayout>
+
+    <!-- Shimmer Loader Container -->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerIntro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_auto_start="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+        android:baselineAligned="false">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="24dp"
+                android:background="@color/light_gray_border"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/light_gray_border"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/light_gray_border"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/light_gray_border" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <!-- Main Content Container -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollIntroContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+        android:baselineAligned="false">
+
+            <!-- Written Introduction Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/light_gray_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+        android:baselineAligned="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_assan_finance_program_780"
+                        android:textColor="@color/auto_color_1E293B"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/aboutUsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6dp"
+                        android:text="@string/auto_assan_finance_provides_mi_781"
+                        android:textColor="@color/auto_color_475569"
+                        android:textSize="14sp" 
+        tools:ignore="SmallSp,SpUsage" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Audio Introduction Player -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/light_gray_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+        android:baselineAligned="false">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabPlayAudio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share"
+                        app:backgroundTint="@color/auto_color_2E7D32"
+                        app:tint="@color/white"
+                        app:fabSize="mini" 
+        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/auto_listen_to_program_intro_782"
+                            android:textColor="@color/auto_color_1E293B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tvAudioStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/auto_press_play_to_listen_634"
+                            android:textColor="@color/auto_color_64748B"
+                            android:textSize="12sp" 
+        tools:ignore="SmallSp,SpUsage" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Video Introduction Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/light_gray_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+        android:baselineAligned="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_watch_introduction_video_783"
+                        android:textColor="@color/auto_color_1E293B"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" 
+        tools:ignore="SmallSp,SpUsage" />
+
+                    <!-- Simulated Video Viewport -->
+                    <FrameLayout
+                        android:id="@+id/layoutVideoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/black"
+        tools:ignore="UnusedAttribute">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/logo"
+                            android:alpha="0.4" 
+        tools:ignore="ContentDescription" />
+
+                        <!-- Center Play Button Overlay -->
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_cnic_card_24"
+                            app:tint="@color/white" 
+        tools:ignore="ContentDescription" />
+                    </FrameLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

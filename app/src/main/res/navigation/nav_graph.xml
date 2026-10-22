@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/assanLogin">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.assan.finance.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_voiceChat"
+            app:destination="@id/voiceChatFragment" />
+
+        <action
+            android:id="@+id/action_home_to_assanDashboard"
+            app:destination="@id/assanDashboard"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_to_loanLedgerFragment"
+            app:destination="@id/loanLedgerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/voiceChatFragment"
+        android:name="com.assan.finance.ui.chat.VoiceChatFragment"
+        android:label="Asaan AI Assistant"
+        tools:layout="@layout/fragment_voice_chat" />
+
+    <fragment
+        android:id="@+id/assanDashboard"
+        android:name="com.assan.finance.ui.dashboard.AssanDashboardFragment"
+        android:label="Asaan Dashboard"
+        tools:layout="@layout/fragment_assan_dashboard" />
+
+    <fragment
+        android:id="@+id/assanLogin"
+        android:name="com.assan.finance.ui.auth.AssanLoginFragment"
+        android:label="Asaan Login"
+        tools:layout="@layout/fragment_assan_login">
+        <action
+            android:id="@+id/action_assanLogin_to_assanSignup"
+            app:destination="@id/assanSignup"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_assanLogin_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/assanLogin"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/assanSignup"
+        android:name="com.assan.finance.ui.auth.AssanSignupFragment"
+        android:label="Asaan Signup"
+        tools:layout="@layout/fragment_assan_signup" />
+
+    <fragment
+        android:id="@+id/loanLedgerFragment"
+        android:name="com.assan.finance.fragments.LoanLedgerFragment"
+        android:label="Loan Ledger"
+        tools:layout="@layout/fragment_loan_ledger">
+        <action
+            android:id="@+id/action_loanLedgerFragment_to_downloadsFragment"
+            app:destination="@id/downloadsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.assan.finance.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_feedbackFragment"
+            app:destination="@id/feedbackFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.assan.finance.fragments.FeedbackFragment"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.assan.finance.fragments.UpdateProfileFragment"
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.assan.finance.fragments.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.assan.finance.fragments.AboutUsFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/termsConditionsFragment"
+        android:name="com.assan.finance.fragments.TermsConditionsFragment"
+        android:label="Terms &amp; Conditions"
+        tools:layout="@layout/fragment_terms_conditions" />
+
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="com.assan.finance.fragments.UpdatePasswordFragment"
+        android:label="Update Password"
+        tools:layout="@layout/fragment_update_password" />
+
+    <fragment
+        android:id="@+id/downloadsFragment"
+        android:name="com.assan.finance.fragments.DownloadsFragment"
+        android:label="Downloads"
+        tools:layout="@layout/fragment_downloads" />
+
+</navigation>

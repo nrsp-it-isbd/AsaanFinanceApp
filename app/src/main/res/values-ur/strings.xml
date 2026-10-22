@@ -1,0 +1,1308 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name" translatable="false">Asaan Finance</string>
+    <string name="open" translatable="false">کھولیں</string>
+    <string name="close" translatable="false">بند کریں</string>
+    <string name="back" translatable="false" />
+    <string-array name="months">
+        <item>منتخب کریں</item>
+        <item>جنوری</item>
+        <item>فروری</item>
+        <item>مارچ</item>
+        <item>اپریل</item>
+        <item>مئی</item>
+        <item>جون</item>
+        <item>جولائی</item>
+        <item>اگست</item>
+        <item>ستمبر</item>
+        <item>اکتوبر</item>
+        <item>نومبر</item>
+        <item>دسمبر</item>
+    </string-array>
+    <string-array name="Type_of_loan_catagory">
+        <item>پہلی فنانسنگ</item>
+        <item>دہرائی گئی فنانسنگ</item>
+    </string-array>
+    <string-array name="Bank_name">
+        <item>National Bank of Pakistan (NBP)</item>
+        <item>Habib Bank Limited (HBL)</item>
+        <item>United Bank Limited (UBL)</item>
+        <item>MCB Bank Limited</item>
+        <item>Allied Bank Limited (ABL)</item>
+        <item>Bank Alfalah Limited</item>
+        <item>Askari Bank Limited</item>
+        <item>Faysal Bank Limited</item>
+        <item>Bank Al-Habib Limited</item>
+        <item>Soneri Bank Limited</item>
+        <item>NRSP Microfinance Bank</item>
+    </string-array>
+    <string-array name="Type_of_loan_options">
+        <item>فنانسنگ کی قسم</item>
+        <item>زراعت</item>
+        <item>مویشی</item>
+        <item>کاروبار</item>
+    </string-array>
+    <string-array name="yes_no_array">
+        <item>ہاں</item>
+        <item>نہیں</item>
+    </string-array>
+    <string-array name="verity">
+        <item>قسم</item>
+        <item>Kainat-1121</item>
+        <item>Supri</item>
+        <item>1509</item>
+        <item>Al-Khalid</item>
+        <item>Rice</item>
+    </string-array>
+    <string-array name="Duration_of_Loan">
+        <item>6 ماہ</item>
+        <item>12 ماہ</item>
+        <item>18 ماہ</item>
+    </string-array>
+    <string name="aboutUsText" translatable="false">&lt;b&gt;آسان فنانس: پروگرام کا تعارف&lt;/b&gt;&lt;br&gt;&lt;br&gt;آسان فنانس پاکستان کے لیے ڈیزائن کی گئی ایک ڈیجیٹل فنانسنگ ایپلی کیشن ہے، جو صارفین کو ضرورت کے وقت آسان، تیز اور محفوظ مالی حل فراہم کرتی ہے۔&lt;br&gt;&lt;br&gt;ہمارا مقصد ان پاکستانیوں کو سب سے آسان اور محفوظ طریقے سے، آسان اقساط پر بلا سود فنانسنگ کے ذریعے فوری مالی امداد فراہم کرنا ہے جو پیچیدہ روایتی بینکاری نظام سے تنگ آچکے ہیں۔ کسی بھی اچانک ضرورت یا کاروباری تقاضے کے لیے، آپ منٹوں میں گھر بیٹھے فنانسنگ کے لیے درخواست دے سکتے ہیں۔&lt;br&gt;&lt;br&gt;مکمل قانونی تحفظ جو آپ کو مارکیٹ میں موجود غیر قانونی ایپس سے محفوظ رکھتا ہے۔ بلا سود فنانسنگ اور شفاف شرائط (کوئی پوشیدہ چارجز نہیں)۔ نئے کلائنٹس کے لیے ایک مخصوص ابتدائی حد، جبکہ وقت پر ادائیگی کرنے والے باقاعدہ کلائنٹس کے لیے فنانسنگ کی حد میں اضافہ کیا جاتا ہے۔&lt;br&gt;&lt;br&gt;منظور شدہ رقم براہ راست آپ کے ایزی پیسہ، جاز کیش، یا بینک اکاؤنٹ میں منتقل کی جاتی ہے۔ آپ کے ذاتی ڈیٹا اور پرائیویسی کے تحفظ کو قابل اطلاق قوانین اور ضوابط کے مطابق ترجیح دی جاتی ہے۔&lt;br&gt;&lt;br&gt;آسان فنانس کا مشن پاکستان میں ڈیجیٹل فنانسنگ کو شفاف، سستا اور آسان بنانا ہے۔ ہم اپنے باقاعدہ صارفین کی وفاداری کی قدر کرتے ہیں اور انہیں بہتر مالی سہولیات فراہم کرتے ہیں تاکہ انہیں مشکل وقت میں کہیں اور نہ بھٹکنا پڑے۔</string>
+    <string name="aboutUsUrduText" translatable="false">&lt;b&gt;آسان فنانس: پروگرام کا تعارف&lt;/b&gt;&lt;br&gt;&lt;br&gt;آسان فنانس پاکستان کے لیے ڈیزائن کی گئی ایک ڈیجیٹل فنانسنگ ایپلی کیشن ہے، جو صارفین کو ضرورت کے وقت آسان، تیز، اور محفوظ مالی حل فراہم کرتی ہے۔&lt;br&gt;&lt;br&gt;ہمارا مقصد ان پاکستانیوں کو سب سے آسان اور محفوظ طریقے سے، آسان اقساط پر بلا سود فنانسنگ کے ذریعے فوری مالی امداد فراہم کرنا ہے جو پیچیدہ روایتی بینکاری نظام سے تنگ ہیں۔ کسی بھی اچانک ضرورت یا کاروباری تقاضے کے لیے، آپ گھر بیٹھے چند منٹوں میں فنانسنگ کے لیے اپلائی کر سکتے ہیں۔&lt;br&gt;&lt;br&gt;مکمل قانونی تحفظ جو آپ کو مارکیٹ میں موجود غیر قانونی ایپس سے محفوظ رکھتا ہے۔ بلا سود فنانسنگ اور شفاف شرائط (کوئی پوشیدہ چارجز نہیں)۔ نئے کلائنٹس کے لیے ایک مخصوص ابتدائی حد، جبکہ وقت پر ادائیگی کرنے والے پرانے کلائنٹس کے لیے فنانسنگ کی حد بڑھا دی جاتی ہے۔&lt;br&gt;&lt;br&gt;منظور شدہ رقم براہ راست آپ کے ایزی پیسہ، جاز کیش، یا بینک اکاؤنٹ میں منتقل کی جاتی ہے۔ آپ کے ذاتی ڈیٹا اور رازداری کے تحفظ کو قابل اطلاق قوانین اور ضوابط کے مطابق ترجیح دی جاتی ہے۔&lt;br&gt;&lt;br&gt;آسان فنانس کا مشن پاکستان میں ڈیجیٹل لینڈنگ کو شفاف، سستا اور آسان بنانا ہے۔ ہم اپنے پرانے اور وفادار صارفین کی قدر کرتے ہیں اور انہیں بہتر مالی سہولیات فراہم کرتے ہیں تاکہ انہیں مشکل وقت میں کہیں اور بھٹکنا نہ پڑے۔</string>
+    <string name="aboutUsUrduHeadingText" translatable="false">آسان فنانس کا تعارف</string>
+    <string name="termsAndConditionsUrdu" translatable="false">میں ضمانت دیتا/دیتی ہوں کہ میں درج ذیل معاہدے کی پابندی کروں گا۔
+1.		این آر ایس پی کی سہولت ان ممبران کو دستیاب نہیں ہوگی جنہوں نے خود یا ان کے گھر کے کسی فرد نے کسی سرکاری یا غیر سرکاری ادارے سے نقد یا جنس کی صورت میں کسی بھی قسم کی فنانسنگ حاصل کی ہو اور اسے واپس نہ کیا ہو۔
+2.		صارف اس بات کی ضمانت دیتا ہے کہ وہ فنانسنگ کا صحیح استعمال کرے گا اور مقررہ تاریخ تک اپنی اور اپنے گروپ/تنظیم کے ممبران کی فنانسنگ کی بروقت واپسی کو یقینی بنائے گا۔
+3.		اگر صارف وقت پر فنانسنگ واپس کرنے میں ناکام رہتا ہے، تو این آر ایس پی ادارہ صارف کے خلاف قانونی کارروائی کرے گا اور اصل رقم کے ساتھ ساتھ عدالتی اخراجات بشمول وکیل کی فیس وصول کرنے کا مجاز ہوگا۔
+4.		صارف وصولی کی رقم بینک/ایجنٹ (HBL Konnect، Easy Paisa، Jazz Cash) میں جمع کرائے گا اور اگر ادارے کے نمائندے کے پاس جمع کرائی گئی ہے تو رسید حاصل کرے گا۔ اگر صارف وصولی کی رقم ایجنٹ (HBL Konnect، Easy Paisa، Jazz Cash) کے پاس جمع کراتا ہے تو اسے کوڈ موصول ہونے تک موبائل ایجنٹ کی دکان نہیں چھوڑنی چاہیے، بصورت دیگر ادارہ ذمہ دار نہیں ہوگا۔
+5.		منافع: صارف این آر ایس پی پالیسی کے مطابق فنانسنگ کی رقم پر منافع ادا کرنے کا پابند ہوگا۔
+6.		مخصوص فنانسنگ کے ساتھ تکافل فراہم کیا جاتا ہے۔
+7.		صارف کسی عدالت سے کسی بھی قسم کا حکم امتناعی (Stay Order) حاصل نہیں کرے گا اور کوئی قانونی کارروائی نہیں کرے گا۔
+8.		اگر صارف ادارے کے خلاف کوئی جھوٹا یا بے بنیاد دیوانی یا فوجداری مقدمہ دائر کرتا ہے، تو وہ ادارے کو ہرجانہ اور اخراجات ادا کرنے کا پابند ہوگا۔
+9.		صارف کے گھر کے کسی فرد کی موت کی صورت میں، این آر ایس پی فنانسنگ کی قسط کو 7 دن کے لیے ملتوی کر دے گا۔
+10.		این آر ایس پی صارف اور اس کے گھر والوں سے متعلق معلومات کسی ادارے یا فرد کو فراہم نہیں کرے گا۔ تاہم، این آر ایس پی حکومت پاکستان کے اداروں کو یہ معلومات فراہم کرنے کا پابند ہوگا۔
+11.		صارف این آر ایس پی کو فنانسنگ پروگرام کو فروغ دینے کے لیے مختلف رپورٹس میں اپنی تصویر اور دیگر اسناد استعمال کرنے کی اجازت دیتا ہے۔
+12.		صارف کو فنانسنگ کے حصول اور واپسی کے دوران غیر ضروری مشکلات کے خلاف این آر ایس پی کے اعلیٰ حکام سے شکایت کرنے کا حق حاصل ہوگا۔
+13.		ممبر اور ضامن فنانسنگ کے استعمال کا جائزہ لینے کے لیے این آر ایس پی کے عملے کو ہر ممکن مدد اور تعاون فراہم کریں گے۔
+14.		میں تسلیم کرتا ہوں کہ ادارے کے عملے نے مجھے میری تمام ذمہ داریوں اور حقوق سے آگاہ کر دیا ہے۔
+15.		این آر ایس پی ادارہ بطور ضمانت صارف سے ایک پوسٹ ڈیٹڈ چیک لے گا۔ فنانسنگ کی واپسی پر، این آر ایس پی ادارہ صارف کے مطالبے پر چیک منسوخ اور واپس کرنے کا پابند ہوگا۔
+16.		اگر صارف فنانسنگ کی مدت کے دوران اپنا کاروبار تبدیل یا بند کرتا ہے، تو این آر ایس پی ادارے کو صارف سے تمام بقایا جات (اصل رقم کے ساتھ منافع) وصول کرنے کا حق ہوگا۔
+17.		صارف فنانسنگ کی رقم صرف بتائے گئے مقصد کے لیے استعمال کرے گا۔ اور اگر فراہم کردہ معلومات میں سے کوئی بھی غلط ثابت ہوتی ہے تو ادارہ فنانسنگ کی فراہمی روکنے کا مجاز ہے اور حقائق کو چھپانے یا کسی بھی جعلسازی کی صورت میں قواعد و ضوابط کے مطابق کارروائی کر سکتا ہے۔
+18.		پاکستان کے قوانین کے مطابق، صارف فنانسنگ کو غیر قانونی سرگرمیوں، جبری/چائلڈ لیبر، کالے دھن، رشوت خوری، دہشت گردی، جوئے، جنگلات کو نقصان پہنچانے، اسلحہ/شراب/تمباکو کے کاروبار، کیپٹا جیسی فصلوں کے لیے ممنوعہ ادویات کے استعمال، اور جانوروں کی محفوظ انواع کو نقصان پہنچانے کے لیے استعمال نہیں کرے گا۔
+19.		مجھے کوئی اعتراض نہیں ہوگا اگر این آر ایس پی نادرا سے ویری سس کے ذریعے میرے شناختی کارڈ کی معلومات کی تصدیق کرے۔</string>
+    <string name="termsAndConditionsHeadingUrdu" translatable="false">شرائط و ضوابط</string>
+    <string name="terms_and_conditions" translatable="false">شرائط و ضوابط</string>
+    <string name="AboutUs" translatable="false">ہمارے بارے میں</string>
+    <string name="forgotPassword" translatable="false">پاسورڈ بھول گئے؟</string>
+    <string name="loan_application" translatable="false">فنانسنگ درخواست</string>
+    <string name="first_loan_repeated_loan" translatable="false">پہلی فنانسنگ / دہرائی گئی فنانسنگ</string>
+    <string name="tenancy_agreement" translatable="false">کرایہ داری معاہدہ (ایکڑ)</string>
+    <string name="take_photo" translatable="false">تصویر لیں</string>
+    <string name="start_capture" translatable="false">کیپچر شروع کریں</string>
+    <string name="stop_capture" translatable="false">کیپچر بند کریں</string>
+    <string name="check_ledger" translatable="false">لیجر چیک کریں</string>
+    <string name="user_guide" translatable="false">صارف گائیڈ</string>
+    <string name="feedback" translatable="false">رائے</string>
+    <string name="share" translatable="false">شیئر کریں</string>
+    <string name="about_us" translatable="false">ہمارے بارے میں</string>
+    <string name="terms_and_condition" translatable="false">شرائط و ضوابط</string>
+    <string name="change_password" translatable="false">پاسورڈ تبدیل کریں</string>
+    <string name="logout" translatable="false">لاگ آؤٹ</string>
+    <string name="exit" translatable="false">باہر نکلیں</string>
+    <string name="check_loan_status" translatable="false">فنانسنگ کی حیثیت چیک کریں</string>
+    <string name="book_agri_input" translatable="false">زرعی ان پٹ بک کریں</string>
+    <string name="book_machinery" translatable="false">مشینری بک کریں</string>
+    <string name="book_machinery_urdu" translatable="false">مشینری آرڈر کریں</string>
+    <string name="book_sale_storage_both" translatable="false">فروخت / ذخیرہ / دونوں بک کریں</string>
+    <string name="generate_deposit_slip" translatable="false">ڈیپازٹ سلپ بنائیں</string>
+    <string name="loan_app_form" translatable="false">فنانسنگ فارم</string>
+    <string name="loan_app_form_urdu" translatable="false">فنانسنگ درخواست فارم</string>
+    <string name="loan_app_guide_title" translatable="false">فنانسنگ درخواست گائیڈ</string>
+    <string name="loan_app_guide_desc" translatable="false">براہ کرم شریعت کے مطابق یا بلا سود، قسطوں میں قابلِ واپسی فنانسنگ کے لیے درخواست دینے کے لیے نیچے دیا گیا فارم درست معلومات کے ساتھ احتیاط سے پُر کریں۔ ستارہ (*) والی تمام فیلڈز لازمی ہیں۔</string>
+    <string name="applicant_name" translatable="false">درخواست دہندہ کا نام</string>
+    <string name="loan_use_by_gender" translatable="false">جنس کے لحاظ سے فنانسنگ</string>
+    <string name="gender" translatable="false">جنس</string>
+    <string name="male" translatable="false">مرد</string>
+    <string name="female" translatable="false">خاتون</string>
+    <string name="applicant_cnic" translatable="false">درخواست دہندہ کا شناختی کارڈ</string>
+    <string name="date_of_birth" translatable="false">تاریخِ پیدائش</string>
+    <string name="cnic_issue_date" translatable="false">تاریخ اجراء</string>
+    <string name="error_message_placeholder" translatable="false">خرابی کا پیغام</string>
+    <string name="cnic_expiry_date" translatable="false">شناختی کارڈ کی میعاد ختم ہونے کی تاریخ</string>
+    <string name="cnic_date_of_birth" translatable="false">شناختی کارڈ پر تاریخِ پیدائش</string>
+    <string name="marital_status" translatable="false">ازدواجی حیثیت</string>
+    <string name="single" translatable="false">غیر شادی شدہ</string>
+    <string name="married" translatable="false">شادی شدہ</string>
+    <string name="father_s_name" translatable="false">والد کا نام</string>
+    <string name="father_cnic" translatable="false">والد کا شناختی کارڈ نمبر</string>
+    <string name="father_mobile_number" translatable="false">والد کا موبائل نمبر</string>
+    <string name="husband_s_name" translatable="false">والد / شوہر کا نام</string>
+    <string name="husband_s_cnic" translatable="false">والد / شوہر کا شناختی کارڈ</string>
+    <string name="husband_mobile_number" translatable="false">والد / شوہر کا موبائل نمبر</string>
+    <string name="present_address" translatable="false">موجودہ پتہ</string>
+    <string name="permanent_address_as_per_cnic" translatable="false">مستقل پتہ (شناختی کارڈ کے مطابق)</string>
+    <string name="district_name" translatable="false">ضلع کا نام</string>
+    <string name="city_name" translatable="false">شہر کا نام</string>
+    <string name="city" translatable="false">شہر</string>
+    <string name="district" translatable="false">ضلع کا نام</string>
+    <string name="tehsil_name" translatable="false">تحصیل کا نام</string>
+    <string name="land_owned_acres" translatable="false">ملکیتی زمین (ایکڑ)</string>
+    <string name="bank_account_number" translatable="false">بینک اکاؤنٹ نمبر (اختیاری)</string>
+    <string name="bank_name" translatable="false">بینک کا نام (اختیاری)</string>
+    <string name="bank_branch" translatable="false">بینک برانچ کا پتہ (اختیاری)</string>
+    <string name="bank_branch_code" translatable="false">بینک برانچ کوڈ (اختیاری)</string>
+    <string name="loan_amount" translatable="false">فنانسنگ کی رقم</string>
+    <string name="occupation" translatable="false">پیشہ</string>
+    <string name="purpose_of_loan" translatable="false">فنانسنگ کا مقصد</string>
+    <string name="crop_seasons" translatable="false">فصل کے موسم</string>
+    <string name="kharif" translatable="false">خریف</string>
+    <string name="rabi" translatable="false">ربیع</string>
+    <string name="duration_of_loan" translatable="false">فنانسنگ کی مدت</string>
+    <string name="business_address" translatable="false">مکمل کاروباری پتہ</string>
+    <string name="how_old_is_your_business" translatable="false">کاروبار کی مدت</string>
+    <string name="any_other_loan_active" translatable="false">کوئی اور فنانسنگ فعال ہے؟</string>
+    <string name="any_other_loan_active_urdu" translatable="false" />
+    <string name="yes_no" translatable="false">ہاں / نہیں</string>
+    <string name="name_of_financial_institution" translatable="false">مالیاتی ادارے کا نام</string>
+    <string name="type_of_loan" translatable="false">فنانسنگ کی قسم</string>
+    <string name="select_loan_type" translatable="false">فنانسنگ کی قسم منتخب کریں</string>
+    <string name="remaining_balance" translatable="false">بقایا رقم</string>
+    <string name="do_you_want_to_place_a_lien_on_the_land" translatable="false">کیا آپ زمین پر رہن رکھنا چاہتے ہیں؟</string>
+    <string name="yes_default" translatable="false">ہاں (پہلے سے طے)</string>
+    <string name="no" translatable="false">نہیں</string>
+    <string name="capture_cnic_front" translatable="false">شناختی کارڈ کا سامنے والا حصہ اسکین کریں</string>
+    <string name="capture_cnic_back" translatable="false">شناختی کارڈ کا پچھلا حصہ اسکین کریں</string>
+    <string name="save" translatable="false">محفوظ کریں</string>
+    <string name="apply" translatable="false">فنانسنگ کے لیے درخواست دیں</string>
+    <string name="ok" translatable="false">ٹھیک ہے</string>
+    <string name="no_receipts" translatable="false">اس قرض دار کے لیے کوئی لیجر ڈیٹا یا ریکارڈ نہیں ملا۔</string>
+    <string name="enter_your_borrower_no" translatable="false">اپنا قرض دار نمبر درج کریں</string>
+    <string name="no_data_found" translatable="false">کوئی ڈیٹا نہیں ملا</string>
+    <string name="total_due_amount" translatable="false">کل واجب الادا رقم</string>
+    <string name="due_date" translatable="false">آخری تاریخ</string>
+    <string name="please_click_back_again_to_exit" translatable="false">باہر نکلنے کے لیے دوبارہ BACK دبائیں</string>
+    <string name="network_error" translatable="false">نیٹ ورک خرابی</string>
+    <string name="loan_applied_successfully" translatable="false">فنانسنگ کامیابی سے جمع ہوئی</string>
+    <string name="deposited_receipt" translatable="false">جمع رسید</string>
+    <string name="current_outstanding" translatable="false">موجودہ بقایا</string>
+    <string name="you_can_pay_by_using_the_following_channels" translatable="false">آپ درج ذیل ذرائع سے ادائیگی کر سکتے ہیں۔</string>
+    <string name="you_can_pay_by_using_the_following_channels_urdu" translatable="false">" "</string>
+    <string name="enter_your_phone_number" translatable="false">اپنا فون نمبر درج کریں</string>
+    <string name="sign_up_and_let_s_begin_an_amazing_journey" translatable="false">سائن اپ کریں اور ایک حیرت انگیز سفر کا آغاز کریں۔</string>
+    <string name="create_your_account" translatable="false">اپنا اکاؤنٹ بنائیں</string>
+    <string name="enter_your_full_name" translatable="false">اپنا مکمل نام درج کریں</string>
+    <string name="enter_your_cnic_number" translatable="false">اپنا شناختی کارڈ نمبر درج کریں</string>
+    <string name="cnic_expiry_date_" translatable="false">شناختی کارڈ کی میعاد ختم ہونے کی تاریخ:*</string>
+    <string name="pin" translatable="false">پن کوڈ</string>
+    <string name="assan_id" translatable="false">آسان آئی ڈی:</string>
+    <string name="live_stock" translatable="false">مویشی</string>
+    <string name="service_product_registration" translatable="false">سروس پروڈکٹ رجسٹریشن</string>
+    <string name="payment_method" translatable="false">ادائیگی کا طریقہ</string>
+    <string name="crop_sale_store" translatable="false">فصل فروخت / ذخیرہ</string>
+    <string name="book_farm_machinery" translatable="false">فارم مشینری بک کریں</string>
+    <string name="buy_agri_inputs" translatable="false">زرعی ان پٹ خریدیں</string>
+    <string name="loan_application_status" translatable="false">فنانسنگ درخواست کی حیثیت</string>
+    <string name="loan_application_" translatable="false">فنانسنگ درخواست</string>
+    <string name="loan_application_urdu" translatable="false">فنانسنگ درخواست</string>
+    <string name="which_source_do_you_need" translatable="false" />
+    <string name="welcome" translatable="false">خوش آمدید،</string>
+    <string name="noInternetMessage" translatable="false">نیٹ ورک دستیاب نہیں ہے۔</string>
+    <string name="order_placement" translatable="false">آرڈر درج کریں</string>
+    <string name="order_placement_" translatable="false">آرڈر درج کریں</string>
+    <string name="order_placement_urdu" translatable="false" />
+    <string name="place_order" translatable="false">آرڈر دیں</string>
+    <string name="loan_application_status_urdu" translatable="false" />
+    <string name="product_type" translatable="false">پروڈکٹ کی قسم</string>
+    <string name="product_name" translatable="false">پروڈکٹ کا نام</string>
+    <string name="unit_type" translatable="false">یونٹ کی قسم</string>
+    <string name="borrower_no" translatable="false">قرض دار نمبر</string>
+    <string name="product_name_" translatable="false">پروڈکٹ کا نام:</string>
+    <string name="quantity" translatable="false">مقدار:</string>
+    <string name="crop_sale_or_warehousing" translatable="false">فصل کی فروخت یا گودام</string>
+    <string name="crop_sale_or_warehousing_urdu" translatable="false" />
+    <string name="variety" translatable="false">قسم</string>
+    <string name="sale_storage" translatable="false">فروخت / ذخیرہ</string>
+    <string name="sale" translatable="false">فروخت</string>
+    <string name="storage" translatable="false">ذخیرہ</string>
+    <string name="sale_store" translatable="false">فروخت / اسٹور</string>
+    <string name="select_date_and_time" translatable="false">تاریخ اور وقت منتخب کریں</string>
+    <string name="quantity_for_sale_kg" translatable="false">Quantity for Sale (kg)</string>
+    <string name="quantity_for_storage_kg" translatable="false">Quantity for Storage (kg)</string>
+    <string name="tentative_days_for_rent" translatable="false">Tentative Days for Rent</string>
+    <string name="book_my_crop" translatable="false">جمع کریں</string>
+    <string name="select_quantity" translatable="false">Select Quantity</string>
+    <string name="payment_method_" translatable="false">ادائیگی کا طریقہ</string>
+    <string name="send_payment" translatable="false">Send Payment</string>
+    <string name="select_payment_method" translatable="false">Select Payment Method</string>
+    <string name="select_payment_method_en" translatable="false">Select Payment Method</string>
+    <string name="wallet" translatable="false">Wallet</string>
+    <string name="cash" translatable="false">Cash</string>
+    <string name="bank_account" translatable="false">بینک اکاؤنٹ</string>
+    <string name="enter_account_number" translatable="false">اکاؤنٹ نمبر درج کریں</string>
+    <string name="enter_branch_code" translatable="false">Enter Branch Code</string>
+    <string name="enter_bank_name" translatable="false">Enter Bank Name</string>
+    <string name="enter_mobile_number" translatable="false">Enter Mobile Number</string>
+    <string name="register" translatable="false">رجسٹر</string>
+    <string name="supplier_registration_urdu" translatable="false" />
+    <string name="supplier_registration" translatable="false">Supplier Registration</string>
+    <string name="supplier_registration_" translatable="false">Supplier Registration</string>
+    <string name="number_of_goat" translatable="false">Number of Goat</string>
+    <string name="cow" translatable="false">Cow</string>
+    <string name="number_of_cow" translatable="false">Number of Cow</string>
+    <string name="camel" translatable="false">Camel</string>
+    <string name="buffalo" translatable="false">Buffalo</string>
+    <string name="number_of_buffalo" translatable="false">Number of Buffalo</string>
+    <string name="type_of_services" translatable="false">TYPE OF SERVICES</string>
+    <string name="health_improvement" translatable="false">Health Improvement</string>
+    <string name="feed_wanda" translatable="false">Feed / Wanda</string>
+    <string name="medicine" translatable="false">Medicine</string>
+    <string name="doctor_visit" translatable="false">Doctor Visit</string>
+    <string name="breed" translatable="false">Breed</string>
+    <string name="siemens" translatable="false">Siemens</string>
+    <string name="embryo" translatable="false">Embryo</string>
+    <string name="farm_improvement" translatable="false">Farm Improvement</string>
+    <string name="water_system" translatable="false">Water System</string>
+    <string name="clean" translatable="false">Clean</string>
+    <string name="infrastructure" translatable="false">Infrastructure</string>
+    <string name="environment" translatable="false">Environment</string>
+    <string name="solar" translatable="false">Solar</string>
+    <string name="description" translatable="false">
+        <b>Description</b>
+        (optional)
+    </string>
+    <string name="submit" translatable="false">جمع کریں</string>
+    <string name="goat" translatable="false">Goat</string>
+    <string name="livestock" translatable="false">مویشی</string>
+    <string name="livestock_urdu" translatable="false" />
+    <string name="select_livestock" translatable="false">Select Livestock</string>
+    <string name="download_deposit_slip" translatable="false">Download Deposit Slip</string>
+    <string name="downloading_deposit_slip" translatable="false">Downloading Deposit Slip</string>
+    <string name="select_sub_machinery" translatable="false">Select Sub Machinery</string>
+    <string name="select_unit" translatable="false">Select Unit</string>
+    <string name="hour" translatable="false">Hour</string>
+    <string name="day" translatable="false">Day</string>
+    <string name="acre" translatable="false">Acre</string>
+    <string name="start_date" translatable="false">Start Date</string>
+    <string name="end_date" translatable="false">End Date</string>
+    <string name="total_amount" translatable="false">Total Amount:</string>
+    <string name="hours" translatable="false">Hours</string>
+    <string name="calculate_amount" translatable="false">Calculate Amount</string>
+    <string name="Successful_Registration" translatable="false">کامیاب رجسٹریشن</string>
+    <string name="registration_failed" translatable="false">رجسٹریشن ناکام</string>
+    <string name="server_response_unsuccessful" translatable="false">سرور کا جواب ناکام</string>
+    <string name="successfully_booked_your_crop" translatable="false">Successfully Booked your crop</string>
+    <string name="enter_hour" translatable="false">Enter number of hours</string>
+    <string name="enter_number_of_days" translatable="false">Enter number of Days</string>
+    <string name="enter_per_acre" translatable="false">Enter per Acre</string>
+    <string name="rate_per_acre" translatable="false">Rate Per Acre:</string>
+    <string name="hour_rate" translatable="false">Hour Rate:</string>
+    <string name="day_rate" translatable="false">Day Rate:</string>
+    <string name="update_profile" translatable="false">پروفائل اپ ڈیٹ کریں</string>
+    <string name="enter_old_password" translatable="false">پرانا پاس ورڈ درج کریں</string>
+    <string name="enter_new_password" translatable="false">نیا پاس ورڈ درج کریں</string>
+    <string name="confirm_password" translatable="false">پاس ورڈ کی تصدیق کریں</string>
+    <string name="update" translatable="false">اپ ڈیٹ</string>
+    <string name="deposit_receipt">ڈپازٹ رسید</string>
+    <string name="select_machinery" translatable="false">Select Machinery</string>
+    <string name="applied_for_livestock" translatable="false">Applied for Livestock</string>
+    <string name="order_successfully_placed" translatable="false">Order Successfully Placed</string>
+    <string name="loan_amount_should_be_10_000_to_150_000_rupees" translatable="false">فنانسنگ کی رقم 10,000 سے 150,000 روپے ہونی چاہیے</string>
+    <string name="terms_and_conditions_loan_application" translatable="false">
+        میں نے پڑھ لیا ہے اور قبول کرتا/کرتی ہوں
+        <u>شرائط و ضوابط</u>
+    </string>
+    <string name="please_select_at_least_one_option_and_enter_a_value_for_each_option" translatable="false">Please select at least one option and enter a value for each option.</string>
+    <string name="server_error_please_try_again_later" translatable="false">سرور کی خرابی۔ براہ کرم بعد میں دوبارہ کوشش کریں۔</string>
+    <string name="cancel" translatable="false">منسوخ کریں</string>
+    <string name="yes" translatable="false">ہاں</string>
+    <string name="network_or_server_problem" translatable="false">نیٹ ورک یا سرور کا مسئلہ</string>
+    <string name="specify_other_occupation" translatable="false">Specify other occupation</string>
+    <string name="powered_by_nrsp" translatable="false">این آر ایس پی کے زیر انتظام</string>
+    <string name="services" translatable="false">خدمات</string>
+    <string name="registration" translatable="false">رجسٹریشن</string>
+    <string name="land_owned" translatable="false">Land Owned?</string>
+    <string name="city_of_business" translatable="false">City of Business</string>
+    <string name="nature_of_business" translatable="false">کاروبار کی نوعیت</string>
+    <string name="please_wait" translatable="false">براہ کرم انتظار کریں..</string>
+    <string name="add_to_cart" translatable="false">Add to cart</string>
+    <string name="add" translatable="false">Add</string>
+    <string name="product_details" translatable="false">Product Details</string>
+    <string name="Buy_Now" translatable="false">آرڈر دیں</string>
+    <string name="introText" translatable="false" />
+    <string name="checkout" translatable="false">Checkout</string>
+    <string name="Agri_products_list" translatable="false">Agri Products List</string>
+    <string-array name="Occupation_list">
+        <item>Farmer</item>
+        <item>Business</item>
+        <item>Employment</item>
+    </string-array>
+    <string name="product_image" translatable="false">Product Image</string>
+    <string name="decrease_quantity" translatable="false">Decrease Quantity</string>
+    <string name="increase_quantity" translatable="false">Increase Quantity</string>
+    <string name="otp" translatable="false">او ٹی پی</string>
+    <string name="update_password" translatable="false">پاس ورڈ اپ ڈیٹ کریں</string>
+    <string name="something_went_wrong" translatable="false">کچھ غلط ہو گیا</string>
+    <string name="care_instructions" translatable="false">Care Instructions</string>
+    <string name="water" translatable="false">Water</string>
+    <string name="sunlight" translatable="false">Sunlight</string>
+    <string name="soil" translatable="false">Soil</string>
+    <string name="disease_info" translatable="false">Disease Information</string>
+    <string name="symptoms" translatable="false">Symptoms</string>
+    <string name="causes" translatable="false">Causes</string>
+    <string name="growth_stage" translatable="false">Growth Stage</string>
+    <string name="health_status" translatable="false">Health Status</string>
+    <string name="plant_identity" translatable="false">Plant Identity</string>
+    <string name="confidence_score" translatable="false">Confidence Score</string>
+    <string name="treatment" translatable="false">Treatment</string>
+    <string name="organic_treatment" translatable="false">Organic Treatment</string>
+    <string name="chemical_treatment" translatable="false">Chemical Treatment</string>
+    <string name="toggle_flash" translatable="false">فلیش آن/آف</string>
+    <string name="open_gallery" translatable="false">گیلری کھولیں</string>
+    <string name="capture_photo" translatable="false">تصویر کھینچیں</string>
+    <string name="analysis_results" translatable="false">Analysis Results</string>
+    <string name="plant_image_desc" translatable="false">Plant Image Description</string>
+    <string name="error" translatable="false">خرابی</string>
+    <string name="analysis_failed" translatable="false">Analysis Failed</string>
+    <string name="retry" translatable="false">دوبارہ کوشش کریں</string>
+    <string name="unknown_plant" translatable="false">Unknown Plant</string>
+    <string name="app_logo_desc" translatable="false">App Logo</string>
+    <string name="save_to_gallery" translatable="false">گیلری میں محفوظ کریں</string>
+    <string name="new_scan" translatable="false">نیا اسکین</string>
+    <string name="analyzing_plant" translatable="false">Analyzing Plant</string>
+    <string name="view_details" translatable="false">تفصیلات دیکھیں</string>
+    <string name="camera_permission_denied" translatable="false">کیمرے کی اجازت مسترد کر دی گئی۔</string>
+    <string name="str_fertillizers" translatable="false">Fertillizers</string>
+    <string name="str_price" translatable="false">Price:</string>
+    <string name="str_rs_2000" translatable="false">Rs. 2000</string>
+    <string name="str_total_price" translatable="false">Total Price:</string>
+    <string name="str_rs" translatable="false">Rs.</string>
+    <string name="txt_empty" translatable="false">-</string>
+    <string name="str_1" translatable="false">1</string>
+    <string name="txt_empty_1" translatable="false">+</string>
+    <string name="str_add_to_cart" translatable="false">Add to Cart</string>
+    <string name="str_888888888888" translatable="false">888888888888</string>
+    <string name="str_99999999999999" translatable="false">99999999999999</string>
+    <string name="str_00000" translatable="false">00000</string>
+    <string name="str_time" translatable="false">Time:</string>
+    <string name="str_product_name" translatable="false">پروڈکٹ کا نام</string>
+    <string name="str_price_1" translatable="false">price</string>
+    <string name="str_product_category" translatable="false">Product Category</string>
+    <string name="str_0" translatable="false">0</string>
+    <string name="str_product_description" translatable="false">Product Description</string>
+    <string name="str_sdjfbsdfbdb" translatable="false">sdjfbsdfbdb</string>
+    <string name="str_secure_your_account" translatable="false">اپنا اکاؤنٹ محفوظ بنائیں</string>
+    <string name="str_create_a_strong_pass" translatable="false">اپنے آسان فنانس ڈیٹا کو محفوظ رکھنے کے لیے ایک مضبوط پاس ورڈ بنائیں۔</string>
+    <string name="str_checkout" translatable="false">Checkout</string>
+    <string name="str_items" translatable="false">Items</string>
+    <string name="str_product">پروڈکٹ</string>
+    <string name="str_payment_network">پیمنٹ نیٹ ورک</string>
+    <string name="str_qty" translatable="false">Qty:</string>
+    <string name="str_unit_price" translatable="false">Unit Price</string>
+    <string name="str_price_2" translatable="false">Price</string>
+    <string name="str_total" translatable="false">Total:</string>
+    <string name="str_rs_0" translatable="false">Rs. 0</string>
+    <string name="str_delivery_details" translatable="false">Delivery Details</string>
+    <string name="str_name" translatable="false">Name:</string>
+    <string name="str_address" translatable="false">Address:</string>
+    <string name="str_phone_number">فون نمبر:</string>
+    <string name="str_payment_method" translatable="false">Payment Method:</string>
+    <string name="str_cash_on_delivery" translatable="false">Cash on delivery</string>
+    <string name="str_delivery_time" translatable="false">Delivery Time:</string>
+    <string name="str_asap" translatable="false">ASAP</string>
+    <string name="str_submit" translatable="false">جمع کریں</string>
+    <string name="str_deposit_receipt">ڈپازٹ رسید</string>
+    <string name="str_total_due_amount">کل واجب الادا رقم</string>
+    <string name="str_pkr_0" translatable="false">PKR 0</string>
+    <string name="str_due_date">مقررہ تاریخ</string>
+    <string name="txt_empty_2" translatable="false">-- -- ----</string>
+    <string name="str_total_paid" translatable="false">TOTAL PAID</string>
+    <string name="str_receipt" translatable="false">RECEIPT</string>
+    <string name="str_inst" translatable="false">INST.</string>
+    <string name="str_total_1">کل</string>
+    <string name="str_total_receipts_0" translatable="false">Total Receipts: 0</string>
+    <string name="str_payment_channels" translatable="false">PAYMENT CHANNELS</string>
+    <string name="str_you_can_pay_using_th" translatable="false">آپ ان تصدیق شدہ طریقوں کا استعمال کرتے ہوئے ادائیگی کر سکتے ہیں:</string>
+    <string name="str_authorized_agents" translatable="false">مجاز ایجنٹس</string>
+    <string name="str_bank_channels" translatable="false">بینک چینلز</string>
+    <string name="str_no_transactions" translatable="false">کوئی ٹرانزیکشن نہیں</string>
+    <string name="str_your_digital_deposit" translatable="false">آپ کی ادائیگی کی کارروائی مکمل ہونے کے بعد آپ کی ڈیجیٹل ڈپازٹ رسیدیں یہاں ظاہر ہوں گی۔</string>
+    <string name="str_receipt_no">رسید نمبر</string>
+    <string name="str_instalments">اقساط</string>
+    <string name="str_paid_date">ادائیگی کی تاریخ</string>
+    <string name="str_receipts" translatable="false">رسیدیں:</string>
+    <string name="str_agents" translatable="false">ایجنٹس:</string>
+    <string name="str_banks" translatable="false">بینکس:</string>
+    <string name="str_location_details" translatable="false">Location Details</string>
+    <string name="str_applicant_details" translatable="false">درخواست گزار کی تفصیلات</string>
+    <string name="str_user_name" translatable="false">یوزر نیم</string>
+    <string name="str_00000_0000000_0" translatable="false">00000-0000000-0</string>
+    <string name="str_01_01_1990" translatable="false">01-01-1990</string>
+    <string name="str_loan_used_by" translatable="false">فنانسنگ کا استعمال کرنے والا</string>
+    <string name="str_self" translatable="false">ذاتی</string>
+    <string name="str_other" translatable="false">دیگر</string>
+    <string name="str_name_1" translatable="false">نام</string>
+    <string name="str_cnic" translatable="false">شناختی کارڈ</string>
+    <string name="str_address_details" translatable="false">Address Details</string>
+    <string name="str_bank_account_informa" translatable="false">بینک اکاؤنٹ کی معلومات</string>
+    <string name="str_format_aaaaaaaaaaaa" translatable="false">Format: ( AAAAAAAAAAAA )</string>
+    <string name="str_format_bbbbbb" translatable="false">Format: ( BBBBBB )</string>
+    <string name="str_loan_requirements" translatable="false">فنانسنگ کی ضروریات</string>
+    <string name="str_loan_category" translatable="false">فنانسنگ کا زمرہ</string>
+    <string name="str_agriculture" translatable="false">زراعت</string>
+    <string name="str_non_agriculture" translatable="false">Non-Agriculture</string>
+    <string name="str_work_on_family_farm" translatable="false">خاندانی فارم پر کام</string>
+    <string name="str_work_on_other_farm" translatable="false">Work on other farm</string>
+    <string name="str_share_cropping_on_fa" translatable="false">فارم پر شراکت داری کاشت</string>
+    <string name="str_keep_other_s_livesto" translatable="false">Keep other’s livestock</string>
+    <string name="str_fishing_business" translatable="false">مچھلی کا کاروبار</string>
+    <string name="str_food_processing_and_" translatable="false">Food Processing and vending</string>
+    <string name="str_trading_buy_and_sell" translatable="false">تجارت / خرید و فروخت</string>
+    <string name="str_handicrafts" translatable="false">دستکاری</string>
+    <string name="str_garments" translatable="false">کپڑے کا کاروبار</string>
+    <string name="str_mechanic" translatable="false">مکینک</string>
+    <string name="str_carpentry_metal_work" translatable="false">بڑھئی / دھات کا کام</string>
+    <string name="str_transport_service" translatable="false">ٹرانسپورٹ سروس</string>
+    <string name="str_wage_earner_construc" translatable="false">یومیہ اجرت / تعمیرات</string>
+    <string name="str_office_work" translatable="false">دفتری کام</string>
+    <string name="str_sewing" translatable="false">سلائی کڑھائی</string>
+    <string name="str_government_employee" translatable="false">سرکاری ملازم</string>
+    <string name="str_private_job" translatable="false">نجی ملازمت</string>
+    <string name="str_house_wife" translatable="false">گھریلو خاتون</string>
+    <string name="str_source_of_income" translatable="false">آمدنی کا ذریعہ</string>
+    <string name="str_business" translatable="false">کاروبار</string>
+    <string name="str_salary" translatable="false">تنخواہ</string>
+    <string name="str_limit_min_max" translatable="false">حد: کم از کم - زیادہ سے زیادہ</string>
+    <string name="str_new" translatable="false">نیا</string>
+    <string name="str_existing" translatable="false">موجودہ</string>
+    <string name="str_application_status" translatable="false">درخواست کی حیثیت</string>
+    <string name="str_loan_status" translatable="false">فنانسنگ کی حیثیت</string>
+    <string name="txt_empty_3" translatable="false" />
+    <string name="str_application_submitte" translatable="false">درخواست جمع ہو گئی</string>
+    <string name="str_verified_by_digital_" translatable="false">ڈیجیٹل دستخط کے ذریعے تصدیق شدہ</string>
+    <string name="str_under_review" translatable="false">جائزے میں</string>
+    <string name="str_credit_score_process" translatable="false">کریڈٹ اسکور پروسیسنگ</string>
+    <string name="str_disbursement_pending" translatable="false">ادائیگی زیر التوا ہے</string>
+    <string name="str_final_verification_p" translatable="false">حتمی تصدیق کا مرحلہ</string>
+    <string name="str_assan_transparent_tr" translatable="false">آسان شفاف ٹریکنگ</string>
+    <string name="str_assan_card" translatable="false">آسان فنانس</string>
+    <string name="str_nrsp_digital_portal" translatable="false">این آر ایس پی ڈیجیٹل پورٹل</string>
+    <string name="str_phone_number_1" translatable="false">فون نمبر</string>
+    <string name="str_0323_7939393" translatable="false">0302-8582454</string>
+    <string name="str_4_digit_pin" translatable="false">4 ہندسوں کا پن</string>
+    <string name="str_0001" translatable="false">0001</string>
+    <string name="str_forgot_pin" translatable="false">پن بھول گئے؟</string>
+    <string name="str_login" translatable="false">لاگ ان</string>
+    <string name="str_new_to_assan_card" translatable="false">آسان فنانس پر نئے ہیں؟</string>
+    <string name="str_register" translatable="false">رجسٹر</string>
+    <string name="str_notifications" translatable="false">اطلاعات</string>
+    <string name="str_mark_all_as_read" translatable="false">سب کو پڑھا ہوا نشان زد کریں</string>
+    <string name="str_all" translatable="false">سب</string>
+    <string name="str_category" translatable="false">زمرہ</string>
+    <string name="str_advisory" translatable="false">Advisory</string>
+    <string name="str_community" translatable="false">Community</string>
+    <string name="str_today" translatable="false">Today</string>
+    <string name="str_next" translatable="false">اگلا</string>
+    <string name="str_skip" translatable="false">چھوڑیں</string>
+    <string name="str_verify_phone" translatable="false">فون کی تصدیق کریں</string>
+    <string name="str_we_have_sent_a_4_dig" translatable="false">ہم نے آپ کے رجسٹرڈ نمبر پر 4 ہندسوں کا تصدیقی کوڈ بھیجا ہے۔</string>
+    <string name="str_didn_t_receive_code" translatable="false">کوڈ موصول نہیں ہوا؟</string>
+    <string name="str_resend_in_00_54" translatable="false">00:54 میں دوبارہ بھیجیں</string>
+    <string name="str_verify_amp_continue" translatable="false">تصدیق کریں اور جاری رکھیں</string>
+    <string name="str_enter_otp_send_to_yo" translatable="false">آپ کے فون نمبر پر بھیجا گیا او ٹی پی درج کریں</string>
+    <string name="str_join_us" translatable="false">ہمارے ساتھ شامل ہوں</string>
+    <string name="str_expiry" translatable="false">میعاد ختم</string>
+    <string name="str_dob" translatable="false">تاریخ پیدائش</string>
+    <string name="str_create_pin" translatable="false">پن بنائیں</string>
+    <string name="str_select_gender" translatable="false">جنس منتخب کریں</string>
+    <string name="str_already_have_an_acco" translatable="false">پہلے سے اکاؤنٹ ہے؟</string>
+    <string name="txt_empty_4" translatable="false" />
+    <string name="str_enter_digital_portal" translatable="false">ڈیجیٹل پورٹل میں داخل ہوں</string>
+    <string name="str_urdu_language" translatable="false">اردو زبان</string>
+    <string name="str_last_updated_may_202" translatable="false">آخری اپ ڈیٹ: مئی 2026</string>
+    <string name="str_profile" translatable="false">پروفائل</string>
+    <string name="str_txtname" translatable="false">txtName</string>
+    <string name="str_txtassanid" translatable="false">txtAssanId</string>
+    <string name="str_txtusername" translatable="false">txtUsername</string>
+    <string name="str_edit_profile" translatable="false">پروفائل ترمیم کریں</string>
+    <string name="str_full_name" translatable="false">مکمل نام</string>
+    <string name="str_cnic_number">شناختی کارڈ نمبر</string>
+    <string name="str_date_of_birth" translatable="false">تاریخ پیدائش</string>
+    <string name="str_agri_input_type" translatable="false">Agri Input Type</string>
+    <string name="str_agri_input_type_id" translatable="false">Agri Input Type ID</string>
+    <string name="str_name_2" translatable="false">name</string>
+    <string name="str_qty_1" translatable="false">Qty</string>
+    <string name="str_please_wait" translatable="false">براہ کرم انتظار کریں...</string>
+    <string name="str_bank_name" translatable="false">بینک کا نام</string>
+    <string name="str_do_you_want_to_clear" translatable="false">Do you want to clear the cart?</string>
+    <string name="str_delete_record" translatable="false">ریکارڈ حذف کریں؟</string>
+    <string name="str_are_you_sure_you_wan" translatable="false">کیا آپ واقعی یہ ریکارڈ حذف کرنا چاہتے ہیں؟ اس عمل کو واپس نہیں لیا جا سکتا۔</string>
+    <string name="str_cancel" translatable="false">منسوخ کریں</string>
+    <string name="str_delete" translatable="false">حذف کریں</string>
+    <string name="str_request_failed" translatable="false">درخواست ناکام ہو گئی</string>
+    <string name="str_close" translatable="false">بند کریں</string>
+    <string name="str_try_again" translatable="false">دوبارہ کوشش کریں</string>
+    <string name="str_assan_service_diagno" translatable="false">آسان سروس تشخیص</string>
+    <string name="str_success" translatable="false">کامیابی!</string>
+    <string name="str_your_application_has" translatable="false">آپ کی درخواست کامیابی کے ساتھ جمع ہو گئی ہے۔ ہم جلد آپ سے رابطہ کریں گے۔</string>
+    <string name="str_done" translatable="false">مکمل</string>
+    <string name="str_camera" translatable="false">کیمرہ</string>
+    <string name="str_gallery" translatable="false">گیلری</string>
+    <string name="str_sign_out">لاگ آؤٹ کریں؟</string>
+    <string name="str_are_you_sure_you_wan_1">کیا آپ واقعی آسان فنانس پورٹل سے باہر جانا چاہتے ہیں؟</string>
+    <string name="str_sign_out_1">لاگ آؤٹ</string>
+    <string name="txt_empty_5" translatable="false">🌿</string>
+    <string name="str_plants_amp_crops" translatable="false">Plants &amp; Crops</string>
+    <string name="txt_empty_6" translatable="false" />
+    <string name="str_identify_crops_veget" translatable="false">Identify crops, vegetables, flowers &amp; trees</string>
+    <string name="txt_empty_7" translatable="false" />
+    <string name="str_camera_1" translatable="false">📷 Camera</string>
+    <string name="str_gallery_1" translatable="false">🖼️ Gallery</string>
+    <string name="str_action" translatable="false">Action</string>
+    <string name="str_assan_user">آسان صارف</string>
+    <string name="str_92_300_0000000" translatable="false">+92 300 0000000</string>
+    <string name="str_save_field_boundary" translatable="false">Save Field Boundary</string>
+    <string name="str_please_provide_farme" translatable="false">Please provide farmer information to link the marked land.</string>
+    <string name="str_marked_area" translatable="false">Marked Area:</string>
+    <string name="str_1_45_acres" translatable="false">1.45 Acres</string>
+    <string name="str_farmer_name" translatable="false">Farmer Name</string>
+    <string name="str_assan_card_number" translatable="false">Asaan Finance Number</string>
+    <string name="str_current_crop_type_e_" translatable="false">Current Crop Type (e.g. Wheat, Rice)</string>
+    <string name="str_congratulations" translatable="false">مبارک ہو!</string>
+    <string name="str_your_loan_applicatio" translatable="false">آپ کی فنانسنگ درخواست کامیابی سے جمع ہو گئی۔ ہمارا ایجنٹ جلد آپ سے رابطہ کرے گا۔</string>
+    <string name="str_back_to_home" translatable="false">Back to Home</string>
+    <string name="str_transaction_secured_" translatable="false">TRANSACTION SECURED BY SSL</string>
+    <string name="txt_empty_8" translatable="false">📍</string>
+    <string name="str_islamabad" translatable="false">Islamabad</string>
+    <string name="txt_empty_9" translatable="false">☀️</string>
+    <string name="str_32_c" translatable="false">32°C</string>
+    <string name="str_hot" translatable="false">Hot</string>
+    <string name="str_h_37_c_l_25_c" translatable="false">H: 37°C - L: 25°C</string>
+    <string name="str_feels_like_35_4_c" translatable="false">Feels like: 35.4 °C</string>
+    <string name="txt_empty_10" translatable="false">🎯</string>
+    <string name="str_weather_point_700_m_" translatable="false">Weather Point ~ 700 m away</string>
+    <string name="str_hourly" translatable="false">Hourly</string>
+    <string name="str_weekly" translatable="false">Weekly</string>
+    <string name="str_about_us" translatable="false">ہمارے بارے میں</string>
+    <string name="str_plants_amp_crops_1" translatable="false">🌿 Plants &amp; Crops</string>
+    <string name="str_change_password" translatable="false">پاسورڈ تبدیل کریں</string>
+    <string name="str_update_your_account_" translatable="false">اپنی اکاؤنٹ سیکیورٹی اپ ڈیٹ کریں</string>
+    <string name="str_old_password" translatable="false">پرانا پاس ورڈ</string>
+    <string name="str_new_password" translatable="false">نیا پاس ورڈ</string>
+    <string name="str_confirm_password" translatable="false">پاسورڈ کی تصدیق کریں</string>
+    <string name="str_update_password" translatable="false">پاس ورڈ اپ ڈیٹ کریں</string>
+    <string name="str_select_two_images_to" translatable="false">Select two images to compare:</string>
+    <string name="str_tap_to_select_image_" translatable="false">Tap to select Image 1</string>
+    <string name="str_tap_to_select_image__1" translatable="false">Tap to select Image 2</string>
+    <string name="str_analyzing_images" translatable="false">Analyzing images...</string>
+    <string name="str_ai_comparison_report" translatable="false">AI Comparison Report</string>
+    <string name="str_image_category" translatable="false">Image Category</string>
+    <string name="str_satellite" translatable="false">Satellite</string>
+    <string name="str_similarity_score" translatable="false">Similarity Score</string>
+    <string name="str_0_1" translatable="false">0%</string>
+    <string name="str_health_comparison" translatable="false">Health Comparison</string>
+    <string name="str_image_1" translatable="false">Image 1:</string>
+    <string name="str_n_a" translatable="false">N / A</string>
+    <string name="str_image_2" translatable="false">Image 2:</string>
+    <string name="str_overall_status" translatable="false">Overall Status:</string>
+    <string name="str_unknown" translatable="false">Unknown</string>
+    <string name="str_quantitative_metrics" translatable="false">Quantitative Metrics</string>
+    <string name="str_no_metrics_found" translatable="false">No metrics found.</string>
+    <string name="str_similarities" translatable="false">Similarities</string>
+    <string name="str_no_similarities_foun" translatable="false">No similarities found.</string>
+    <string name="str_key_differences" translatable="false">Key Differences</string>
+    <string name="str_no_differences_found" translatable="false">No differences found.</string>
+    <string name="str_damage_assessment" translatable="false">Damage Assessment</string>
+    <string name="str_high_risk" translatable="false">High Risk</string>
+    <string name="str_type_drought" translatable="false">Type: Drought</string>
+    <string name="str_detailed_explanation" translatable="false">Detailed explanation...</string>
+    <string name="str_automated_expert_rep" translatable="false">Automated Expert Report</string>
+    <string name="str_condition_summary" translatable="false">Condition Summary</string>
+    <string name="txt_empty_11" translatable="false">...</string>
+    <string name="str_irrigation_need" translatable="false">Irrigation Need</string>
+    <string name="str_suggested_action" translatable="false">Suggested Action</string>
+    <string name="str_compare_images" translatable="false">Compare Images</string>
+    <string name="str_forgot_password">پاس ورڈ بھول گئے؟</string>
+    <string name="str_enter_your_phone_to_" translatable="false">Enter your phone to receive OTP</string>
+    <string name="str_send_otp" translatable="false">Send OTP</string>
+    <string name="str_analysis_history" translatable="false">Analysis History</string>
+    <string name="str_select" translatable="false">منتخب کریں</string>
+    <string name="str_plant_diseases" translatable="false">Plant Diseases</string>
+    <string name="str_land_marking" translatable="false">Land Marking</string>
+    <string name="str_search_history" translatable="false">Search history...</string>
+    <string name="str_no_history_found" translatable="false">No history found</string>
+    <string name="txt_empty_12" translatable="false">English</string>
+    <string name="str_locating" translatable="false">📍 Locating...</string>
+    <string name="str_weather_point_0_7_km" translatable="false">◎ Weather point 0.7 km</string>
+    <string name="txt_empty_13" translatable="false">⏳</string>
+    <string name="str_loading" translatable="false">لوڈ ہو رہا ہے...</string>
+    <string name="str_scan_your_plants" translatable="false">Scan Your Plants 🪴</string>
+    <string name="txt_empty_14" translatable="false">📸</string>
+    <string name="str_scan_plant" translatable="false">Scan Plant</string>
+    <string name="txt_empty_15" translatable="false">&gt;&gt;</string>
+    <string name="txt_empty_16" translatable="false">🔍</string>
+    <string name="str_analyse" translatable="false">Analyse</string>
+    <string name="txt_empty_17" translatable="false">📋</string>
+    <string name="str_results" translatable="false">Results</string>
+    <string name="str_scan_your_plant" translatable="false">📷 Scan Your Plant</string>
+    <string name="str_scan_history" translatable="false">🕒 Scan History</string>
+    <string name="str_assan_services">آسان خدمات</string>
+    <string name="str_discover">دریافت کریں</string>
+    <string name="str_ai_services" translatable="false">AI Services</string>
+    <string name="str_welcome_back" translatable="false">Welcome back,</string>
+    <string name="str_no_active_loan" translatable="false">کوئی فعال فنانسنگ نہیں</string>
+    <string name="str_limit" translatable="false">Limit</string>
+    <string name="str_pkr_0_00" translatable="false">PKR 0.00</string>
+    <string name="str_main_services" translatable="false">Main Services</string>
+    <string name="str_loan_apply" translatable="false">فنانسنگ کے لیے درخواست دیں</string>
+    <string name="str_ledger">لیجر</string>
+    <string name="str_supplier_registratio" translatable="false">Supplier Registration</string>
+    <string name="str_services" translatable="false">Services</string>
+    <string name="str_special_discounts" translatable="false">خصوصی رعایتیں</string>
+    <string name="str_up_to_20_off_on_agri" translatable="false">Up to 20% off on Agri-Inputs</string>
+    <string name="str_assan_features_will" translatable="false">Asaan Features will be migrated here.</string>
+    <string name="str_welcome_back_1" translatable="false">Welcome Back,</string>
+    <string name="str_not_applied" translatable="false">Not Applied</string>
+    <string name="str_available_services" translatable="false">Available Services</string>
+    <string name="str_welcome_back_2" translatable="false">خوش آمدید!</string>
+    <string name="str_login_to_access_kiss">آسان سروسز تک رسائی کے لیے لاگ ان کریں</string>
+    <string name="str_03028582454" translatable="false">03028582454</string>
+    <string name="str_password" translatable="false">پاسورڈ</string>
+    <string name="str_don_t_have_an_accoun" translatable="false">اکاؤنٹ نہیں ہے؟</string>
+    <string name="str_sign_up" translatable="false">سائن اپ</string>
+    <string name="str_tap_to_select_photo" translatable="false">Tap to select photo</string>
+    <string name="str_username">یوزر نیم</string>
+    <string name="str_cnic_number_e_g_1234">شناختی کارڈ نمبر (مثال کے طور پر 12345-1234567-1)</string>
+    <string name="str_cnic_expiry" translatable="false">شناختی کارڈ کی میعاد ختم</string>
+    <string name="str_gender" translatable="false">جنس</string>
+    <string name="str_male" translatable="false">مرد</string>
+    <string name="str_female" translatable="false">خاتون</string>
+    <string name="str_search_location_e_g_" translatable="false">Search location (e.g. Gojra, Pakistan)</string>
+    <string name="str_length_0m" translatable="false">Length: 0m</string>
+    <string name="str_area_0_00_acres" translatable="false">Area: 0.00 Acres</string>
+    <string name="str_corners_0" translatable="false">Corners: 0</string>
+    <string name="str_center_n_a" translatable="false">Center: N / A</string>
+    <string name="str_save" translatable="false">SAVE</string>
+    <string name="str_clear" translatable="false">CLEAR</string>
+    <string name="txt_empty_18" translatable="false">--</string>
+    <string name="str_receipts_1">رسیدیں</string>
+    <string name="str_total_paid_1">کل ادا شدہ</string>
+    <string name="str_agents_1">ایجنٹس</string>
+    <string name="str_banks_1">بینکس</string>
+    <string name="str_verify_otp" translatable="false">Verify OTP</string>
+    <string name="str_enter_the_4_digit_co" translatable="false">Enter the 4-digit code sent to you</string>
+    <string name="str_verify_amp_proceed" translatable="false">Verify &amp; Proceed</string>
+    <string name="str_assan_dost_ai_scan_" translatable="false">Asaan Finance AI - Scan Report</string>
+    <string name="txt_empty_19" translatable="false">💾</string>
+    <string name="str_scan_auto_saved_to_h" translatable="false">Scan auto-saved to history</string>
+    <string name="str_listen_to_analysis" translatable="false">🔊 Listen to Analysis</string>
+    <string name="txt_empty_20" translatable="false">🇵🇰</string>
+    <string name="str_select_machinery" translatable="false">Select Machinery</string>
+    <string name="str_smart_services" translatable="false">Smart Services</string>
+    <string name="str_advanced_solutions_f" translatable="false">Advanced solutions for your farm</string>
+    <string name="str_assan_id_0000">آسان آئی ڈی: 0000</string>
+    <string name="str_account_settings" translatable="false">اکاؤنٹ کی ترتیبات</string>
+    <string name="str_update_profile" translatable="false">پروفائل اپ ڈیٹ کریں</string>
+    <string name="str_support_amp_informat" translatable="false">مدد اور معلومات</string>
+    <string name="str_terms_amp_conditions">شرائط و ضوابط</string>
+    <string name="str_share_app">ایپ شیئر کریں</string>
+    <string name="str_logout" translatable="false">لاگ آؤٹ</string>
+    <string name="str_reset_password" translatable="false">پاس ورڈ ری سیٹ کریں</string>
+    <string name="str_create_a_new_secure_" translatable="false">ایک نیا محفوظ پاس ورڈ بنائیں</string>
+    <string name="str_assan_id_12345">آسان آئی ڈی: 12345</string>
+    <string name="str_assan_assistant" translatable="false">Asaan Assistant</string>
+    <string name="str_assan_card_app" translatable="false">Asaan Finance App</string>
+    <string name="str_ask_assan_assistant" translatable="false">Ask Asaan Assistant...</string>
+    <string name="str_category_name" translatable="false">Category Name</string>
+    <string name="str_plant_detection" translatable="false">PLANT DETECTION</string>
+    <string name="str_item_title" translatable="false">Item Title</string>
+    <string name="str_category_subtitle" translatable="false">Category / Subtitle</string>
+    <string name="str_date" translatable="false">تاریخ</string>
+    <string name="txt_empty_21" translatable="false" />
+    <string name="str_notification_title" translatable="false">Title</string>
+    <string name="str_notifications_desc" translatable="false">description</string>
+    <string name="str_jun_7_2026" translatable="false">Jun 7, 2026</string>
+    <string name="str_mon" translatable="false">Mon</string>
+    <string name="str_32" translatable="false">32°</string>
+    <string name="str_24" translatable="false">24°</string>
+    <string name="str_50" translatable="false">50% 💧</string>
+    <string name="str_3_pm" translatable="false">3 PM</string>
+    <string name="str_40" translatable="false">💧 40%</string>
+    <string name="str_10_am" translatable="false">10 AM</string>
+    <string name="str_33_c" translatable="false">33°C</string>
+    <string name="str_sun" translatable="false">SUN</string>
+    <string name="txt_empty_22" translatable="false">⛅</string>
+    <string name="str_37_25" translatable="false">37° | 25°</string>
+    <string name="str_0_items" translatable="false">0 items</string>
+    <string name="str_total_rs_0" translatable="false">Total: Rs. 0</string>
+    <string name="str_plus_tax" translatable="false">plus tax</string>
+    <string name="str_view_cart" translatable="false">View Cart</string>
+    <string name="str_home" translatable="false">ہوم</string>
+    <string name="str_ledger_1">لیجر</string>
+    <string name="str_advisor" translatable="false">ADVISOR</string>
+    <string name="str_account" translatable="false">اکاؤنٹ</string>
+    <string name="str_bank_name_1" translatable="false">BANK NAME</string>
+    <string name="str_tractors" translatable="false">Tractors</string>
+    <string name="str_book_the_best" translatable="false">Book the best</string>
+    <string name="str_book_now" translatable="false">Book Now</string>
+    <string name="str_assan_id" translatable="false">Asaan ID: --</string>
+    <string name="str_account_number_forma" translatable="false">اکاؤنٹ نمبر فارمیٹ- ( AAAAAAAAAAAA )</string>
+    <string name="str_branch_code_format_b" translatable="false">Branch Code Format- ( BBBBBB )</string>
+    <string name="str_source_of_income_1" translatable="false">Source Of Income</string>
+    <string name="my_orders" translatable="false">My Orders</string>
+    <string name="my_orders_urdu" translatable="false">My Orders</string>
+    <string name="no_orders_placed" translatable="false">No orders placed yet.</string>
+    <string name="no_orders_placed_urdu" translatable="false">No orders placed yet.</string>
+    <string name="status_placed" translatable="false">Order Placed</string>
+    <string name="status_placed_urdu" translatable="false">Order Booked</string>
+    <string name="auto_an_update_has_just_been_d_616" translatable="false">An update has just been downloaded.</string>
+    <string name="auto_no_internet_connection_617" translatable="false">انٹرنیٹ کنیکشن نہیں</string>
+    <string name="auto_back_online_618" translatable="false">Back Online</string>
+    <string name="auto_camera_initialization_fai_619" translatable="false">Camera initialization failed</string>
+    <string name="auto_failed_to_capture_both_si_620" translatable="false">Failed to capture both sides</string>
+    <string name="auto_error_e_message_621" translatable="false">An unexpected error occurred. Please try again.</string>
+    <string name="auto_failed_to_return_data_e_m_622" translatable="false">Unable to fetch required data at this time.</string>
+    <string name="auto_get_started_623" translatable="false">شروع کریں</string>
+    <string name="auto_locked_speak_now_tap_mic_624" translatable="false">🎙 Locked... speak now. Tap Mic to stop</string>
+    <string name="auto_processing_625" translatable="false">⏳ Processing…</string>
+    <string name="auto_scan_completed_626" translatable="false">Scan Completed</string>
+    <string name="auto_image_saved_to_scoped_sto_627" translatable="false">Image saved to scoped storage</string>
+    <string name="auto_loan_details_successfully_628" translatable="false">فنانسنگ کی تفصیلات فارم میں لگا دی گئیں!</string>
+    <string name="auto_cnic_scanned_successfully_629" translatable="false">CNIC scanned successfully</string>
+    <string name="auto_could_not_share_pdf_630" translatable="false">Could not share PDF.</string>
+    <string name="auto_no_pdf_viewer_found_631" translatable="false">No PDF viewer found.</string>
+    <string name="auto_ledger_deleted_632" translatable="false">Ledger deleted</string>
+    <string name="auto_failed_to_delete_file_633" translatable="false">Failed to delete file</string>
+    <string name="auto_press_play_to_listen_634" translatable="false">Press play to listen</string>
+    <string name="auto_playing_introduction_audi_635" translatable="false">Playing introduction audio...</string>
+    <string name="auto_opening_jhelum_team_progr_636" translatable="false">Opening Jhelum Team Program Intro Video...</string>
+    <string name="auto_please_enter_a_custom_tit_637" translatable="false">Please enter a custom title</string>
+    <string name="auto_network_error_t_message_638" translatable="false">Unable to connect. Please check your network connection.</string>
+    <string name="auto_error_making_request_639" translatable="false">Error making request</string>
+    <string name="auto_privacy_policy_640" translatable="false">رازداری کی پالیسی</string>
+    <string name="auto_please_enter_username_and_641" translatable="false">Please enter username and password</string>
+    <string name="auto_please_enter_a_valid_15_d_642" translatable="false">Please enter a valid 15-digit CNIC (e.g. xxxxx-xxxxxxx-x)</string>
+    <string name="auto_cannot_open_dialer_e_mess_643" translatable="false">Unable to open phone dialer.</string>
+    <string name="auto_cannot_open_whatsapp_e_me_644" translatable="false">Unable to open WhatsApp.</string>
+    <string name="auto_login_successful_645" translatable="false">Login Successful</string>
+    <string name="auto_token_registered_successf_646" translatable="false">Token registered successfully!</string>
+    <string name="auto_failed_to_register_token_647" translatable="false">Failed to register token.</string>
+    <string name="auto_token_registration_error_648" translatable="false">Unable to register token.</string>
+    <string name="auto_server_error_response_cod_649" translatable="false">Server error occurred. Please try again.</string>
+    <string name="auto_cnic_successfully_scanned_650" translatable="false">CNIC successfully scanned!</string>
+    <string name="auto_camera_permission_denied_651" translatable="false">Camera permission denied</string>
+    <string name="auto_please_fill_all_required_652" translatable="false">Please fill all required fields</string>
+    <string name="auto_please_enter_a_valid_11_d_653" translatable="false">Please enter a valid 11-digit phone number (e.g. 03xx-xxxxxxx)</string>
+    <string name="auto_error_creating_request_654" translatable="false">Error creating request</string>
+    <string name="auto_microphone_permission_is_655" translatable="false">Microphone permission is required for Voice Chat.</string>
+    <string name="auto_recording_failed_or_too_s_656" translatable="false">Recording failed or too short.</string>
+    <string name="auto_image_selected_successful_657" translatable="false">Image selected successfully</string>
+    <string name="auto_please_fill_all_fields_658" translatable="false">Please fill all fields</string>
+    <string name="auto_invalid_amount_or_duratio_659" translatable="false">Invalid amount or duration</string>
+    <string name="auto_amount_must_be_between_mi_660" translatable="false">Amount must be between $min and $max for this product</string>
+    <string name="auto_str_661" translatable="false">💡</string>
+    <string name="auto_scan_your_cnic_662" translatable="false">اپنا شناختی کارڈ اسکین کریں</string>
+    <string name="auto_automatically_fill_your_l_663" translatable="false">شناختی کارڈ اسکین کرنا لازمی ہے۔ آپ کی تفصیلات صرف اصل کارڈ سے بھری جاتی ہیں، انہیں ٹائپ نہیں کیا جا سکتا۔</string>
+    <string name="auto_align_the_front_side_of_y_664" translatable="false">اپنے شناختی کارڈ کا سامنے والا حصہ فریم کے اندر رکھیں۔</string>
+    <string name="auto_capture_front_665" translatable="false">سامنے والے حصے کی تصویر کھینچیں</string>
+    <string name="auto_name_n_cnic_number_n_dat_666" translatable="false">✔ نام، شناختی کارڈ نمبر، تاریخ پیدائش، والد / شوہر کا نام، جنس، اجراء و میعاد کی تاریخیں اور پتے خودبخود بھر دیے جائیں گے۔</string>
+    <string name="auto_tips_for_best_results_667" translatable="false">💡 بہترین نتائج کے لیے ہدایات</string>
+    <string name="auto_place_your_cnic_on_a_fla_668" translatable="false">• اصل شناختی کارڈ استعمال کریں، فوٹو کاپی یا اسکرین کی تصویر نہیں۔\n• ہموار جگہ، اچھی روشنی، چمک نہ ہو۔\n• پورا کارڈ فریم میں، انگلیاں لکھائی سے دور۔\n• فوکس ہونے تک فون ساکن رکھیں؛ دوبارہ فوکس کے لیے اسکرین پر ٹیپ کریں۔</string>
+    <string name="auto_your_cnic_information_is_669" translatable="false">🔒 آپ کے شناختی کارڈ کی معلومات صرف آپ کی فنانسنگ درخواست بھرنے کے لیے استعمال ہوتی ہیں۔ آپ کا ڈیٹا محفوظ ہے۔</string>
+    <string name="auto_extracting_cnic_data_670" translatable="false">Extracting CNIC Data...</string>
+    <string name="auto_cnic_verification_require_671" translatable="false">CNIC Verification (Required)</string>
+    <string name="auto_please_scan_both_front_an_672" translatable="false">Please scan both Front and Back of your CNIC to auto-fill applicant information.</string>
+    <string name="auto_scan_cnic_card_front_amp_673" translatable="false">Scan CNIC Card (Front &amp; Back)</string>
+    <string name="auto_not_scanned_674" translatable="false">Not Scanned</string>
+    <string name="auto_str_675" translatable="false">*</string>
+    <string name="auto_enter_name_676" translatable="false">Enter Name</string>
+    <string name="auto_enter_cnic_e_g_12345_1234_677" translatable="false">Enter CNIC (e.g., 12345-1234567-1)</string>
+    <string name="auto_enter_present_address_678" translatable="false">Enter Present Address</string>
+    <string name="auto_enter_permanent_address_679" translatable="false">Enter Permanent Address</string>
+    <string name="auto_enter_branch_address_680" translatable="false">Enter Branch Address</string>
+    <string name="auto_specify_other_occupation_681" translatable="false">Specify Other Occupation</string>
+    <string name="auto_enter_loan_amount_682" translatable="false">فنانسنگ کی رقم درج کریں</string>
+    <string name="auto_enter_duration_months_683" translatable="false">Enter Duration (Months)</string>
+    <string name="auto_enter_business_age_e_g_2_684" translatable="false">Enter Business Age (e.g., 2 Years)</string>
+    <string name="auto_enter_business_address_685" translatable="false">Enter Business Address</string>
+    <string name="auto_unread_686" translatable="false">غیر پڑھا</string>
+    <string name="auto_read_687" translatable="false">پڑھا</string>
+    <string name="auto_general_688" translatable="false">General</string>
+    <string name="auto_recovery_689" translatable="false">Recovery</string>
+    <string name="auto_installment_690" translatable="false">Installment</string>
+    <string name="auto_loan_691" translatable="false">فنانسنگ</string>
+    <string name="auto_payment_692" translatable="false">ادائیگی</string>
+    <string name="auto_approved_693" translatable="false">منظور شدہ</string>
+    <string name="auto_rejected_694" translatable="false">مسترد</string>
+    <string name="auto_promotion_695" translatable="false">Promotion</string>
+    <string name="auto_date_range_696" translatable="false">Date Range</string>
+    <string name="auto_no_recovery_notifications_697">ابھی کوئی اطلاع نہیں</string>
+    <string name="auto_you_will_see_a_notificati_698">آپ کی فنانسنگ درخواست، اقساط اور ادائیگیوں کی اطلاعات یہاں نظر آئیں گی۔</string>
+    <string name="auto_assan_finance_introductio_699">آسان فنانس کا تعارف</string>
+    <string name="auto_english_700" translatable="false">English</string>
+    <string name="auto_choose_application_method_701" translatable="false">درخواست کا طریقہ منتخب کریں</string>
+    <string name="auto_how_would_you_like_to_fil_702" translatable="false">آپ اپنا فنانسنگ فارم کیسے پُر کرنا چاہیں گے؟</string>
+    <string name="auto_fill_with_ai_assistant_vo_703" translatable="false">اے آئی اسسٹنٹ (آواز) کے ذریعے پُر کریں</string>
+    <string name="auto_fill_form_manually_704" translatable="false">دستی طور پر فارم پُر کریں</string>
+    <string name="auto_str_705" translatable="false">Forgot Password?</string>
+    <string name="auto_if_you_are_experiencing_i_706">اگر آپ کو اپنا پاس ورڈ ری سیٹ کرنے میں مسئلہ درپیش ہے، تو براہ کرم این آر ایس پی آئی ٹی ڈیپارٹمنٹ سے رابطہ کریں۔</string>
+    <string name="auto_str_707" translatable="false">If you face any issues logging in or changing your password, please contact the IT Department for guidance via the buttons below.</string>
+    <string name="auto_nrsp_it_department_708">این آر ایس پی آئی ٹی ڈیپارٹمنٹ</string>
+    <string name="auto_muhammad_usman_709" translatable="false">محمد عثمان</string>
+    <string name="auto_senior_software_developer_710">سینئر سافٹ ویئر ڈیویلپر</string>
+    <string name="auto_contact_03028582454_call_711">رابطہ: 03028582454 (کال اور واٹس ایپ)</string>
+    <string name="auto_call_712" translatable="false">کال کریں</string>
+    <string name="auto_whatsapp_713" translatable="false">واٹس ایپ</string>
+    <string name="auto_close_714" translatable="false">بند کریں</string>
+    <string name="auto_select_photo_source_715" translatable="false">تصویر کا ذریعہ منتخب کریں</string>
+    <string name="auto_str_716" translatable="false">Image Source</string>
+    <string name="auto_choose_how_you_want_to_up_717" translatable="false">اپنی پروفائل تصویر اپ لوڈ کرنے کا طریقہ منتخب کریں</string>
+    <string name="auto_str_718" translatable="false">کیمرہ</string>
+    <string name="auto_str_719" translatable="false">گیلری</string>
+    <string name="auto_cancel_720" translatable="false">منسوخ کریں</string>
+    <string name="auto_installment_details_721" translatable="false">قسط کی تفصیلات</string>
+    <string name="auto_receipt_no_722" translatable="false">رسید نمبر:</string>
+    <string name="auto_n_a_723" translatable="false">دستیاب نہیں</string>
+    <string name="auto_due_date_724" translatable="false">مقررہ تاریخ:</string>
+    <string name="auto_receipt_date_725" translatable="false">رسید کی تاریخ:</string>
+    <string name="auto_description_726" translatable="false">تفصیل:</string>
+    <string name="auto_due_principal_727" translatable="false">واجب الادا اصل رقم:</string>
+    <string name="auto_rec_principal_728" translatable="false">موصولہ اصل رقم:</string>
+    <string name="auto_due_service_charge_729" translatable="false">واجب الادا سروس چارج:</string>
+    <string name="auto_rec_service_charge_730" translatable="false">موصولہ سروس چارج:</string>
+    <string name="auto_od_pa_731" translatable="false">OD PA:</string>
+    <string name="auto_od_sc_732" translatable="false">OD SC:</string>
+    <string name="auto_due_penalty_733" translatable="false">واجب الادا جرمانہ:</string>
+    <string name="auto_adjustment_adj_734" translatable="false">ایڈجسٹمنٹ:</string>
+    <string name="auto_write_off_amount_735" translatable="false">معاف شدہ رقم:</string>
+    <string name="auto_refund_cheque_736" translatable="false">ریفنڈ چیک:</string>
+    <string name="auto_refund_date_737" translatable="false">واپسی کی تاریخ:</string>
+    <string name="auto_refund_amount_738" translatable="false">واپسی کی رقم:</string>
+    <string name="auto_due_total_739" translatable="false">کل واجب الادا:</string>
+    <string name="auto_rec_total_740" translatable="false">کل موصولہ:</string>
+    <string name="auto_assan_loan_ai_assistant_741" translatable="false">آسان فنانسنگ اے آئی اسسٹنٹ</string>
+    <string name="auto_ai_742">اے آئی</string>
+    <string name="auto_assalamu_alaikum_main_aap_743">السلام علیکم! میں آپ کا فنانسنگ اسسٹنٹ ہوں۔ آپ مجھے بتا سکتے ہیں — آپ کو کتنی فنانسنگ چاہیے، کتنے مہینوں کے لیے، اور آپ کا کاروبار یا نوکری کیا ہے؟</string>
+    <string name="auto_amount_duration_occupati_744">📋  رقم: —  |  مدت: —  |  پیشہ: —</string>
+    <string name="auto_type_or_speak_your_messag_745">اپنا پیغام ٹائپ کریں یا بولیں...</string>
+    <string name="auto_loan_calculator_746" translatable="false">فنانسنگ کیلکولیٹر</string>
+    <string name="auto_estimate_your_monthly_ins_747" translatable="false">فعال فنانسنگ مصنوعات کی بنیاد پر اپنی ماہانہ اقساط کا تخمینہ لگائیں۔ فی الحال تمام مائیکرو فنانسنگ سود سے پاک ہیں۔</string>
+    <string name="auto_select_loan_purpose_748" translatable="false">فنانسنگ کا مقصد منتخب کریں</string>
+    <string name="auto_loan_amount_pkr_749" translatable="false">فنانسنگ کی رقم (PKR)</string>
+    <string name="auto_min_0_max_0_750" translatable="false">Min: 0  |  Max: 0</string>
+    <string name="auto_duration_months_751" translatable="false">مدت (مہینے)</string>
+    <string name="auto_calculate_752" translatable="false">حساب لگائیں</string>
+    <string name="auto_estimated_monthly_install_753" translatable="false">تخمینی ماہانہ قسط</string>
+    <string name="auto_total_markup_754" translatable="false">کل مارک اپ</string>
+    <string name="auto_total_payable_755" translatable="false">کل قابلِ ادا</string>
+    <string name="auto_review_amp_edit_loan_deta_756" translatable="false">فنانسنگ کی تفصیلات دیکھیں اور ترمیم کریں</string>
+    <string name="auto_loan_amount_raqam_757" translatable="false">فنانسنگ کی رقم</string>
+    <string name="auto_bank_account_number_758" translatable="false">بینک اکاؤنٹ نمبر</string>
+    <string name="auto_permanent_address_759" translatable="false">مستقل پتہ</string>
+    <string name="auto_district_760" translatable="false">ضلع</string>
+    <string name="auto_tehsil_761" translatable="false">تحصیل</string>
+    <string name="auto_loan_used_by_name_762" translatable="false">فنانسنگ استعمال کرنے والے کا نام</string>
+    <string name="auto_loan_used_by_cnic_763" translatable="false">فنانسنگ استعمال کرنے والے کا شناختی کارڈ</string>
+    <string name="auto_branch_code_764" translatable="false">برانچ کوڈ</string>
+    <string name="auto_branch_address_765" translatable="false">برانچ کا پتہ</string>
+    <string name="auto_business_nature_766" translatable="false">Business Nature</string>
+    <string name="auto_business_city_767" translatable="false">کاروباری شہر</string>
+    <string name="auto_confirm_amp_fill_768" translatable="false">تصدیق کریں اور پُر کریں</string>
+    <string name="auto_loan_used_by_self_other_769" translatable="false">فنانسنگ استعمال کرنے والا (خود/دوسرا)</string>
+    <string name="auto_login_failed_770" translatable="false">لاگ ان ناکام</string>
+    <string name="auto_user_not_found_or_inactiv_771" translatable="false">صارف نہیں ملا یا غیر فعال ہے</string>
+    <string name="auto_notification_title_772" translatable="false">اطلاع کا عنوان</string>
+    <string name="auto_notification_message_deta_773" translatable="false">اطلاع کے پیغام کی تفصیلات...</string>
+    <string name="auto_assan_member_774">آسان ممبر</string>
+    <string name="auto_assan_id_775">آسان آئی ڈی</string>
+    <string name="auto_0000_776" translatable="false">0000</string>
+    <string name="auto_phone_777">فون</string>
+    <string name="auto_01_jan_1990_778" translatable="false">01-Jan-1990</string>
+    <string name="auto_program_introduction_779" translatable="false">Program Introduction</string>
+    <string name="auto_assan_finance_program_780" translatable="false">Asaan Finance Program</string>
+    <string name="auto_assan_finance_provides_mi_781" translatable="false">Asaan Finance provides micro-financing to small-scale farmers and businesses to empower local production. With interest-free schemes and easy installments, applying is made fast and digitized.</string>
+    <string name="auto_listen_to_program_intro_782" translatable="false">Listen to Program Intro</string>
+    <string name="auto_watch_introduction_video_783" translatable="false">Watch Introduction Video</string>
+    <string name="auto_assan_dashboard_784" translatable="false">Asaan Dashboard</string>
+    <string name="auto_assan_785">آسان</string>
+    <string name="auto_finance_786" translatable="false">فنانس</string>
+    <string name="auto_securely_manage_your_assa_787" translatable="false">اپنے آسان فنانس کو محفوظ طریقے سے سنبھالیں</string>
+    <string name="auto_password_123_789" translatable="false">12345678</string>
+    <string name="auto_sign_in_account_790" translatable="false">اکاؤنٹ میں سائن ان کریں</string>
+    <string name="auto_create_account_791" translatable="false">اکاؤنٹ بنائیں</string>
+    <string name="auto_xxxxx_xxxxxxx_x_792" translatable="false">xxxxx-xxxxxxx-x</string>
+    <string name="auto_str_793" translatable="false">••••••</string>
+    <string name="auto_tap_to_select_photo_optio_794" translatable="false">تصویر منتخب کرنے کے لیے ٹیپ کریں (اختیاری)</string>
+    <string name="auto_full_name_795" translatable="false">مکمل نام</string>
+    <string name="auto_username_796" translatable="false">صارف نام</string>
+    <string name="auto_cnic_number_797" translatable="false">شناختی کارڈ نمبر</string>
+    <string name="auto_date_of_birth_798" translatable="false">تاریخِ پیدائش</string>
+    <string name="auto_cnic_expiry_799" translatable="false">شناختی کارڈ کی میعاد ختم</string>
+    <string name="auto_gender_800" translatable="false">جنس</string>
+    <string name="auto_phone_number_801" translatable="false">فون نمبر</string>
+    <string name="auto_password_802" translatable="false">پاسورڈ</string>
+    <string name="auto_sign_up_account_803" translatable="false">نیا اکاؤنٹ بنائیں</string>
+    <string name="auto_your_full_name_804" translatable="false">آپ کا مکمل نام</string>
+    <string name="auto_username_805" translatable="false">صارف نام</string>
+    <string name="auto_dd_mm_yyyy_806" translatable="false">DD-MMM-YYYY</string>
+    <string name="auto_03xxxxxxxxx_807" translatable="false">03XXXXXXXXX</string>
+    <string name="auto_select_range_808" translatable="false">رینج منتخب کریں</string>
+    <string name="auto_range_selected_809" translatable="false">رینج منتخب ہوئی</string>
+    <string name="auto_july_2026_810" translatable="false">جولائی 2026</string>
+    <string name="auto_s_811" translatable="false">ا</string>
+    <string name="auto_m_812" translatable="false">پ</string>
+    <string name="auto_t_813" translatable="false">م</string>
+    <string name="auto_w_814" translatable="false">ب</string>
+    <string name="auto_f_815" translatable="false">ج</string>
+    <string name="auto_clear_dates_816" translatable="false">تاریخیں صاف کریں</string>
+    <string name="auto_my_downloads_817" translatable="false">میرے ڈاؤنلوڈز</string>
+    <string name="auto_no_downloaded_files_found_818" translatable="false">کوئی ڈاؤنلوڈ شدہ فائل نہیں ملی۔</string>
+    <string name="auto_search_files_819" translatable="false">فائلیں تلاش کریں...</string>
+    <string name="auto_provide_feedback_820" translatable="false">رائے دیں</string>
+    <string name="auto_how_was_your_experience_821" translatable="false">آپ کا تجربہ کیسا رہا؟</string>
+    <string name="auto_your_feedback_helps_us_im_822" translatable="false">آپ کی رائے ہماری خدمات کو بہتر بنانے میں مدد کرتی ہے۔</string>
+    <string name="auto_select_category_823" translatable="false">زمرہ منتخب کریں</string>
+    <string name="auto_attach_image_optional_824" translatable="false">تصویر منسلک کریں (اختیاری)</string>
+    <string name="auto_choose_image_825" translatable="false">تصویر منتخب کریں</string>
+    <string name="auto_additional_comments_optio_826" translatable="false">اضافی تبصرے (اختیاری)</string>
+    <string name="auto_submit_feedback_827" translatable="false">رائے جمع کریں</string>
+    <string name="auto_enter_your_feedback_title_828" translatable="false">اپنا تاثر کا عنوان درج کریں...</string>
+    <string name="auto_tell_us_what_you_think_829" translatable="false">ہمیں بتائیں آپ کیا سوچتے ہیں...</string>
+    <string name="auto_cnic_n_a_830" translatable="false">شناختی کارڈ: دستیاب نہیں</string>
+    <string name="auto_borrower_no_n_a_831" translatable="false">قرض دار نمبر: دستیاب نہیں</string>
+    <string name="auto_get_instant_agricultural_832" translatable="false">آسان اقساط پر بلا سود زرعی فنانسنگ حاصل کریں! ابھی اپلائی کریں...</string>
+    <string name="auto_active_disbursed_amount_833" translatable="false">فعال ادا شدہ رقم</string>
+    <string name="auto_18_sep_2024_834" translatable="false">18 ستمبر، 2024</string>
+    <string name="auto_loan_cycle_835" translatable="false">فنانسنگ سائیکل</string>
+    <string name="auto_first_cycle_836" translatable="false">پہلا سائیکل</string>
+    <string name="auto_status_837" translatable="false">حیثیت</string>
+    <string name="auto_disbursed_838" translatable="false">ادا کردہ</string>
+    <string name="auto_assan_digital_loan_scheme_839" translatable="false">آسان ڈیجیٹل فنانسنگ اسکیم 2026</string>
+    <string name="auto_get_interest_free_micro_l_840" translatable="false">Get interest-free micro-financing up to Rs. 150,000 using digital card scanning &amp; voice submission.</string>
+    <string name="auto_apply_now_841" translatable="false">ابھی درخواست دیں</string>
+    <string name="auto_loan_ledger_842" translatable="false">فنانسنگ لیجر</string>
+    <string name="auto_borrower_summary_843">کسٹمر کی تفصیل</string>
+    <string name="auto_loan_details_844" translatable="false">فنانسنگ کی تفصیلات</string>
+    <string name="auto_borrower_name_845">کسٹمر کا نام</string>
+    <string name="auto_borrower_no_846">کسٹمر نمبر</string>
+    <string name="auto_total_recovered_847" translatable="false">کل وصول شدہ</string>
+    <string name="auto_ledger_schedule_848" translatable="false">لیجر شیڈول</string>
+    <string name="str_repayment_schedule">ری پیمنٹ شیڈول</string>
+    <string name="auto_inst_849" translatable="false">قسط نمبر</string>
+    <string name="auto_due_total_850" translatable="false">کل واجب الادا</string>
+    <string name="auto_rec_date_851" translatable="false">وصولی تاریخ</string>
+    <string name="auto_rec_amt_852" translatable="false">وصولی رقم</string>
+    <string name="auto_settings_853" translatable="false">ترتیبات</string>
+    <string name="auto_str_854" translatable="false">🌾</string>
+    <string name="auto_str_855" translatable="false">✅</string>
+    <string name="auto_verified_856" translatable="false">تصدیق شدہ</string>
+    <string name="auto_str_857" translatable="false">🏦</string>
+    <string name="auto_nrsp_portal_858" translatable="false">NRSP پورٹل</string>
+    <string name="auto_notification_popups_859" translatable="false">اطلاعی پاپ اپ</string>
+    <string name="auto_show_alert_on_screen_860" translatable="false">اسکرین پر الرٹ دکھائیں</string>
+    <string name="auto_support_amp_information_861" translatable="false">مدد اور معلومات</string>
+    <string name="auto_assan_finance_nrsp_portal_862" translatable="false">آسان فنانس · NRSP پورٹل · v1.0</string>
+    <string name="auto_old_password_863" translatable="false">پرانا پاسورڈ</string>
+    <string name="auto_new_password_864" translatable="false">نیا پاسورڈ</string>
+    <string name="auto_confirm_new_password_865" translatable="false">نئے پاسورڈ کی تصدیق کریں</string>
+    <string name="auto_update_data_866" translatable="false">ڈیٹا اپ ڈیٹ کریں</string>
+    <string name="auto_old_password_optional_867" translatable="false">پرانا پاسورڈ (اختیاری)</string>
+    <string name="auto_new_password_optional_868" translatable="false">نیا پاسورڈ (اختیاری)</string>
+    <string name="auto_confirm_new_password_opti_869" translatable="false">نئے پاسورڈ کی تصدیق کریں (اختیاری)</string>
+    <string name="auto_2021_870" translatable="false">2021</string>
+    <string name="auto_ledger_20230101_pdf_871" translatable="false">Ledger_20230101.pdf</string>
+    <string name="auto_12_jan_2023_872" translatable="false">12 جنوری 2023</string>
+    <string name="auto_str_873" translatable="false"> • </string>
+    <string name="auto_1_2_mb_874" translatable="false">1.2 MB</string>
+    <string name="auto_2023_01_01_875" translatable="false">2023-01-01</string>
+    <string name="auto_5000_876" translatable="false">5000</string>
+    <string name="auto_2023_01_05_877" translatable="false">2023-01-05</string>
+    <string name="auto_assan_finance_services_878" translatable="false">آسان فنانس سروسز</string>
+    <string name="privacy_policy_text" translatable="false">&lt;b&gt;Privacy Policy – Asaan Finance&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;Last updated:&lt;/b&gt; 16 October 2026&lt;br&gt;&lt;br&gt;
+This Privacy Policy explains how the National Rural Support Programme (NRSP) (\"NRSP\", \"we\", \"our\" or \"us\") collects, uses, shares and protects your information when you use the Asaan Finance mobile app (the \"App\"). The App lets you apply for and manage interest-free micro-financing from NRSP.&lt;br&gt;&lt;br&gt;
+By registering for or using the App, you agree to this Privacy Policy. If you do not agree, please do not use the App.&lt;br&gt;&lt;br&gt;
+&lt;b&gt;1. Information We Collect&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;A. Information you give us&lt;/b&gt;&lt;br&gt;
+• Identity details: full name, CNIC number, CNIC issue and expiry dates, date of birth, gender and marital status.&lt;br&gt;
+• Contact details: mobile number, present and permanent address, district and tehsil.&lt;br&gt;
+• Photos: your profile photo and photos of the front and back of your CNIC.&lt;br&gt;
+• Bank details: bank name, account number, branch code and branch address.&lt;br&gt;
+• Financing details: purpose, amount and duration of financing, business or occupation details, source of income and nearest NRSP branch city.&lt;br&gt;
+• Payments: receipt photos and details you submit for manual payments.&lt;br&gt;
+• Support: feedback, attachments and the messages or voice questions you send to the in-app assistants.&lt;br&gt;
+&lt;b&gt;B. Information collected automatically&lt;/b&gt;&lt;br&gt;
+• A notification token (Google Firebase Cloud Messaging) so we can send you updates about your application.&lt;br&gt;
+• Your device ID at registration, and basic technical information (such as app version and device model) needed to keep the App working.&lt;br&gt;
+The App does not show advertisements and does not use your location.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;2. App Permissions&lt;/b&gt;&lt;br&gt;
+• Camera: to scan your CNIC and take your profile photo or a payment receipt photo.&lt;br&gt;
+• Photos / media: to choose a CNIC photo, profile photo or receipt from your gallery.&lt;br&gt;
+• Microphone: only while you use voice mode in the assistants. Your speech is converted to text by your phone\'s speech service.&lt;br&gt;
+• Notifications: to tell you about application status and payments.&lt;br&gt;
+• Internet: to send your application and load your financing records.&lt;br&gt;
+You can withdraw any permission in your phone\'s settings; some features will then stop working.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;3. How We Use Your Information&lt;/b&gt;&lt;br&gt;
+• To create and manage your account and verify your identity.&lt;br&gt;
+• To receive, assess and process your financing application, including eligibility checks such as existing NRSP financing, repeat-client status, NADRA biometric verification and AML/CFT screening.&lt;br&gt;
+• To disburse financing, record repayments and show your Financing Ledger.&lt;br&gt;
+• To send notifications about your application and payments.&lt;br&gt;
+• To answer your questions, handle feedback and provide support.&lt;br&gt;
+• To prevent fraud and meet our legal and regulatory obligations.&lt;br&gt;
+• To improve the App.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;4. AI Features&lt;/b&gt;&lt;br&gt;
+CNIC scanning and the in-app assistants use Google Gemini, a service of Google LLC, to read the details on your CNIC and to understand and answer your questions. CNIC photos and the messages you send to the assistants are sent to Google for this processing. Please do not share passwords, PINs or OTPs with the assistants; NRSP never asks for them.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;5. Sharing Your Information&lt;/b&gt;&lt;br&gt;
+We do not sell your personal information. We share it only with:&lt;br&gt;
+• NRSP staff and branches who process your application and financing.&lt;br&gt;
+• Banks and payment channels used for disbursement and repayment.&lt;br&gt;
+• NADRA, regulators and law enforcement authorities when required by law.&lt;br&gt;
+• Service providers who help us run the App: Google Firebase (notifications) and Google Gemini (AI features).&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;6. Data Security&lt;/b&gt;&lt;br&gt;
+We use reasonable technical and organisational measures to protect your information against unauthorised access, loss or misuse. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;7. Data Retention&lt;/b&gt;&lt;br&gt;
+We keep your information while your account is active and for as long as required by law and NRSP\'s record-keeping rules for financial records, after which it is deleted or anonymised.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;8. Your Rights&lt;/b&gt;&lt;br&gt;
+• Access: ask for a copy of the information we hold about you.&lt;br&gt;
+• Correction: update your profile in the App (Settings, Update Profile) or ask us to correct it.&lt;br&gt;
+• Deletion: ask us to delete your account. Financing and repayment records may be kept where the law requires it.&lt;br&gt;
+To make a request, email mer_dojlm@yahoo.com with the subject \"Data Deletion Request\" or \"Data Access Request\". We will respond within 14 business days.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;9. Children&lt;/b&gt;&lt;br&gt;
+The App is for adults aged 18 and over. We do not knowingly collect information from anyone under 18.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;10. Changes to This Policy&lt;/b&gt;&lt;br&gt;
+We may update this Privacy Policy. When we do, we will change the \"Last updated\" date above. Continuing to use the App after an update means you accept the updated policy.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;11. Contact Us&lt;/b&gt;&lt;br&gt;
+• Organisation: National Rural Support Programme (NRSP)&lt;br&gt;
+• Email: mer_dojlm@yahoo.com&lt;br&gt;
+• WhatsApp / Phone: +92 302 8582454</string>
+    <string name="agri_work_on_family_farm">خاندانی فارم پر کام</string>
+    <string name="agri_work_on_other_farm">دوسرے کے فارم پر کام</string>
+    <string name="agri_share_cropping">فارم پر شراکت داری کاشت</string>
+    <string name="agri_keep_others_livestock">Keep other\'s Livestock</string>
+    <string name="agri_fishing_business">مچھلی کا کاروبار</string>
+    <string name="non_agri_food_processing">کھانے کی پروسیسنگ اور بیچنا</string>
+    <string name="non_agri_trading">تجارت / خرید و فروخت</string>
+    <string name="non_agri_handicrafts">دستکاری</string>
+    <string name="non_agri_garments">کپڑے کا کاروبار</string>
+    <string name="non_agri_mechanic">مکینک</string>
+    <string name="non_agri_carpentry">بڑھئی / دھات کا کام</string>
+    <string name="non_agri_transport">ٹرانسپورٹ سروس</string>
+    <string name="non_agri_wage_earner">یومیہ اجرت / تعمیرات</string>
+    <string name="non_agri_office_work">دفتری کام</string>
+    <string name="non_agri_sewing">سلائی کڑھائی</string>
+    <string name="non_agri_govt_employee">سرکاری ملازم</string>
+    <string name="non_agri_private_job">نجی ملازمت</string>
+    <string name="non_agri_house_wife">گھریلو خاتون</string>
+    <string name="str_"> *</string>
+    <string name="str_cnic_expiry_date">تاریخ تنسیخ</string>
+    <string name="str_cnic_pictures_front_amp_ba">شناختی کارڈ کی تصاویر (سامنے اور پیچھے)</string>
+    <string name="str_front_side">سامنے کا حصہ</string>
+    <string name="str_back_side">پچھلا حصہ</string>
+    <string name="str_marital_status">ازدواجی حیثیت</string>
+    <string name="str_single">غیر شادی شدہ</string>
+    <string name="str_married">شادی شدہ</string>
+    <string name="str_present_address">موجودہ پتہ</string>
+    <string name="str_permanent_address">مستقل پتہ</string>
+    <string name="str_district">ضلع</string>
+    <string name="str_tehsil">تحصیل</string>
+    <string name="str_account_number">آئی بی اے این نمبر</string>
+    <string name="str_0_0">0/0</string>
+    <string name="str_iban_hint">PKXXXXXXXXXXXXXXXXXXXXXX</string>
+    <string name="str_branch_code">برانچ کوڈ</string>
+    <string name="str_branch_address">برانچ کا پتہ</string>
+    <string name="str_purpose_of_financing">فنانسنگ کا مقصد</string>
+    <string name="str_financing_amount_pkr">فنانسنگ کی رقم (PKR)</string>
+    <string name="str_loan_duration">فنانسنگ کی مدت</string>
+    <string name="str_nature_of_business">کاروبار کی نوعیت</string>
+    <string name="str_business_duration_years">کاروبار کی مدت (سال)</string>
+    <string name="str_complete_business_address">مکمل کاروباری پتہ</string>
+    <string name="str_business_city">قریبی این آر ایس پی برانچ کا شہر</string>
+    <string name="str_select_occupation_type">پیشے کی قسم منتخب کریں</string>
+    <string name="str_agriculture_occupation">زرعی پیشہ</string>
+    <string name="str_non_agriculture_occupation">غیر زرعی پیشہ</string>
+    <string name="str_i_confirm_that_all_informa">میں تصدیق کرتا ہوں کہ فراہم کردہ تمام معلومات درست اور مکمل ہیں۔ میں سمجھتا ہوں کہ اس مالیاتی درخواست کا جائزہ NRSP کی ٹیم لے گی، اور مجھ سے تصدیق کے لیے رابطہ کیا جا سکتا ہے۔ میں پروگرام کے شرائط و ضوابط سے متفق ہوں۔</string>
+    <string name="str_i_agree_to_the_declaration">میں اقرار نامے سے متفق ہوں</string>
+    <string name="str_powered_by">طاقت از</string>
+    <string name="str__1">اردو</string>
+    <string name="str_listening">سن رہا ہے...</string>
+    <string name="str_applicant_name">درخواست دہندہ کا نام</string>
+    <string name="str_applicant_cnic">درخواست دہندہ کا شناختی کارڈ</string>
+    <string name="str_purpose_of_loan">فنانسنگ کا مقصد</string>
+    <string name="str_loan_amount">فنانسنگ کی رقم</string>
+    <string name="str_business_address">کاروباری پتہ</string>
+    <string name="str_occupation_type">پیشے کی قسم</string>
+    <string name="str_specific_occupation">مخصوص پیشہ</string>
+    <string name="str_select_whatsapp_version">واٹس ایپ ورژن منتخب کریں</string>
+    <string name="str_whatsapp">واٹس ایپ</string>
+    <string name="str_whatsapp_business">واٹس ایپ بزنس</string>
+    <string name="str_tupac_420">Tupac@420</string>
+    <string name="str_username_already_exists">یہ صارف نام پہلے سے موجود ہے</string>
+    <string name="str_always_screen_on">اسکرین ہمیشہ آن رکھیں</string>
+    <string name="str_keep_the_screen_awake_whil">ایپ استعمال کے دوران اسکرین آن رکھیں</string>
+    <string name="str_dark_mode">ڈارک موڈ</string>
+    <string name="str_enable_dark_theme_for_the">ایپ کا ڈارک تھیم فعال کریں</string>
+    <string name="str_whatsapp_support">واٹس ایپ سپورٹ</string>
+    <string name="str_auto_logout_session">خودکار لاگ آؤٹ سیشن</string>
+    <string name="str_easypaisa">ایزی پیسہ</string>
+    <string name="str_manual_payment_verificatio">دستی ادائیگی کی تصدیق</string>
+    <string name="str_1_send_money_to_our_master">1. ہمارے ماسٹر اکاؤنٹ میں رقم بھیجیں:</string>
+    <string name="str_bank_nrsp_microfinance_ban">Bank: NRSP Microfinance Bank\nTitle: NRSP Collection Account</string>
+    <string name="str_pk1234567890">PK1234567890</string>
+    <string name="str_open_app_to_pay">ادائیگی کے لیے ایپ کھولیں</string>
+    <string name="str_2_enter_transaction_id_tid">2. ادائیگی کے بعد ٹرانزیکشن آئی ڈی درج کریں:</string>
+    <string name="str_transaction_id_e_g_1234567">ٹرانزیکشن آئی ڈی (مثلاً 1234567890)</string>
+    <string name="str_amount_paid_pkr">ادا کردہ رقم (PKR)</string>
+    <string name="str_submit_proof">ثبوت جمع کرائیں</string>
+    <string name="str_about_Asaan_finance">آسان فنانس کے بارے میں</string>
+    <string name="str_change_pin">پن تبدیل کریں</string>
+    <string name="str_documents">دستاویزات</string>
+    <string name="str_me">میں</string>
+    <string name="str_history">ہسٹری</string>
+    <string name="str_apply_financing">فنانسنگ کی درخواست دیں</string>
+    <string name="str_support_security">سپورٹ اور سیکیورٹی</string>
+    <string name="str_others">دیگر</string>
+    <string name="msg_camera_permission">شناختی کارڈ اسکین کرنے کے لیے کیمرہ کی اجازت درکار ہے</string>
+    <string name="msg_security_alert">سیکیورٹی الرٹ</string>
+    <string name="msg_rooted_device">سیکیورٹی وجوہات کی بنا پر یہ ایپ روٹ شدہ ڈیوائس یا ایمولیٹر پر نہیں چلائی جا سکتی</string>
+    <string name="action_exit">باہر نکلیں</string>
+    <string name="hint_select_district">ضلع منتخب کریں</string>
+    <string name="hint_select_city">کاروبار کا شہر منتخب کریں</string>
+    <string name="msg_district_not_found">ضلع نہیں ملا</string>
+    <string name="msg_network_error">سرور سے رابطہ کرنے میں ناکام۔ براہ کرم اپنا انٹرنیٹ کنکشن چیک کریں۔</string>
+    <string name="hint_select_tehsil">تحصیل منتخب کریں</string>
+    <string name="msg_no_tehsil_found">اس ضلع میں کوئی تحصیل نہیں ملی</string>
+    <string name="lbl_pkr">روپے</string>
+    <string name="msg_no_bank_channels">کوئی بینک چینل نہیں ملا</string>
+    <string name="msg_failed_retrieve_banks">بینک چینلز حاصل کرنے میں ناکامی</string>
+    <string name="hint_select_bank">بینک منتخب کریں</string>
+    <string name="msg_select_gender">براہ کرم جنس منتخب کریں</string>
+    <string name="msg_select_marital_status">ازدواجی حیثیت منتخب کریں</string>
+    <string name="msg_select_income_source">براہ کرم آمدنی کا ذریعہ منتخب کریں</string>
+    <string name="lbl_financing_limit">فنانسنگ کی حد:</string>
+    <string name="msg_select_business_nature">براہ کرم کاروبار کی نوعیت منتخب کریں</string>
+    <string name="msg_select_occupation_type">براہ کرم پیشے کی قسم (زرعی یا غیر زرعی) منتخب کریں</string>
+    <string name="msg_select_agri_occupation">براہ کرم کوئی زرعی پیشہ منتخب کریں</string>
+    <string name="msg_select_non_agri_occupation">براہ کرم کوئی غیر زرعی پیشہ منتخب کریں</string>
+    <string name="msg_session_expired">سیشن ختم ہو گیا یا لاگ ان نہیں ہے۔ براہ کرم دوبارہ لاگ ان کریں۔</string>
+    <string name="hint_select_purpose">فنانسنگ کا مقصد منتخب کریں</string>
+    <string name="msg_thinking">سوچ رہا ہے...</string>
+    <string name="msg_listening">سن رہا ہے...</string>
+    <string name="msg_speaking">بول رہا ہے...</string>
+    <string name="action_delete_ledger">لیجر حذف کریں</string>
+    <string name="msg_confirm_delete_ledger">کیا آپ واقعی اس ڈاؤنلوڈ شدہ لیجر کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="action_delete">حذف کریں</string>
+    <string name="action_cancel">منسوخ کریں</string>
+    <string name="lbl_borrower_no">قرض دار نمبر:</string>
+    <string name="lbl_recovery_details">وصولی کی تفصیلات - قسط نمبر</string>
+    <string name="lbl_deposit_slip">جمع رسید</string>
+    <string name="msg_could_not_share_pdf">پی ڈی ایف شیئر نہیں کی جا سکی</string>
+    <string name="msg_saved_to_documents">دستاویزات میں محفوظ ہو گئی:</string>
+    <string name="msg_failed_generate_pdf">پی ڈی ایف بنانے میں ناکامی۔</string>
+    <string name="lbl_Asaan_id">آسان آئی ڈی:</string>
+    <string name="lbl_Asaan_finance_intro">آسان فنانس کا تعارف</string>
+    <string name="lbl_Asaan_user">آسان صارف</string>
+    <string name="lbl_name_upper">نام</string>
+    <string name="lbl_cnic_upper">شناختی کارڈ</string>
+    <string name="lbl_phone_upper">فون</string>
+    <string name="msg_text_copied">ٹیکسٹ کاپی ہو گیا</string>
+    <string name="msg_please_wait">براہ کرم انتظار کریں</string>
+    <string name="ug_title">صارف گائیڈ</string>
+    <string name="scam_alert_title">سیکیورٹی الرٹ</string>
+    <string name="scam_alert_desc">NRSP کبھی بھی آپ کا پاس ورڈ نہیں مانگتا۔ دھوکہ دہی سے بچنے کے لیے ہمیشہ یہ آفیشل ایپ استعمال کریں۔</string>
+    <string name="contact_us_title">ہم سے رابطہ کریں</string>
+    <string name="contact_address_label">پتہ</string>
+    <string name="contact_support_phone_label">آسان فنانس سپورٹ (کال / واٹس ایپ)</string>
+    <string name="contact_support_email_label">سپورٹ ای میل</string>
+    <string name="contact_address_value">7th Floor, UBL Building, Islamabad, Pakistan.</string>
+    <string name="contact_tel_label">فون</string>
+    <string name="contact_tel_value">92-51-2822319, 2822324</string>
+    <string name="contact_fax_label">فیکس</string>
+    <string name="contact_fax_value">92-51-2822779</string>
+    <string name="contact_email_label">ای میل</string>
+    <string name="contact_email_value">info@nrsp.org.pk</string>
+    <string name="contact_website_label">ویب سائٹ</string>
+    <string name="contact_website_value">https://nrsp.org.pk/contact/</string>
+    <string name="str_account_security">اکاؤنٹ اور سیکیورٹی</string>
+    <string name="str_display_preferences">ڈسپلے اور ترجیحات</string>
+    <string name="str_i_have_read_and_accept_the">میں نے پڑھ لی ہیں اور میں متفق ہوں </string>
+    <string name="str_scanning_front_side">شناختی کارڈ کے سامنے والے حصے کو اسکین کیا جا رہا ہے...</string>
+    <string name="str_scanning_back_side">شناختی کارڈ کے پچھلے حصے کو اسکین کیا جا رہا ہے...</string>
+    <string name="str_front_captured_align_back">سامنے کا حصہ کھینچ لیا گیا ہے!\nاب پچھلے حصے کو سیدھا کریں اور تصویر کھینچیں</string>
+    <string name="str_capture_back">پچھلے حصے کی تصویر کھینچیں</string>
+    <string name="str_extracting_cnic_data">شناختی کارڈ کا ڈیٹا نکالا جا رہا ہے...</string>
+    <string name="str_offline_ai_extraction">آف لائن اے آئی ڈیٹا ایکسٹریشن...</string>
+    <string name="str_error_exclamation">خرابی!</string>
+    <string name="str_align_front_inside_frame">اپنے شناختی کارڈ کے سامنے والے حصے کو\nفریم کے اندر سیدھا کریں۔</string>
+    <string name="str_capture_front">سامنے والے حصے کی تصویر کھینچیں</string>
+    <string name="str_submitting_feedback">جمع کرایا جا رہا ہے...</string>
+    <string name="str_submit_feedback_btn">رائے جمع کرائیں</string>
+    <string name="str_unable_to_process_request">اس وقت آپ کی درخواست پر کارروائی نہیں کی جا سکتی۔ براہ کرم بعد میں دوبارہ کوشش کریں۔</string>
+    <string name="str_open_easypaisa_app">ایزی پیسہ ایپ کھولیں</string>
+    <string name="str_open_jazzcash_app">جاز کیش ایپ کھولیں</string>
+    <string name="str_account_number_copied">اکاؤنٹ نمبر کاپی ہو گیا</string>
+    <string name="str_app_not_found">ایپ نہیں ملی</string>
+    <string name="str_no_specific_app_mapped">اس چینل کے لیے کوئی مخصوص ایپ موجود نہیں ہے</string>
+    <string name="str_coming_soon">بہت جلد آ رہا ہے</string>
+    <string name="str_payment_proof_submitted">ادائیگی کا ثبوت کامیابی کے ساتھ جمع ہو گیا</string>
+    <string name="str_listening_tap_to_send">سن رہا ہے... (بھیجنے کے لیے ↑ دبائیں)</string>
+    <string name="str_listening_speak_then_tap">سن رہا ہے... (بولیں، پھر ↑ دبائیں)</string>
+    <string name="str_thinking">سوچ رہا ہے...</string>
+    <string name="str_speaking">بول رہا ہے...</string>
+    <string name="str_borrower_no">قرض دار نمبر: </string>
+    <string name="str_Asaan_id">آسان آئی ڈی</string>
+    <string name="str_Asaan_id_colon">آسان آئی ڈی: </string>
+    <string name="str_cnic_number_label">شناختی کارڈ نمبر</string>
+    <string name="str_phone_number_label">فون نمبر</string>
+    <string name="str_date_of_birth_label">تاریخ پیدائش</string>
+    <string name="str_gender_label">جنس</string>
+    <string name="str_Asaan_member">آسان ممبر</string>
+    <string name="str_close_label">بند کریں</string>
+    <string name="str_edit_profile_label">پروفائل میں ترمیم کریں</string>
+    <string name="str_applied">درخواست دی گئی</string>
+    <string name="str_applied_cap">درخواست دی گئی</string>
+    <string name="str_sanctioned">منظور شدہ</string>
+    <string name="str_sanctioned_cap">منظور شدہ</string>
+    <string name="str_disbursed">ادائیگی ہو گئی</string>
+    <string name="str_disbursed_cap">ادائیگی ہو گئی</string>
+    <string name="str_recovery_details_installment">وصولی کی تفصیلات - قسط نمبر </string>
+    <string name="str_camera_permission_required">کیمرے کی اجازت درکار ہے</string>
+    <string name="share_app_subject">آسان فنانس ایپ</string>
+    <string name="share_app_message">آسان فنانس پاکستان کے لیے تیار کی گئی ایک ڈیجیٹل فنانسنگ ایپلی کیشن ہے جو صارفین کو ضرورت کے وقت آسان، تیز اور محفوظ مالی حل فراہم کرنے کے لیے ڈیزائن کی گئی ہے۔
+آسان فنانس ایپ ابھی ڈاؤن لوڈ کریں:
+https://play.google.com/store/apps/details?id=com.assan.finance</string>
+    <string name="share_via">شیئر کریں</string>
+    <string name="whatsapp_support_msg">ہیلو آسان فنانس سپورٹ، مجھے اپنی فنانسنگ کے حوالے سے مدد کی ضرورت ہے۔</string>
+    <string name="app_version_label">ورژن %s</string>
+    <string name="str_service_unavailable">سروس دستیاب نہیں</string>
+    <string name="str_quota_exceeded_msg">شناختی کارڈ اسکیننگ سروس کا کوٹہ ختم ہو گیا ہے۔ براہ کرم مدد کے لیے تکنیکی ٹیم سے رابطہ کریں۔</string>
+    <string name="str_okay">ٹھیک ہے</string>
+    <string name="str_coc" translatable="false">COC</string>
+    <string name="str_bt" translatable="false">BT</string>
+    <string name="str_closed_loan" translatable="false">Closed Loan</string>
+    <string name="error_cnic_expired_title">CNIC کی میعاد ختم / جلد ختم ہونے والی ہے</string>
+    <string name="error_cnic_expired_message">آپ ابھی فنانسنگ حاصل نہیں کر سکتے۔ براہ کرم اپنا شناختی کارڈ (CNIC) تجدید کروائیں۔ فنانسنگ اپلائی کرنے کے لیے آپ کے شناختی کارڈ کی میعاد کم از کم 1 سال ہونی چاہیے۔</string>
+    <string name="error_cnic_expired_message_6">آپ ابھی فنانسنگ حاصل نہیں کر سکتے۔ براہ کرم اپنا شناختی کارڈ (CNIC) تجدید کروائیں۔ 6 ماہ کے فنانسنگ پلان کے لیے آپ کے شناختی کارڈ کی میعاد کم از کم 6 ماہ ہونی چاہیے۔</string>
+    <string name="error_cnic_expired_message_12">آپ ابھی فنانسنگ حاصل نہیں کر سکتے۔ براہ کرم اپنا شناختی کارڈ (CNIC) تجدید کروائیں۔ فنانسنگ اپلائی کرنے کے لیے آپ کے شناختی کارڈ کی میعاد کم از کم 1 سال ہونی چاہیے۔</string>
+    <string name="str_tap_to_select_photo_mandatory">تصویر منتخب کرنے کے لیے ٹیپ کریں *</string>
+    <string name="nav_profile">پروفائل</string>
+    <string name="nav_feedback">رائے</string>
+    <string name="str_scanner_focusing">فوکس ہو رہا ہے…</string>
+    <string name="str_scanner_not_clear">تصویر صاف نہیں ہے۔ فون کو ساکن رکھیں، کارڈ فریم کے اندر رکھیں اور دوبارہ تصویر کھینچیں۔</string>
+    <string name="str_scanner_checking">کارڈ چیک ہو رہا ہے…</string>
+
+    <!-- Onboarding -->
+    <string name="onb_language_switch">English</string>
+    <string name="onb1_title">آسان فنانس میں خوش آمدید</string>
+    <string name="onb1_desc">این آر ایس پی کی شریعت کے مطابق فنانسنگ۔ گھر بیٹھے اپنے موبائل سے درخواست دیں۔</string>
+    <string name="onb1_badge">این آر ایس پی کی آفیشل ایپ</string>
+    <string name="onb2_title">اپنا شناختی کارڈ اسکین کریں</string>
+    <string name="onb2_desc">آپ کا نام، شناختی کارڈ نمبر اور پتہ خود بخود بھر جاتا ہے۔ کچھ لکھنے کی ضرورت نہیں۔</string>
+    <string name="onb2_badge">خود بخود بھر گیا</string>
+    <string name="onb3_title">اردو میں، آواز سے مدد</string>
+    <string name="onb3_desc">بس بولیں یا لکھیں۔ آسان اسسٹنٹ آپ کی درخواست مکمل کرنے میں مدد کرے گا۔</string>
+    <string name="onb3_badge">اردو · English</string>
+    <string name="onb4_title">ہر قسط پر نظر رکھیں</string>
+    <string name="onb4_desc">اپنی بقایا رقم، اقساط کا شیڈول اور ادائیگیاں دیکھیں اور فوری اطلاعات پائیں۔</string>
+    <string name="onb4_badge">فوری اطلاعات</string>
+</resources>

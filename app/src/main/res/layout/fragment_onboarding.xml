@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One onboarding page: hero panel (real app screen or logo + badge), then title and description -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/heroPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_onb_hero"
+        android:clipChildren="true"
+        android:outlineProvider="background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- soft decorative circles -->
+        <View
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="-60dp"
+            android:background="@drawable/bg_onb_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="-40dp"
+            android:layout_marginBottom="40dp"
+            android:alpha="0.7"
+            android:background="@drawable/bg_onb_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Real app screen, rising from the bottom of the panel -->
+        <ImageView
+            android:id="@+id/imgOnboardingPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.70"
+            tools:src="@drawable/onb_shot_scan" />
+
+        <!-- Welcome page: the logo instead of a screen -->
+        <LinearLayout
+            android:id="@+id/layoutOnboardingLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.78">
+
+            <ImageView
+                android:id="@+id/imgOnboardingLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/onb_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:letterSpacing="0.2"
+                android:text="@string/str_powered_by"
+                android:textColor="#6B8A90"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="NRSP"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nrsp_logo" />
+        </LinearLayout>
+
+        <!-- Floating badge -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOnboardingBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="14dp">
+
+                <ImageView
+                    android:id="@+id/imgOnboardingBadge"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/bg_onb_icon"
+                    android:importantForAccessibility="no"
+                    android:padding="6dp"
+                    app:tint="@color/teal_brand"
+                    tools:src="@drawable/ic_shield_check" />
+
+                <TextView
+                    android:id="@+id/txtOnboardingBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/dark_navy"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:text="Filled automatically" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtTitleOnboarding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:textColor="@color/dark_navy"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heroPanel"
+        tools:text="Scan your CNIC" />
+
+    <TextView
+        android:id="@+id/txtDescriptionOnboarding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#64748B"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitleOnboarding"
+        tools:text="Your name, CNIC number and address are filled in for you. No typing needed." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

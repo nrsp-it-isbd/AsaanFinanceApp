@@ -1,0 +1,21 @@
+<!-- camera_preview_layout.xml -->
+<FrameLayout
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_gradient"
+        tools:ignore="UnusedAttribute">
+
+    <!-- Camera Preview -->
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Guidelines Overlay -->
+    <com.assan.finance.utils.GuidelinesImageView
+        android:id="@+id/guidelinesImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

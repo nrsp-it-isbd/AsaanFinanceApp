@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- User Guide colours (dark versions in values-night/colors_user_guide.xml) -->
+<resources>
+    <color name="ug_page_bg">#F3F9F9</color>
+    <color name="ug_card_bg">#FFFFFF</color>
+    <color name="ug_card_stroke">#E2EBEE</color>
+    <color name="ug_title">#0A2540</color>
+    <color name="ug_body">#4A5D6B</color>
+    <color name="ug_muted">#7A8B97</color>
+    <color name="ug_teal">#00A8B0</color>
+    <color name="ug_teal_deep">#0B6E75</color>
+    <color name="ug_teal_soft">#DDF3F3</color>
+    <color name="ug_amber_bg">#FFF5DD</color>
+    <color name="ug_amber_text">#7A5200</color>
+    <color name="ug_amber_icon">#F5A524</color>
+    <color name="ug_hero_start">#0B6E75</color>
+    <color name="ug_hero_end">#00A8B0</color>
+    <color name="ug_on_hero">#FFFFFF</color>
+    <color name="ug_on_hero_soft">#33FFFFFF</color>
+    <color name="ug_whatsapp">#1FA855</color>
+    <color name="ug_number_bg">#0B6E75</color>
+    <color name="ug_number_text">#FFFFFF</color>
+    <color name="ug_button_teal">#0B6E75</color>
+</resources>

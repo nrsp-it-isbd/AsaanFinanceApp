@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Home - Default selected (Financing Application and Financing Ledger open from Home) -->
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/str_home" />
+
+    <!-- Assistant (mic) and notifications (bell) are already on Home, so the bar adds what Home lacks -->
+    <!-- 2. Profile -->
+    <item
+        android:id="@+id/updateProfileFragment"
+        android:icon="@drawable/ic_user"
+        android:title="@string/nav_profile" />
+
+    <!-- 3. Feedback -->
+    <item
+        android:id="@+id/feedbackFragment"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/nav_feedback" />
+
+    <!-- 4. Settings - Last -->
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_baseline_widgets_24"
+        android:title="@string/str_account_settings" />
+
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Single animated splash. The real Asaan Finance logo is split into layers (crescent, three bars,
+    two words) placed exactly as in logo_transparent.png (1 source px = 0.20356dp, stage = 160dp wide),
+    and SplashActivity animates them in.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background">
+
+    <FrameLayout
+        android:id="@+id/logoStage"
+        android:layout_width="160dp"
+        android:layout_height="54.96dp"
+        android:contentDescription="@string/app_name"
+        android:layoutDirection="ltr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivSplashCrescent"
+            android:layout_width="54.15dp"
+            android:layout_height="54.96dp"
+            android:layout_gravity="top|left"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_crescent" />
+
+        <ImageView
+            android:id="@+id/ivSplashBar1"
+            android:layout_width="10.38dp"
+            android:layout_height="17.51dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="16.28dp"
+            android:layout_marginTop="25.04dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_bar1" />
+
+        <ImageView
+            android:id="@+id/ivSplashBar2"
+            android:layout_width="10.18dp"
+            android:layout_height="26.67dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="26.67dp"
+            android:layout_marginTop="17.3dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_bar2" />
+
+        <ImageView
+            android:id="@+id/ivSplashBar3"
+            android:layout_width="10.38dp"
+            android:layout_height="33.18dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="36.84dp"
+            android:layout_marginTop="9.16dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_bar3" />
+
+        <ImageView
+            android:id="@+id/ivSplashWordAsaan"
+            android:layout_width="81.22dp"
+            android:layout_height="22.8dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="60.66dp"
+            android:layout_marginTop="6.51dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_word_asaan" />
+
+        <ImageView
+            android:id="@+id/ivSplashWordFinance"
+            android:layout_width="98.93dp"
+            android:layout_height="23.21dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="61.07dp"
+            android:layout_marginTop="29.92dp"
+            android:alpha="0"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_word_finance" />
+    </FrameLayout>
+
+    <!-- Footer: Powered by + NRSP logo -->
+    <LinearLayout
+        android:id="@+id/llFooterBranding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:alpha="0"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.2"
+            android:text="@string/str_powered_by"
+            android:textColor="#8E9AA8"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="NRSP"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nrsp_logo" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
