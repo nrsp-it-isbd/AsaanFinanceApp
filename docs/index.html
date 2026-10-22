@@ -4,35 +4,133 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Asaan Finance by NRSP</title>
-<meta name="description" content="Asaan Finance: apply for NRSP's Sharia-compliant micro-financing from your phone.">
+<meta name="description" content="Asaan Finance by NRSP: apply for Sharia-compliant micro-financing from your phone, scan your CNIC and track your installments.">
+<meta name="theme-color" content="#0b6e75">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="index.html">Asaan Finance <span>by NRSP</span></a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zM9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></symbol>
+  <symbol id="i-lang" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7 1.62-4.33L19.12 17h-3.24z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo-chip" href="index.html" aria-label="Asaan Finance home"><img src="assets/asaan-finance-logo.png" alt="Asaan Finance"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="delete-account.html">Delete account</a>
+    </nav>
+    <span class="nrsp-chip"><img src="assets/nrsp-logo.png" alt="National Rural Support Programme (NRSP)"></span>
+  </div>
 </header>
-<main>
+
 <section class="hero">
-  <h1>Asaan Finance</h1>
-  <p>The official app of the National Rural Support Programme (NRSP) to apply for Sharia-compliant micro-financing from your phone, scan your CNIC instead of typing, and follow your installments.</p>
-  <p class="ur" dir="rtl" lang="ur">مالی سہولت، اب آپ کے موبائل پر</p>
+  <div class="wrap">
+    <div>
+      <span class="pill"><svg class="icon" style="width:18px;height:18px"><use href="#i-shield"/></svg> An official app by NRSP</span>
+      <h1>Financing in every pocket</h1>
+      <p class="ur" dir="rtl" lang="ur">مالی سہولت، ہر جیب میں</p>
+      <p class="lead">Apply for NRSP's Sharia-compliant micro-financing from home. Scan your CNIC instead of typing, get help in Urdu from the AI assistant, and follow every installment.</p>
+      <div class="btns">
+        <a class="btn btn-white" href="https://play.google.com/store/apps/details?id=com.assan.finance">
+          <svg class="icon"><use href="#i-play"/></svg><span><small>GET IT ON</small>Google Play</span>
+        </a>
+        <a class="btn btn-ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <img class="p1" src="assets/phone-apply.webp" alt="">
+      <img class="p2" src="assets/phone-scan.webp" alt="">
+      <img class="p3" src="assets/phone-assistant.webp" alt="">
+    </div>
+  </div>
 </section>
 
-<div class="links">
-  <a class="tile" href="privacy-policy.html"><strong>Privacy Policy</strong><span>How we collect, use and protect your information</span></a>
-  <a class="tile" href="delete-account.html"><strong>Delete your account</strong><span>Steps, what is deleted and what is kept</span></a>
+<div class="wrap trust">
+  <div class="row">
+    <div class="item"><span class="icon-circle"><svg class="icon"><use href="#i-shield"/></svg></span><div>Sharia-compliant<span>Financing by NRSP</span></div></div>
+    <div class="item"><span class="icon-circle"><svg class="icon"><use href="#i-lang"/></svg></span><div>Urdu and English<span>Full app in both languages</span></div></div>
+    <div class="item"><span class="icon-circle"><svg class="icon"><use href="#i-lock"/></svg></span><div>Your data protected<span>Never sold, never shared for ads</span></div></div>
+  </div>
 </div>
 
-<h2>Contact</h2>
-<div class="card">
-  <p>WhatsApp / Phone: <a href="tel:+923028582454">+92 302 8582454</a><br>
-  Email: <a href="mailto:mer_dojlm@yahoo.com">mer_dojlm@yahoo.com</a><br>
-  Website: <a href="https://nrsp.org.pk">nrsp.org.pk</a></p>
-  <p class="muted">NRSP never asks for your password or OTP. Only use the official Asaan Finance app.</p>
-</div>
-</main>
-<footer class="foot">&copy; National Rural Support Programme (NRSP)</footer>
+<section class="block">
+  <div class="wrap">
+    <h2 class="section-title">Everything in one app</h2>
+    <p class="section-sub">No branch visits and no paperwork to apply. Asaan Finance keeps your application and your installments in your pocket.</p>
+    <div class="grid grid-3">
+      <div class="card"><span class="icon-circle"><svg class="icon"><use href="#i-doc"/></svg></span><h3>Apply from home</h3><p>A simple digital form: purpose, amount, duration, bank and business details.</p></div>
+      <div class="card"><span class="icon-circle"><svg class="icon"><use href="#i-camera"/></svg></span><h3>Scan your CNIC</h3><p>Your name, CNIC number, dates and addresses are filled in automatically.</p></div>
+      <div class="card"><span class="icon-circle"><svg class="icon"><use href="#i-mic"/></svg></span><h3>AI assistant</h3><p>Speak or type in Urdu, Roman Urdu or English. It helps you fill the form and answers your questions.</p></div>
+      <div class="card"><span class="icon-circle"><svg class="icon"><use href="#i-chart"/></svg></span><h3>Financing ledger</h3><p>Remaining balance, repayment schedule and the details of every installment.</p></div>
+      <div class="card"><span class="icon-circle"><svg class="icon"><use href="#i-bell"/></svg></span><h3>Instant updates</h3><p>Notifications about your application status and your installments.</p></div>
+      <div class="card"><span class="icon-circle"><svg class="icon"><use href="#i-lock"/></svg></span><h3>Safe and private</h3><p>Auto logout, locked CNIC details, and you can delete your account at any time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="how">
+  <div class="wrap">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">Four easy steps from your phone to NRSP.</p>
+    <div class="steps">
+      <div class="card step"><span class="num">1</span><h3>Create your account</h3><p>Register once with your CNIC and mobile number.</p></div>
+      <div class="card step"><span class="num">2</span><h3>Scan your CNIC</h3><p>Front and back. Your details fill in by themselves.</p></div>
+      <div class="card step"><span class="num">3</span><h3>Fill and submit</h3><p>Choose purpose, amount and duration, then submit.</p></div>
+      <div class="card step"><span class="num">4</span><h3>NRSP reviews</h3><p>You get a notification about your application status.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="section-title">Your data and your account</h2>
+    <p class="section-sub">Read how we protect your information, or delete your account whenever you want.</p>
+    <div class="grid grid-2">
+      <a class="tile" href="privacy-policy.html"><span class="icon-circle"><svg class="icon"><use href="#i-shield"/></svg></span><div><strong>Privacy Policy</strong><span>What we collect, why, and who we share it with</span></div></a>
+      <a class="tile" href="delete-account.html"><span class="icon-circle red"><svg class="icon"><use href="#i-trash"/></svg></span><div><strong>Delete your account</strong><span>Steps, what is deleted and what NRSP keeps</span></div></a>
+    </div>
+
+    <div class="contact">
+      <div>
+        <h3>Need help?</h3>
+        <p>Our team is ready to help you. NRSP never asks for your password or OTP.</p>
+      </div>
+      <div class="btns">
+        <a class="btn btn-green" href="https://wa.me/923028582454"><svg class="icon"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a class="btn btn-white" href="mailto:mer_dojlm@yahoo.com"><svg class="icon"><use href="#i-mail"/></svg>Email us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="chip"><img src="assets/nrsp-logo.png" alt="National Rural Support Programme (NRSP)"></span>
+    <span>&copy; National Rural Support Programme (NRSP)</span>
+    <nav aria-label="Footer">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="delete-account.html">Delete account</a>
+      <a href="https://nrsp.org.pk">nrsp.org.pk</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
