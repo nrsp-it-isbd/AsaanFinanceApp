@@ -1,0 +1,74 @@
+/* Asaan Finance public pages (GitHub Pages) */
+:root {
+  --bg: #f4fafa;
+  --card: #ffffff;
+  --text: #0f2a3a;
+  --muted: #5b6b77;
+  --teal: #0b6e75;
+  --teal-2: #00a8b0;
+  --line: #dce9ea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101719;
+    --card: #182225;
+    --text: #e8eef1;
+    --muted: #9fb0ba;
+    --teal: #57d0d6;
+    --teal-2: #2fc9cf;
+    --line: #26363a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 "Segoe UI", Roboto, Arial, sans-serif;
+}
+.top {
+  background: linear-gradient(135deg, #0b6e75, #00a8b0);
+  padding: 14px 16px;
+}
+.brand { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+.brand span { font-weight: 400; opacity: .85; }
+main { max-width: 820px; margin: 0 auto; padding: 24px 16px 40px; }
+h1 { font-size: 1.8rem; line-height: 1.25; margin: 8px 0 12px; }
+h2 { font-size: 1.25rem; margin: 32px 0 10px; color: var(--teal); }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+a { color: var(--teal); }
+ul, ol { padding-inline-start: 22px; }
+li { margin: 4px 0; }
+.muted { color: var(--muted); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 4px 18px;
+}
+.steps li { margin: 6px 0; }
+.hero p { font-size: 1.05rem; }
+.links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 20px; }
+.tile {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--text);
+}
+.tile strong { display: block; color: var(--teal); font-size: 1.05rem; }
+.tile span { color: var(--muted); font-size: .95rem; }
+.ur {
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+  line-height: 2.2;
+}
+section.ur {
+  margin-top: 36px;
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+}
+.hero .ur { font-size: 1.4rem; color: var(--teal); margin-top: 6px; }
+.foot { text-align: center; color: var(--muted); font-size: .9rem; padding: 20px 16px 32px; }
+.foot a { color: var(--muted); }
