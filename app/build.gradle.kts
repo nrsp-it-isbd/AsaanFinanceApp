@@ -108,9 +108,9 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.8.0")
 
     // CameraX
-    implementation("androidx.camera:camera-camera2:1.3.3")
-    implementation("androidx.camera:camera-lifecycle:1.3.3")
-    implementation("androidx.camera:camera-view:1.3.3")
+    implementation("androidx.camera:camera-camera2:1.4.2")
+    implementation("androidx.camera:camera-lifecycle:1.4.2")
+    implementation("androidx.camera:camera-view:1.4.2")
 
     // Retrofit2
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
@@ -177,7 +177,7 @@ dependencies {
 
     // Security & Root Detection
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
-    implementation("com.scottyab:rootbeer-lib:0.1.0")
+    implementation("com.scottyab:rootbeer-lib:0.1.2")
 }
 
 tasks.withType<JavaCompile> {

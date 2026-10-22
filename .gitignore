@@ -16,6 +16,8 @@ captures/
 .cxx/
 *.apk
 *.aab
+release/
+keystore_details.txt
 *.ap_
 *.dex
 *.class
@@ -37,6 +39,7 @@ Thumbs.db
 presentation/
 promo_video/
 promo_banner/
+play_store_listing/
 node_modules/
 # One-off helper scripts and archives in the project root
 /*.py
