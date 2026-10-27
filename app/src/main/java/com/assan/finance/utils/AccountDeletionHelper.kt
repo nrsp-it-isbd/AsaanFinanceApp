@@ -47,7 +47,7 @@ object AccountDeletionHelper {
         class Deleted(val mode: String?) : ApiOutcome()
         object WrongPassword : ApiOutcome()
         object NotAvailable : ApiOutcome()   // API not deployed / not configured yet -> old way
-        object Failed : ApiOutcome()
+        class Failed(@StringRes val message: Int) : ApiOutcome()
     }
 
     @JvmStatic
@@ -149,9 +149,9 @@ object AccountDeletionHelper {
                             showError(tvError, R.string.del_acc_failed)
                         }
                     }
-                    ApiOutcome.Failed -> {
+                    is ApiOutcome.Failed -> {
                         setBusy(false)
-                        showError(tvError, R.string.del_acc_failed)
+                        showError(tvError, outcome.message)
                     }
                 }
             }
@@ -165,7 +165,7 @@ object AccountDeletionHelper {
         val cnic = SharedManager.getInstance(activity).getString("CNIC", "") ?: ""
         try {
             AssanRetrofitClient.apiService.deleteAccount(
-                DeleteAccountRequest(cnic = cnic, password = password, reason = reason.ifEmpty { null })
+                DeleteAccountRequest(cnic = cnic, password = password, reason = reason)
             ).enqueue(object : Callback<ResponseModelDeleteAccount> {
                 override fun onResponse(call: Call<ResponseModelDeleteAccount>, response: Response<ResponseModelDeleteAccount>) {
                     val body = response.body()
@@ -173,21 +173,23 @@ object AccountDeletionHelper {
                         when {
                             // Older server without the endpoint
                             response.code() == 404 -> ApiOutcome.NotAvailable
-                            !response.isSuccessful || body == null -> ApiOutcome.Failed
-                            body.success -> ApiOutcome.Deleted(body.data?.mode)
+                            // Server rate limit (too many password tries)
+                            response.code() == 429 -> ApiOutcome.Failed(R.string.del_acc_too_many_attempts)
+                            !response.isSuccessful || body == null -> ApiOutcome.Failed(R.string.del_acc_not_deleted)
+                            body.isSuccess -> ApiOutcome.Deleted(body.data?.mode)
                             body.error == ERROR_INVALID_CREDENTIALS -> ApiOutcome.WrongPassword
                             body.error == ERROR_NOT_CONFIGURED -> ApiOutcome.NotAvailable
-                            else -> ApiOutcome.Failed
+                            else -> ApiOutcome.Failed(R.string.del_acc_not_deleted)
                         }
                     )
                 }
 
                 override fun onFailure(call: Call<ResponseModelDeleteAccount>, t: Throwable) {
-                    onResult(ApiOutcome.Failed)
+                    onResult(ApiOutcome.Failed(R.string.del_acc_failed))
                 }
             })
         } catch (e: Exception) {
-            onResult(ApiOutcome.Failed)
+            onResult(ApiOutcome.Failed(R.string.del_acc_not_deleted))
         }
     }
 

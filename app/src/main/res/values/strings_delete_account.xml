@@ -16,6 +16,8 @@
     <string name="del_acc_cancel">Cancel</string>
     <string name="del_acc_ok">OK</string>
     <string name="del_acc_failed">Could not send your request. Please check your internet and try again.</string>
+    <string name="del_acc_not_deleted">Your account could not be deleted right now. Please try again later.</string>
+    <string name="del_acc_too_many_attempts">Too many attempts. Please wait a few minutes and try again.</string>
     <string name="del_acc_password_required">Please enter your password.</string>
     <string name="del_acc_wrong_password">The password is not correct. Please try again.</string>
     <string name="del_acc_done_title">Request received</string>

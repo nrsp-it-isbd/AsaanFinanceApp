@@ -50,16 +50,23 @@ data class ResponseModelRegistration(
 data class DeleteAccountRequest(
     @SerializedName("cnic") val cnic: String,
     @SerializedName("password") val password: String,
-    @SerializedName("reason") val reason: String?
+    // Optional for the user, but the server rejects a missing reason (HTTP 400 "The Reason
+    // field is required"), so send "" when it is empty.
+    @SerializedName("reason") val reason: String
 )
 
 data class ResponseModelDeleteAccount(
-    @SerializedName("success") val success: Boolean = false,
+    // Like Auth/login: the real boolean is "success_bool", and "success" is "1"/"0" (string).
+    @SerializedName("success_bool") val successBool: Boolean? = null,
+    @SerializedName("success") val successString: String? = null,
     @SerializedName("message") val message: String? = null,
     // Machine-readable failure: INVALID_CREDENTIALS, NOT_CONFIGURED, ...
     @SerializedName("error") val error: String? = null,
     @SerializedName("data") val data: DeleteAccountResult? = null
-)
+) {
+    val isSuccess: Boolean
+        get() = successBool == true || successString == "1" || successString.equals("true", ignoreCase = true)
+}
 
 data class DeleteAccountResult(
     // "deleted" = everything removed, "records_kept" = financing records kept by law

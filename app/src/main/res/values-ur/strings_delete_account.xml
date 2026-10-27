@@ -15,6 +15,8 @@
     <string name="del_acc_cancel">منسوخ کریں</string>
     <string name="del_acc_ok">ٹھیک ہے</string>
     <string name="del_acc_failed">آپ کی درخواست نہیں بھیجی جا سکی۔ اپنا انٹرنیٹ چیک کر کے دوبارہ کوشش کریں۔</string>
+    <string name="del_acc_not_deleted">آپ کا اکاؤنٹ ابھی ختم نہیں ہو سکا۔ کچھ دیر بعد دوبارہ کوشش کریں۔</string>
+    <string name="del_acc_too_many_attempts">بہت زیادہ کوششیں ہو گئی ہیں۔ چند منٹ انتظار کر کے دوبارہ کوشش کریں۔</string>
     <string name="del_acc_password_required">مہربانی کر کے اپنا پاس ورڈ لکھیں۔</string>
     <string name="del_acc_wrong_password">پاس ورڈ درست نہیں۔ دوبارہ کوشش کریں۔</string>
     <string name="del_acc_done_title">درخواست موصول ہو گئی</string>
