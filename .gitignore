@@ -50,3 +50,6 @@ node_modules/
 /privacy_raw.txt
 # Backend code is handed to the backend developer separately
 backend_fix/
+
+# ---------- User manual work files (contain real client screenshots) ----------
+user_manual/

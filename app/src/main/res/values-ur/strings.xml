@@ -1305,4 +1305,11 @@ https://play.google.com/store/apps/details?id=com.assan.finance</string>
     <string name="onb4_title">ہر قسط پر نظر رکھیں</string>
     <string name="onb4_desc">اپنی بقایا رقم، اقساط کا شیڈول اور ادائیگیاں دیکھیں اور فوری اطلاعات پائیں۔</string>
     <string name="onb4_badge">فوری اطلاعات</string>
+    <string name="fp_instructions">اپنا رجسٹرڈ شناختی کارڈ یا فون نمبر درج کریں اور نیا پاس ورڈ بنائیں۔</string>
+    <string name="fp_label_cnic_phone">شناختی کارڈ یا فون نمبر</string>
+    <string name="fp_hint_cnic_phone">شناختی کارڈ یا فون نمبر</string>
+    <string name="fp_label_new_password">نیا پاس ورڈ</string>
+    <string name="fp_hint_new_password">نیا پاس ورڈ لکھیں</string>
+    <string name="fp_label_confirm_password">نئے پاس ورڈ کی تصدیق</string>
+    <string name="fp_hint_confirm_password">نیا پاس ورڈ دوبارہ لکھیں</string>
 </resources>

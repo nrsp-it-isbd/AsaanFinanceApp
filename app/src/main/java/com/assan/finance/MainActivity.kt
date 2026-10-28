@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         
         checkForAppUpdate()
+        // APK shared on WhatsApp / Google Drive: Play's update check cannot see it, so check our own version file
+        com.assan.finance.utils.SideloadUpdateChecker.check(this)
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController

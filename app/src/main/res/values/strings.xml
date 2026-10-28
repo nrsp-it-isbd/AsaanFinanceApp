@@ -1286,4 +1286,11 @@ https://play.google.com/store/apps/details?id=com.assan.finance</string>
     <string name="onb4_title">Track every installment</string>
     <string name="onb4_desc">See your balance, repayment schedule and payments, and get instant updates.</string>
     <string name="onb4_badge">Instant updates</string>
+    <string name="fp_instructions">Enter your registered CNIC or Phone Number and create your new password.</string>
+    <string name="fp_label_cnic_phone">CNIC OR PHONE NUMBER</string>
+    <string name="fp_hint_cnic_phone">CNIC or Phone Number</string>
+    <string name="fp_label_new_password">NEW PASSWORD</string>
+    <string name="fp_hint_new_password">Enter new password</string>
+    <string name="fp_label_confirm_password">CONFIRM NEW PASSWORD</string>
+    <string name="fp_hint_confirm_password">Confirm new password</string>
 </resources>
