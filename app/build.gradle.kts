@@ -25,8 +25,8 @@ android {
         targetSdk = 36
         // GitHub Actions sets VERSION_CODE / VERSION_NAME for every Play Store upload
         // Sideloaded APK (WhatsApp / Google Drive): raise these with every shared build and with docs/version.json
-        versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 2
-        versionName = System.getenv("VERSION_NAME") ?: "1.0.1"
+        versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 3
+        versionName = System.getenv("VERSION_NAME") ?: "1.0.2"
 
         buildConfigField("String", "GEMINI_API_KEY", "\"${secret("GEMINI_API_KEY")}\"")
 

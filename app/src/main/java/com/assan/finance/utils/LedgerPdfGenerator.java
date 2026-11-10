@@ -331,7 +331,7 @@ public class LedgerPdfGenerator {
 
     private static String safeDate(String val) {
         if (val == null || val.isEmpty() || val.equalsIgnoreCase("null")) return "";
-        String dateStr = val.contains("T") ? val.split("T")[0] : val;
+        String dateStr = val.contains("T") ? CommonFunctions.serverDateToLocal(val) : val;
         try {
             java.text.SimpleDateFormat inputFormat;
             if (dateStr.contains("-") && dateStr.split("-")[0].length() == 4) {

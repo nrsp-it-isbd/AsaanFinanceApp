@@ -471,8 +471,8 @@ public class LoanLedgerFragment extends androidx.fragment.app.Fragment {
             tvDialogTitle.setText(getString(R.string.str_recovery_details_installment) + record.getInstallmentNo());
 
         setTextOrNa(dialog, R.id.tvReceiptNo, record.getReceiptNo());
-        setTextOrNa(dialog, R.id.tvDueDateDialog, record.getDueDate() != null ? record.getDueDate().split("T")[0] : null);
-        setTextOrNa(dialog, R.id.tvRecDateDialog, record.getReceiptDate() != null ? record.getReceiptDate().split("T")[0] : null);
+        setTextOrNa(dialog, R.id.tvDueDateDialog, record.getDueDate() != null ? com.assan.finance.utils.ServerDates.toDisplayDate(record.getDueDate()) : null);
+        setTextOrNa(dialog, R.id.tvRecDateDialog, record.getReceiptDate() != null ? com.assan.finance.utils.ServerDates.toDisplayDate(record.getReceiptDate()) : null);
         setTextOrNa(dialog, R.id.tvDescription, record.getStatus());
 
         setTextAmount(dialog, R.id.tvDuePA, record.getPrincipalDue());

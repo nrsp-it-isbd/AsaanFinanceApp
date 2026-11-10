@@ -778,7 +778,7 @@ class HomeFragment : Fragment() {
                     var nextDue: com.assan.finance.model.assan.AssanLedgerRecord? = null
                     for (inst in schedule) {
                         cumulativeDue += inst.dueTotal
-                        val instDate = inst.dueDate?.take(10) ?: ""
+                        val instDate = inst.dueDate?.let { com.assan.finance.utils.CommonFunctions.serverDateToLocal(it) } ?: ""
                         if (instDate.isNotEmpty() && instDate <= today) dueTillToday += inst.dueTotal
                         // first installment not fully covered by the total recovered so far
                         if (nextDue == null && cumulativeDue > totalRecPa + 1) nextDue = inst
@@ -798,11 +798,12 @@ class HomeFragment : Fragment() {
 
                     // FIX: showed installment 1's date (22-Jun) even after it was paid; show the next unpaid one
                     val rawDate = if (outstanding <= 0) null else (nextDue?.dueDate ?: firstRecord.dueDate)
-                    val dateString = rawDate?.split("T")?.get(0)
+                    // server dates are UTC: convert to Pakistan time so the due date matches the portal
+                    val dateString = rawDate?.let { com.assan.finance.utils.CommonFunctions.serverDateToLocal(it) }
                     if (!dateString.isNullOrEmpty()) {
                         try {
                             val inputFormat = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.US)
-                            val outputFormat = java.text.SimpleDateFormat("dd-MMM-yyyy", java.util.Locale.US)
+                            val outputFormat = java.text.SimpleDateFormat("dd-MMM-yy", java.util.Locale.US) // like the ledger: 11-Jul-26
                             val date = inputFormat.parse(dateString)
                             binding.tvDueDate?.text = if (date != null) outputFormat.format(date) else dateString
                         } catch (e: Exception) {

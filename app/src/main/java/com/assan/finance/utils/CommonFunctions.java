@@ -1084,13 +1084,22 @@ public class CommonFunctions {
         return formatter.format(currentTime);
     }
 
+    /**
+     * The server sends dates in UTC, e.g. "2026-07-10T19:00:00.000Z", which is 11-Jul-2026 00:00 in Pakistan
+     * (the date the portal shows). Cutting the text at "T" showed every date one day early.
+     * Returns the date as "yyyy-MM-dd" in Pakistan time; a value without a time zone is returned as is.
+     */
+    public static String serverDateToLocal(String raw) {
+        return ServerDates.toLocalDate(raw);
+    }
+
     public static String formatDateOfBirth(String dob) {
         if (dob == null || dob.trim().isEmpty()) {
             return "";
         }
         String cleanDob = dob.trim();
         if (cleanDob.contains("T")) {
-            cleanDob = cleanDob.split("T")[0];
+            cleanDob = serverDateToLocal(cleanDob);
         }
 
         String[] inputFormats = {
@@ -1159,7 +1168,7 @@ public class CommonFunctions {
 
         String cleanDate = uiDate.trim();
         if (cleanDate.contains("T")) {
-            cleanDate = cleanDate.split("T")[0];
+            cleanDate = serverDateToLocal(cleanDate);
         }
 
         String[] inputFormats = {

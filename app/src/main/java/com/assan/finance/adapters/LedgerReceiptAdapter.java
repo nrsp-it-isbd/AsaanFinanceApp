@@ -31,7 +31,7 @@ public class LedgerReceiptAdapter extends RecyclerView.Adapter<LedgerReceiptAdap
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         DataModelGetLedger receipt = receiptList.get(position);
         holder.receiptNoTextView.setText(receipt.getReceiptNo());
-        holder.dueDateTextView.setText(receipt.getDueDate());
+        holder.dueDateTextView.setText(com.assan.finance.utils.ServerDates.toDisplayDate(receipt.getDueDate()));
         holder.totalTextView.setText(receipt.getTotal());
         holder.txtInstallments.setText(receipt.getINSTALLMENTS());
         holder.txtPaidDate.setText(receipt.getPAID_DATE());

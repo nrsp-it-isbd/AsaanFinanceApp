@@ -376,11 +376,22 @@ class AssanLoginFragment : Fragment() {
                         
                         findNavController().navigate(R.id.action_assanLogin_to_homeFragment)
                     } else {
-                        val msg = com.assan.finance.utils.CommonFunctions.getProfessionalErrorMessage(loginResponse.message) ?: "Invalid credentials"
-                        showLoginErrorDialog(msg)
+                        showLoginErrorDialog(friendlyLoginMessage(loginResponse.message))
                     }
                 } else {
-                    showLoginErrorDialog(getString(R.string.str_unable_to_process_request))
+                    // FIX: a 400/401/403 with a reason (e.g. wrong password) was shown as "Unable to process request".
+                    // Show the server's reason; keep the general message for server failures (5xx) or an empty reply.
+                    val serverMessage = try {
+                        org.json.JSONObject(response.errorBody()?.string() ?: "").let { j ->
+                            j.optString("message", "").ifBlank { j.optString("error", "") }
+                        }.ifBlank { null }
+                    } catch (e: Exception) {
+                        null
+                    }
+                    showLoginErrorDialog(
+                        if (response.code() < 500 && serverMessage != null) friendlyLoginMessage(serverMessage)
+                        else getString(R.string.str_unable_to_process_request)
+                    )
                 }
             }
 
@@ -397,6 +408,31 @@ class AssanLoginFragment : Fragment() {
         _binding = null
     }
     
+    /**
+     * Short server replies like "Invalid password" do not tell the user what to do. Turn the common ones into clear
+     * guidance (English / Urdu); messages that already explain the problem are shown as they are.
+     */
+    private fun friendlyLoginMessage(serverMessage: String?): String {
+        val msg = com.assan.finance.utils.CommonFunctions.getProfessionalErrorMessage(serverMessage)
+        val lower = (serverMessage ?: "").lowercase()
+        val isUrdu = com.assan.finance.utils.LocaleHelper.getLanguage(requireContext()) == "ur"
+        return when {
+            lower.contains("password") && (lower.contains("invalid") || lower.contains("incorrect") ||
+                    lower.contains("wrong") || lower.contains("not match")) ->
+                if (isUrdu) "آپ کا پاس ورڈ غلط ہے۔ براہ کرم پاس ورڈ چیک کر کے دوبارہ کوشش کریں (چھوٹے بڑے حروف ایک جیسے ہونے چاہئیں)۔ بھول گئے ہیں تو “پاس ورڈ بھول گئے؟” پر ٹیپ کریں۔"
+                else "The password you entered is wrong. Please check it (capital and small letters must match) and try again. If you have forgotten it, tap \"Forgot Password?\"."
+            (lower.contains("cnic") || lower.contains("user") || lower.contains("account")) &&
+                    (lower.contains("not found") || lower.contains("not exist") || lower.contains("not registered") ||
+                            (lower.contains("invalid") && !lower.contains("password"))) ->
+                if (isUrdu) "اس شناختی کارڈ نمبر سے کوئی اکاؤنٹ نہیں ملا۔ شناختی کارڈ نمبر چیک کریں، یا پہلے “اکاؤنٹ بنائیں” سے رجسٹر ہوں۔"
+                else "No account was found with this CNIC. Please check the CNIC number, or register first with \"Create Account\"."
+            lower.contains("invalid credentials") ->
+                if (isUrdu) "شناختی کارڈ نمبر یا پاس ورڈ غلط ہے۔ دونوں چیک کر کے دوبارہ کوشش کریں، یا “پاس ورڈ بھول گئے؟” پر ٹیپ کریں۔"
+                else "The CNIC or password is wrong. Please check both and try again, or tap \"Forgot Password?\"."
+            else -> msg
+        }
+    }
+
     private fun showLoginErrorDialog(message: String) {
         val dialog = android.app.Dialog(requireContext())
         dialog.window?.setBackgroundDrawable(android.graphics.drawable.ColorDrawable(Color.TRANSPARENT))

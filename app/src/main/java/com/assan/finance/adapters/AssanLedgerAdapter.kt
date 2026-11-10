@@ -35,9 +35,10 @@ class AssanLedgerAdapter(
         val item = scheduleList[position]
 
         holder.tvInstNo.text = item.installmentNo.toString()
-        holder.tvDueDate.text = item.dueDate?.substringBefore("T") ?: "N/A"
+        // server dates are UTC: show them in Pakistan time (same date as the portal)
+        holder.tvDueDate.text = item.dueDate?.let { com.assan.finance.utils.ServerDates.toDisplayDate(it) } ?: "N/A"
         holder.tvDueTotal.text = String.format(java.util.Locale.US, "%,.0f", item.totalDue ?: 0.0)
-        holder.tvRecDate.text = item.receiptDate?.substringBefore("T") ?: "N/A"
+        holder.tvRecDate.text = item.receiptDate?.let { com.assan.finance.utils.ServerDates.toDisplayDate(it) } ?: "N/A"
         val totalRec = (item.recoveredPrincipal ?: 0.0) + (item.recoveredServiceCharge ?: 0.0)
         holder.tvRecTotal.text = String.format(java.util.Locale.US, "%,.0f", totalRec)
 
