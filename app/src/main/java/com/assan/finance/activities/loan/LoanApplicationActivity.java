@@ -1364,6 +1364,12 @@ public class LoanApplicationActivity extends BaseActivity {
                         if ((c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')) clean.append(c);
                         else if (c >= 'a' && c <= 'z') clean.append(Character.toUpperCase(c));
                     }
+                    // FIX: bank apps copy extra text, e.g. HBL copies "IBANPK24MEZN0082010102520857"; the 24-character
+                    // limit then cut the real IBAN. On paste, keep only the IBAN itself (any bank, any label/spaces).
+                    if (end - start > 1) {
+                        String pasted = com.assan.finance.utils.IbanText.fromPaste(clean.toString());
+                        if (!pasted.contentEquals(clean)) return pasted;
+                    }
                     return clean.toString().contentEquals(source.subSequence(start, end)) ? null : clean;
                 },
                 new android.text.InputFilter.LengthFilter(24)

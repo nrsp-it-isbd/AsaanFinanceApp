@@ -83,4 +83,7 @@
     <color name="auto_color_6B21A8">#9F64D0</color>
     <color name="auto_color_F9FAFB">#0A0C0E</color>
     <color name="auto_color_CCEEF8">#06151A</color>
+    <!-- update dialog -->
+    <color name="update_tint_bg">#1F3A38</color>
+    <color name="update_box_bg">#2A2D30</color>
 </resources>

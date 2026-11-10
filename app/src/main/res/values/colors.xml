@@ -99,4 +99,7 @@
     <color name="gray_text">#757575</color>
     <color name="auto_color_FEF3C7">#FEF3C7</color>
     <color name="auto_color_D97706">#D97706</color>
+    <!-- update dialog -->
+    <color name="update_tint_bg">#E0F7F5</color>
+    <color name="update_box_bg">#F4F7F9</color>
 </resources>

@@ -1,8 +1,20 @@
 {
-  "versionCode": 3,
-  "versionName": "1.0.2",
+  "versionCode": 4,
+  "versionName": "1.0.3",
   "downloadUrl": "https://drive.google.com/file/d/1mShUOocFfm0EfHbJgXztSplMm-cNd_h9/view?usp=sharing",
   "force": false,
   "message_en": "",
-  "message_ur": ""
+  "message_ur": "",
+  "whats_new_en": [
+    "Ledger dates now match the NRSP ledger (format 11-Jul-26).",
+    "Clear message when the password or CNIC is wrong at login.",
+    "IBAN copied from a bank app (e.g. HBL) now pastes correctly.",
+    "New update screen with this What's new list."
+  ],
+  "whats_new_ur": [
+    "کھاتے کی تاریخیں اب این آر ایس پی کے لیجر کے مطابق ہیں (11-Jul-26)۔",
+    "لاگ اِن پر غلط پاس ورڈ یا شناختی کارڈ کا واضح پیغام۔",
+    "بینک ایپ (مثلاً HBL) سے کاپی کیا گیا IBAN اب درست پیسٹ ہوتا ہے۔",
+    "نئی اپڈیٹ اسکرین، اس “نیا کیا ہے” فہرست کے ساتھ۔"
+  ]
 }
