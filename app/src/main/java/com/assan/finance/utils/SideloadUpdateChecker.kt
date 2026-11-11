@@ -1,10 +1,23 @@
 package com.assan.finance.utils
 
+import android.animation.ObjectAnimator
+import android.animation.PropertyValuesHolder
+import android.animation.ValueAnimator
 import android.app.Activity
+import android.app.Dialog
+import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.util.Log
+import android.view.View
+import android.view.ViewGroup
+import android.view.Window
+import android.widget.TextView
 import com.assan.finance.BuildConfig
+import com.assan.finance.R
+import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -18,15 +31,28 @@ import java.util.concurrent.TimeUnit
  * Update check for the APK shared on WhatsApp / Google Drive (not installed from the Play Store, so
  * Play's in-app update cannot see it).
  *
- * The latest version is published in docs/version.json on the project's GitHub Pages site. When its
- * "versionCode" is higher than this app's, a dialog offers "Update", which opens the download link.
+ * The latest version is published in docs/version.json on the project's GitHub Pages site:
+ *   versionCode / versionName   the newest APK on the Google Drive link
+ *   downloadUrl                 the Google Drive link
+ *   whats_new_en / whats_new_ur "What's new" lines shown in the dialog
+ *   message_en / message_ur     optional text under the title
+ *   force                       true = no "Later" (the app cannot be used until it is updated)
  * To release an update: upload the new APK to the same Google Drive file ("Manage versions"), then raise
  * versionCode / versionName in docs/version.json and push it.
+ *
+ * The dialog is not shown again and again: "Later" hides it for 12 hours for that version, and "Update"
+ * for 1 hour (the user leaves for Google Drive and the installer, then comes back to the app).
  */
 object SideloadUpdateChecker {
 
     private const val TAG = "SideloadUpdate"
     const val VERSION_URL = "https://nrsp-it-isbd.github.io/AsaanFinanceApp/version.json"
+
+    private const val PREFS = "sideload_update_prefs"
+    private const val KEY_SNOOZE_VERSION = "snooze_version"
+    private const val KEY_SNOOZE_UNTIL = "snooze_until"
+    private const val LATER_MS = 12 * 60 * 60 * 1000L
+    private const val AFTER_UPDATE_TAP_MS = 60 * 60 * 1000L
 
     private val client by lazy {
         OkHttpClient.Builder()
@@ -35,11 +61,10 @@ object SideloadUpdateChecker {
             .build()
     }
 
-    /** Asked once per app start, so "Later" does not bother the user again until the next start. */
-    private var shownThisSession = false
+    private var dialog: Dialog? = null
 
     fun check(activity: Activity) {
-        if (shownThisSession) return
+        if (dialog?.isShowing == true) return
         CoroutineScope(Dispatchers.IO).launch {
             val info = try {
                 // query string avoids an old cached copy of the file
@@ -55,91 +80,117 @@ object SideloadUpdateChecker {
             val latest = info.optInt("versionCode", 0)
             val url = info.optString("downloadUrl", "")
             if (latest <= BuildConfig.VERSION_CODE || url.isBlank()) return@launch
+            val force = info.optBoolean("force", false)
+            if (!force && isSnoozed(activity, latest)) return@launch
 
             withContext(Dispatchers.Main) {
-                if (activity.isFinishing || activity.isDestroyed || shownThisSession) return@withContext
-                shownThisSession = true
-                show(activity, info, url)
+                if (activity.isFinishing || activity.isDestroyed || dialog?.isShowing == true) return@withContext
+                show(activity, info, latest, url, force)
             }
         }
     }
 
-    private fun show(activity: Activity, info: JSONObject, url: String) {
+    private fun isSnoozed(context: Context, versionCode: Int): Boolean {
+        val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+        return prefs.getInt(KEY_SNOOZE_VERSION, -1) == versionCode &&
+                System.currentTimeMillis() < prefs.getLong(KEY_SNOOZE_UNTIL, 0L)
+    }
+
+    private fun snooze(context: Context, versionCode: Int, forMs: Long) {
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()
+            .putInt(KEY_SNOOZE_VERSION, versionCode)
+            .putLong(KEY_SNOOZE_UNTIL, System.currentTimeMillis() + forMs)
+            .apply()
+    }
+
+    private fun show(activity: Activity, info: JSONObject, versionCode: Int, url: String, force: Boolean) {
         val isUrdu = LocaleHelper.getLanguage(activity) == "ur"
-        val force = info.optBoolean("force", false)
         val versionName = info.optString("versionName", "")
-        val title = if (isUrdu) "نیا ورژن دستیاب ہے" else "New version available"
-        val message = info.optString(if (isUrdu) "message_ur" else "message_en", "").ifBlank {
-            if (isUrdu) "اپڈیٹ کریں پر ٹیپ کریں، فائل ڈاؤن لوڈ کر کے انسٹال کریں۔ آپ کا اکاؤنٹ اور ڈیٹا محفوظ رہے گا۔"
-            else "Tap Update, download the file and install it. Your account and data stay safe."
-        }
-        // "What's new": list in version.json ("whats_new_en" / "whats_new_ur"), so it changes without a new app
-        val items = info.optJSONArray(if (isUrdu) "whats_new_ur" else "whats_new_en")
-            ?: info.optJSONArray("whats_new_en")
 
-        val dialog = android.app.Dialog(activity)
-        dialog.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE)
-        dialog.setContentView(com.assan.finance.R.layout.dialog_app_update)
-        dialog.window?.setBackgroundDrawable(android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT))
-        dialog.window?.setLayout(android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT)
-        dialog.setCancelable(!force)
+        val d = Dialog(activity)
+        d.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        d.setContentView(R.layout.dialog_app_update)
+        d.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        d.window?.setLayout(
+            (activity.resources.displayMetrics.widthPixels * 0.9).toInt(),
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+        d.setCancelable(!force)
+        d.setCanceledOnTouchOutside(false)
 
-        dialog.findViewById<android.widget.TextView>(com.assan.finance.R.id.tvUpdateTitle).text = title
-        dialog.findViewById<android.widget.TextView>(com.assan.finance.R.id.tvUpdateVersion).text =
+        d.findViewById<TextView>(R.id.tvUpdateTitle).text =
+            if (isUrdu) "نیا اپڈیٹ دستیاب ہے" else "New Update Available"
+        d.findViewById<TextView>(R.id.tvUpdateVersion).text =
             if (isUrdu) "ورژن $versionName" else "Version $versionName"
-        dialog.findViewById<android.widget.TextView>(com.assan.finance.R.id.tvUpdateMessage).text = message
+        d.findViewById<TextView>(R.id.tvUpdateMessage).text =
+            info.optString(if (isUrdu) "message_ur" else "message_en", "").ifBlank {
+                if (isUrdu) "ایپ کا نیا ورژن تیار ہے۔ تازہ ترین درستگیوں اور سہولیات کے لیے اپڈیٹ کریں۔ آپ کا اکاؤنٹ اور ڈیٹا محفوظ رہے گا۔"
+                else "A new version of the app is ready. Please update to get the latest fixes and features. Your account and data stay safe."
+            }
 
-        val box = dialog.findViewById<android.view.View>(com.assan.finance.R.id.layoutWhatsNew)
-        val list = dialog.findViewById<android.widget.LinearLayout>(com.assan.finance.R.id.listWhatsNew)
-        if (items == null || items.length() == 0) {
-            box.visibility = android.view.View.GONE
-        } else {
-            dialog.findViewById<android.widget.TextView>(com.assan.finance.R.id.tvWhatsNewTitle).text =
-                if (isUrdu) "نیا کیا ہے" else "What's new"
-            val teal = androidx.core.content.ContextCompat.getColor(activity, com.assan.finance.R.color.primary)
-            val textColor = androidx.core.content.ContextCompat.getColor(activity, com.assan.finance.R.color.on_surface)
-            val dp = activity.resources.displayMetrics.density
-            for (i in 0 until items.length()) {
-                val text = items.optString(i).trim()
-                if (text.isEmpty()) continue
-                val row = android.widget.TextView(activity)
-                val line = android.text.SpannableString("✓  $text")
-                line.setSpan(android.text.style.ForegroundColorSpan(teal), 0, 1, 0)
-                line.setSpan(android.text.style.StyleSpan(android.graphics.Typeface.BOLD), 0, 1, 0)
-                row.text = line
-                row.setTextColor(textColor)
-                row.textSize = 14f
-                row.textAlignment = android.view.View.TEXT_ALIGNMENT_VIEW_START
-                row.setPadding(0, (4 * dp).toInt(), 0, (4 * dp).toInt())
-                list.addView(row)
-            }
-            // keep the dialog on screen when the list is long
-            val scroll = dialog.findViewById<android.view.View>(com.assan.finance.R.id.scrollWhatsNew)
-            scroll.post {
-                val max = (180 * dp).toInt()
-                if (scroll.height > max) scroll.layoutParams = scroll.layoutParams.apply { height = max }
-            }
+        // "What's new": list in version.json, so it changes without a new app
+        val notesArray = info.optJSONArray(if (isUrdu) "whats_new_ur" else "whats_new_en")
+            ?: info.optJSONArray("whats_new_en")
+        val notes = (0 until (notesArray?.length() ?: 0)).mapNotNull { i ->
+            notesArray?.optString(i)?.trim()?.takeIf { it.isNotEmpty() }
+        }
+        if (notes.isNotEmpty()) {
+            d.findViewById<View>(R.id.svUpdateNotes).visibility = View.VISIBLE
+            d.findViewById<TextView>(R.id.tvWhatsNewTitle).text = if (isUrdu) "نیا کیا ہے" else "What's new"
+            d.findViewById<TextView>(R.id.tvUpdateNotes).text = notes.joinToString("\n") { "•  $it" }
         }
 
-        val updateButton = dialog.findViewById<android.widget.Button>(com.assan.finance.R.id.btnUpdateNow)
-        updateButton.text = if (isUrdu) "اپڈیٹ کریں" else "Update"
-        updateButton.setOnClickListener {
-            try {
-                activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
-            } catch (e: Exception) {
-                Log.w(TAG, "Could not open update link: ${e.message}")
+        d.findViewById<MaterialButton>(R.id.btnUpdateNow).apply {
+            text = if (isUrdu) "ابھی اپڈیٹ کریں" else "Update Now"
+            setOnClickListener {
+                try {
+                    activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                } catch (e: Exception) {
+                    Log.w(TAG, "Could not open update link: ${e.message}")
+                }
+                if (force) {
+                    // a required update keeps the app closed until it is installed
+                    d.dismiss()
+                    activity.finishAffinity()
+                } else {
+                    snooze(activity, versionCode, AFTER_UPDATE_TAP_MS)
+                    d.dismiss()
+                }
             }
-            dialog.dismiss()
-            // a required update keeps the app closed until it is installed
-            if (force) activity.finishAffinity()
         }
-        val later = dialog.findViewById<android.widget.TextView>(com.assan.finance.R.id.btnUpdateLater)
-        if (force) {
-            later.visibility = android.view.View.GONE
-        } else {
-            later.text = if (isUrdu) "بعد میں" else "Later"
-            later.setOnClickListener { dialog.dismiss() }
+        d.findViewById<MaterialButton>(R.id.btnUpdateLater).apply {
+            if (force) {
+                visibility = View.GONE
+            } else {
+                text = if (isUrdu) "بعد میں" else "Later"
+                setOnClickListener {
+                    snooze(activity, versionCode, LATER_MS)
+                    d.dismiss()
+                }
+            }
         }
-        dialog.show()
+        // back button also counts as "Later"
+        if (!force) d.setOnCancelListener { snooze(activity, versionCode, LATER_MS) }
+
+        // soft pulsing ring around the icon
+        val ring = d.findViewById<View>(R.id.vUpdateRing)
+        val pulse = ObjectAnimator.ofPropertyValuesHolder(
+            ring,
+            PropertyValuesHolder.ofFloat(View.SCALE_X, 0.85f, 1.05f),
+            PropertyValuesHolder.ofFloat(View.SCALE_Y, 0.85f, 1.05f),
+            PropertyValuesHolder.ofFloat(View.ALPHA, 1f, 0.55f)
+        ).apply {
+            duration = 1100
+            repeatCount = ValueAnimator.INFINITE
+            repeatMode = ValueAnimator.REVERSE
+        }
+        d.setOnShowListener { pulse.start() }
+        d.setOnDismissListener {
+            pulse.cancel()
+            if (dialog === d) dialog = null
+        }
+
+        dialog = d
+        d.show()
     }
 }

@@ -86,4 +86,5 @@
     <!-- update dialog -->
     <color name="update_tint_bg">#1F3A38</color>
     <color name="update_box_bg">#2A2D30</color>
+    <color name="update_ring_bg">#18302E</color>
 </resources>
